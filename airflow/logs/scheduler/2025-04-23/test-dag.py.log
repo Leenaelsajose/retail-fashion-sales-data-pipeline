@@ -1,0 +1,826 @@
+[2025-04-22T20:05:44.069-0400] {processor.py:186} INFO - Started process (PID=10434) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:05:44.069-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:05:44.070-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:05:44.070-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:05:44.074-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:05:44.083-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:05:44.083-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:05:44.091-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:05:44.090-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:05:44.104-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.039 seconds
+[2025-04-22T20:07:08.706-0400] {processor.py:186} INFO - Started process (PID=10519) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:07:09.330-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:07:09.331-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:07:09.331-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:07:09.335-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:07:09.350-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:07:09.350-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:07:09.364-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:07:09.364-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:07:09.386-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.684 seconds
+[2025-04-22T20:08:05.807-0400] {processor.py:186} INFO - Started process (PID=10579) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:08:05.809-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:08:05.810-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:08:05.809-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:08:05.813-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:08:05.823-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:08:05.823-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:08:05.830-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:08:05.830-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:08:05.845-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.043 seconds
+[2025-04-22T20:09:31.213-0400] {processor.py:186} INFO - Started process (PID=10669) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:09:31.215-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:09:31.216-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:09:31.216-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:09:31.220-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:09:31.232-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:09:31.232-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:09:31.240-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:09:31.240-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:09:31.255-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.049 seconds
+[2025-04-22T20:10:54.563-0400] {processor.py:186} INFO - Started process (PID=10755) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:10:54.564-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:10:54.565-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:10:54.565-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:10:54.569-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:10:54.579-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:10:54.579-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:10:54.586-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:10:54.586-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:10:54.600-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.041 seconds
+[2025-04-22T20:12:18.434-0400] {processor.py:186} INFO - Started process (PID=10841) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:12:18.436-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:12:18.436-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:12:18.436-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:12:18.441-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:12:18.452-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:12:18.452-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:12:18.463-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:12:18.463-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:12:18.484-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.054 seconds
+[2025-04-22T20:13:45.844-0400] {processor.py:186} INFO - Started process (PID=10931) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:13:45.854-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:13:45.856-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:13:45.855-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:13:45.861-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:13:45.873-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:13:45.873-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:13:45.881-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:13:45.881-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:13:45.897-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.057 seconds
+[2025-04-22T20:15:09.375-0400] {processor.py:186} INFO - Started process (PID=11018) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:15:09.376-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:15:09.377-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:15:09.377-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:15:09.381-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:15:09.393-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:15:09.393-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:15:09.402-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:15:09.401-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:15:09.418-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.047 seconds
+[2025-04-22T20:16:31.411-0400] {processor.py:186} INFO - Started process (PID=11103) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:16:31.427-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:16:31.428-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:16:31.428-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:16:31.433-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:16:31.444-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:16:31.444-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:16:31.451-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:16:31.451-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:16:31.465-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.057 seconds
+[2025-04-22T20:17:50.352-0400] {processor.py:186} INFO - Started process (PID=11192) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:17:50.353-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:17:50.354-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:17:50.354-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:17:50.359-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:17:50.373-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:17:50.372-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:17:50.380-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:17:50.380-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:17:50.396-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.049 seconds
+[2025-04-22T20:19:14.926-0400] {processor.py:186} INFO - Started process (PID=11278) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:19:14.942-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:19:14.943-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:19:14.943-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:19:14.947-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:19:14.958-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:19:14.958-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:19:14.965-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:19:14.965-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:19:14.979-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.057 seconds
+[2025-04-22T20:20:38.784-0400] {processor.py:186} INFO - Started process (PID=11364) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:20:38.799-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:20:38.800-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:20:38.800-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:20:38.803-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:20:38.816-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:20:38.815-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:20:38.823-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:20:38.823-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:20:38.836-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.054 seconds
+[2025-04-22T20:22:00.756-0400] {processor.py:186} INFO - Started process (PID=11449) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:22:00.758-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:22:00.759-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:22:00.759-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:22:00.764-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:22:00.775-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:22:00.775-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:22:00.783-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:22:00.783-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:22:00.798-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.046 seconds
+[2025-04-22T20:22:58.966-0400] {processor.py:186} INFO - Started process (PID=11510) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:22:59.000-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:22:59.001-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:22:59.001-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:22:59.006-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:22:59.017-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:22:59.017-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:22:59.025-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:22:59.025-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:22:59.038-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.076 seconds
+[2025-04-22T20:24:23.514-0400] {processor.py:186} INFO - Started process (PID=11598) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:24:23.515-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:24:23.516-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:24:23.516-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:24:23.520-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:24:23.529-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:24:23.529-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:24:23.536-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:24:23.535-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:24:23.551-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.041 seconds
+[2025-04-22T20:25:43.868-0400] {processor.py:186} INFO - Started process (PID=11681) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:25:43.870-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:25:43.871-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:25:43.870-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:25:43.875-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:25:43.886-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:25:43.886-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:25:43.893-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:25:43.893-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:25:43.909-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.045 seconds
+[2025-04-22T20:27:00.886-0400] {processor.py:186} INFO - Started process (PID=11764) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:27:00.902-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:27:00.903-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:27:00.903-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:27:00.906-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:27:00.916-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:27:00.915-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:27:00.922-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:27:00.922-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:27:00.934-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.051 seconds
+[2025-04-22T20:28:24.134-0400] {processor.py:186} INFO - Started process (PID=11850) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:28:24.136-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:28:24.137-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:28:24.137-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:28:24.141-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:28:24.151-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:28:24.151-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:28:24.158-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:28:24.158-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:28:24.171-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.041 seconds
+[2025-04-22T20:29:44.720-0400] {processor.py:186} INFO - Started process (PID=11933) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:29:44.736-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:29:44.737-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:29:44.737-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:29:44.744-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:29:44.755-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:29:44.754-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:29:44.762-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:29:44.762-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:29:44.776-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.060 seconds
+[2025-04-22T20:31:07.270-0400] {processor.py:186} INFO - Started process (PID=12019) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:31:07.272-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:31:07.273-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:31:07.273-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:31:07.277-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:31:07.289-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:31:07.289-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:31:07.296-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:31:07.296-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:31:07.312-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.047 seconds
+[2025-04-22T20:32:27.567-0400] {processor.py:186} INFO - Started process (PID=12103) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:32:27.580-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:32:27.581-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:32:27.581-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:32:27.586-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:32:27.597-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:32:27.597-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:32:27.606-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:32:27.606-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:32:27.621-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.058 seconds
+[2025-04-22T20:33:50.908-0400] {processor.py:186} INFO - Started process (PID=12191) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:33:50.923-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:33:50.924-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:33:50.924-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:33:50.928-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:33:50.942-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:33:50.941-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:33:50.950-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:33:50.950-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:33:50.963-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.059 seconds
+[2025-04-22T20:34:48.794-0400] {processor.py:186} INFO - Started process (PID=12250) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:34:48.796-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:34:48.797-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:34:48.797-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:34:48.801-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:34:48.811-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:34:48.811-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:34:48.818-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:34:48.818-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:34:48.833-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.043 seconds
+[2025-04-22T20:36:15.032-0400] {processor.py:186} INFO - Started process (PID=12337) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:36:15.048-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:36:15.049-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:36:15.048-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:36:15.053-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:36:15.063-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:36:15.063-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:36:15.070-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:36:15.070-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:36:15.083-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.056 seconds
+[2025-04-22T20:37:43.279-0400] {processor.py:186} INFO - Started process (PID=12426) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:37:43.280-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:37:43.281-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:37:43.281-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:37:43.285-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:37:43.296-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:37:43.296-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:37:43.304-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:37:43.304-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:37:43.319-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.045 seconds
+[2025-04-22T20:38:44.180-0400] {processor.py:186} INFO - Started process (PID=12485) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:38:44.181-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:38:44.182-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:38:44.182-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:38:44.186-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:38:44.196-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:38:44.196-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:38:44.202-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:38:44.202-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:38:44.217-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.041 seconds
+[2025-04-22T20:39:41.125-0400] {processor.py:186} INFO - Started process (PID=12544) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:39:41.127-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:39:41.128-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:39:41.128-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:39:41.132-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:39:41.145-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:39:41.145-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:39:41.153-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:39:41.153-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:39:41.278-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.158 seconds
+[2025-04-22T20:40:45.425-0400] {processor.py:186} INFO - Started process (PID=12605) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:40:45.427-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:40:45.428-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:40:45.428-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:40:45.432-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:40:45.445-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:40:45.445-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:40:45.454-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:40:45.454-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:40:45.477-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.056 seconds
+[2025-04-22T20:42:09.206-0400] {processor.py:186} INFO - Started process (PID=12691) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:42:09.208-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:42:09.209-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:42:09.208-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:42:09.214-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:42:09.224-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:42:09.224-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:42:09.232-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:42:09.232-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:42:09.247-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.046 seconds
+[2025-04-22T20:43:30.486-0400] {processor.py:186} INFO - Started process (PID=12778) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:43:30.489-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:43:30.490-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:43:30.490-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:43:30.494-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:43:30.505-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:43:30.505-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:43:30.513-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:43:30.512-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:43:30.526-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.044 seconds
+[2025-04-22T20:44:53.520-0400] {processor.py:186} INFO - Started process (PID=12863) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:44:53.521-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:44:53.522-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:44:53.522-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:44:53.526-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:44:53.537-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:44:53.537-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:44:53.546-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:44:53.545-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:44:53.563-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.047 seconds
+[2025-04-22T20:46:20.010-0400] {processor.py:186} INFO - Started process (PID=12950) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:46:20.013-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:46:20.014-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:46:20.013-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:46:20.019-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:46:20.036-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:46:20.036-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:46:20.048-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:46:20.047-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:46:20.074-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.069 seconds
+[2025-04-22T20:47:40.728-0400] {processor.py:186} INFO - Started process (PID=13035) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:47:40.729-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:47:40.730-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:47:40.729-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:47:40.734-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:47:40.746-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:47:40.746-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:47:40.755-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:47:40.755-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:47:40.771-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.048 seconds
+[2025-04-22T20:48:40.376-0400] {processor.py:186} INFO - Started process (PID=13096) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:48:40.379-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:48:40.380-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:48:40.379-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:48:40.384-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:48:40.399-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:48:40.399-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:48:40.409-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:48:40.409-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:48:40.431-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.060 seconds
+[2025-04-22T20:49:40.032-0400] {processor.py:186} INFO - Started process (PID=13156) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:49:40.034-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:49:40.035-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:49:40.034-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:49:40.039-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:49:40.050-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:49:40.050-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:49:40.059-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:49:40.059-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:49:40.075-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.048 seconds
+[2025-04-22T20:50:39.206-0400] {processor.py:186} INFO - Started process (PID=13215) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:50:39.207-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:50:39.208-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:50:39.208-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:50:39.212-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:50:39.223-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:50:39.223-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:50:39.233-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:50:39.232-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:50:39.247-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.046 seconds
+[2025-04-22T20:51:58.302-0400] {processor.py:186} INFO - Started process (PID=13299) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:51:58.305-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:51:58.305-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:51:58.305-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:51:58.309-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:51:58.319-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:51:58.318-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:51:58.326-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:51:58.326-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:51:58.342-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.043 seconds
+[2025-04-22T20:52:55.612-0400] {processor.py:186} INFO - Started process (PID=13359) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:52:55.614-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:52:55.615-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:52:55.615-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:52:55.620-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:52:55.630-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:52:55.630-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:52:55.637-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:52:55.637-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:52:55.652-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.043 seconds
+[2025-04-22T20:54:19.604-0400] {processor.py:186} INFO - Started process (PID=13444) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:54:19.606-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:54:19.607-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:54:19.607-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:54:19.613-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:54:19.627-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:54:19.626-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:54:19.637-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:54:19.637-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:54:19.655-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.056 seconds
+[2025-04-22T20:55:45.195-0400] {processor.py:186} INFO - Started process (PID=13531) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:55:45.210-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:55:45.212-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:55:45.211-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:55:45.217-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:55:45.228-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:55:45.228-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:55:45.236-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:55:45.236-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:55:45.253-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.064 seconds
+[2025-04-22T20:56:41.925-0400] {processor.py:186} INFO - Started process (PID=13590) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:56:41.927-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:56:41.928-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:56:41.928-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:56:41.933-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:56:41.947-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:56:41.947-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:56:41.957-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:56:41.957-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:56:41.975-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.055 seconds
+[2025-04-22T20:58:08.313-0400] {processor.py:186} INFO - Started process (PID=13678) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:58:08.315-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:58:08.316-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:58:08.316-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:58:08.322-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:58:08.337-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:58:08.337-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:58:08.347-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:58:08.347-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:58:08.367-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.060 seconds
+[2025-04-22T20:59:35.439-0400] {processor.py:186} INFO - Started process (PID=13765) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:59:35.442-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T20:59:35.443-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:59:35.442-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:59:35.447-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T20:59:35.457-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:59:35.457-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:59:35.465-0400] {logging_mixin.py:190} INFO - [2025-04-22T20:59:35.465-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T20:59:35.479-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.044 seconds
+[2025-04-22T21:00:35.072-0400] {processor.py:186} INFO - Started process (PID=13825) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:00:35.074-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:00:35.075-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:00:35.075-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:00:35.080-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:00:35.092-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:00:35.092-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:00:35.101-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:00:35.101-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:00:35.116-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.049 seconds
+[2025-04-22T21:01:34.245-0400] {processor.py:186} INFO - Started process (PID=13884) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:01:34.247-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:01:34.248-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:01:34.248-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:01:34.253-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:01:34.268-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:01:34.267-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:01:34.279-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:01:34.279-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:01:34.298-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.058 seconds
+[2025-04-22T21:02:33.275-0400] {processor.py:186} INFO - Started process (PID=13945) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:02:33.276-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:02:33.277-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:02:33.276-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:02:33.281-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:02:33.294-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:02:33.294-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:02:33.303-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:02:33.303-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:02:33.318-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.047 seconds
+[2025-04-22T21:03:35.706-0400] {processor.py:186} INFO - Started process (PID=14006) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:03:35.709-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:03:35.711-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:03:35.710-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:03:35.719-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:03:35.737-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:03:35.737-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:03:35.746-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:03:35.746-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:03:35.764-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.066 seconds
+[2025-04-22T21:05:00.246-0400] {processor.py:186} INFO - Started process (PID=14091) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:05:00.248-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:05:00.251-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:05:00.250-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:05:00.259-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:05:00.287-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:05:00.286-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:05:00.310-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:05:00.309-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:05:00.351-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.114 seconds
+[2025-04-22T21:06:06.797-0400] {processor.py:186} INFO - Started process (PID=14153) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:06:06.799-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:06:06.800-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:06:06.799-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:06:06.806-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:06:06.822-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:06:06.822-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:06:06.834-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:06:06.833-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:06:06.856-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.065 seconds
+[2025-04-22T21:07:10.650-0400] {processor.py:186} INFO - Started process (PID=14222) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:07:10.652-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:07:10.653-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:07:10.653-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:07:10.661-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:07:10.679-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:07:10.679-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:07:10.693-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:07:10.693-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:07:10.720-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.076 seconds
+[2025-04-22T21:16:38.599-0400] {processor.py:186} INFO - Started process (PID=14303) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:16:38.600-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:16:38.602-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:16:38.601-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:16:38.607-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:16:38.621-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:16:38.621-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:16:38.632-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:16:38.632-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:16:38.652-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.059 seconds
+[2025-04-22T21:17:48.320-0400] {processor.py:186} INFO - Started process (PID=14383) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:17:48.321-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:17:48.322-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:17:48.322-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:17:48.326-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:17:48.339-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:17:48.339-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:17:48.348-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:17:48.348-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:17:48.366-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.050 seconds
+[2025-04-22T21:19:10.837-0400] {processor.py:186} INFO - Started process (PID=14469) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:19:10.839-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:19:10.839-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:19:10.839-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:19:10.843-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:19:10.854-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:19:10.853-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:19:10.862-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:19:10.862-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:19:10.879-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.047 seconds
+[2025-04-22T21:20:27.878-0400] {processor.py:186} INFO - Started process (PID=14550) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:20:27.893-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:20:27.895-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:20:27.894-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:20:27.899-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:20:27.913-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:20:27.913-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:20:27.923-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:20:27.923-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:20:27.966-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.094 seconds
+[2025-04-22T21:21:53.364-0400] {processor.py:186} INFO - Started process (PID=14637) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:21:53.365-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:21:53.366-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:21:53.366-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:21:53.371-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:21:53.381-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:21:53.380-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:21:53.389-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:21:53.389-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:21:53.404-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.044 seconds
+[2025-04-22T21:22:58.611-0400] {processor.py:186} INFO - Started process (PID=14705) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:22:58.613-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:22:58.614-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:22:58.614-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:22:58.618-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:22:58.629-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:22:58.629-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:22:58.637-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:22:58.637-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:22:58.654-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.046 seconds
+[2025-04-22T21:23:56.950-0400] {processor.py:186} INFO - Started process (PID=14764) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:23:56.952-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:23:56.955-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:23:56.954-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:23:56.966-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:23:56.989-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:23:56.989-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:23:57.011-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:23:57.010-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:23:57.043-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.103 seconds
+[2025-04-22T21:24:54.573-0400] {processor.py:186} INFO - Started process (PID=14823) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:24:54.575-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:24:54.576-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:24:54.576-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:24:54.581-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:24:54.597-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:24:54.597-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:24:54.609-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:24:54.609-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:24:54.663-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.095 seconds
+[2025-04-22T21:26:19.796-0400] {processor.py:186} INFO - Started process (PID=14909) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:26:19.798-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:26:19.799-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:26:19.798-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:26:19.804-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:26:19.818-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:26:19.817-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:26:19.831-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:26:19.830-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:26:19.849-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.058 seconds
+[2025-04-22T21:27:43.399-0400] {processor.py:186} INFO - Started process (PID=14995) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:27:43.401-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:27:43.402-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:27:43.401-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:27:43.407-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:27:43.420-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:27:43.420-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:27:43.429-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:27:43.429-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:27:43.446-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.051 seconds
+[2025-04-22T21:28:47.964-0400] {processor.py:186} INFO - Started process (PID=15056) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:28:47.967-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:28:47.968-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:28:47.968-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:28:47.975-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:28:47.989-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:28:47.988-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:28:48.002-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:28:48.002-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:28:48.023-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.064 seconds
+[2025-04-22T21:29:46.272-0400] {processor.py:186} INFO - Started process (PID=15115) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:29:46.274-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:29:46.277-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:29:46.276-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:29:46.284-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:29:46.305-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:29:46.305-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:29:46.320-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:29:46.319-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:29:46.348-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.083 seconds
+[2025-04-22T21:31:12.644-0400] {processor.py:186} INFO - Started process (PID=15202) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:31:12.645-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:31:12.647-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:31:12.646-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:31:12.651-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:31:12.667-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:31:12.667-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:31:12.679-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:31:12.679-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:31:12.700-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.061 seconds
+[2025-04-22T21:32:38.738-0400] {processor.py:186} INFO - Started process (PID=15291) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:32:38.740-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:32:38.741-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:32:38.741-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:32:38.748-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:32:38.764-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:32:38.763-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:32:38.775-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:32:38.774-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:32:38.796-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.063 seconds
+[2025-04-22T21:33:39.971-0400] {processor.py:186} INFO - Started process (PID=15351) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:33:39.972-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:33:39.973-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:33:39.973-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:33:39.977-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:33:39.989-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:33:39.988-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:33:39.997-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:33:39.997-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:33:40.013-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.047 seconds
+[2025-04-22T21:34:39.315-0400] {processor.py:186} INFO - Started process (PID=15410) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:34:39.316-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:34:39.317-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:34:39.317-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:34:39.323-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:34:39.338-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:34:39.338-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:34:39.358-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:34:39.358-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:34:39.388-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.079 seconds
+[2025-04-22T21:35:40.579-0400] {processor.py:186} INFO - Started process (PID=15470) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:35:40.581-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:35:40.583-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:35:40.582-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:35:40.589-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:35:40.600-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:35:40.600-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:35:40.609-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:35:40.608-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:35:40.626-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.052 seconds
+[2025-04-22T21:36:39.113-0400] {processor.py:186} INFO - Started process (PID=15530) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:36:39.115-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:36:39.116-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:36:39.116-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:36:39.123-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:36:39.145-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:36:39.145-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:36:39.164-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:36:39.164-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:36:39.249-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.143 seconds
+[2025-04-22T21:37:38.237-0400] {processor.py:186} INFO - Started process (PID=15589) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:37:38.238-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:37:38.240-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:37:38.239-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:37:38.244-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:37:38.260-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:37:38.259-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:37:38.270-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:37:38.270-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:37:38.286-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.057 seconds
+[2025-04-22T21:38:43.911-0400] {processor.py:186} INFO - Started process (PID=15650) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:38:43.931-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:38:43.933-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:38:43.933-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:38:43.940-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:38:43.959-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:38:43.959-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:38:43.973-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:38:43.973-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:38:44.014-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.112 seconds
+[2025-04-22T21:39:46.395-0400] {processor.py:186} INFO - Started process (PID=15711) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:39:46.396-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:39:46.397-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:39:46.397-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:39:46.403-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:39:46.417-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:39:46.417-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:39:46.426-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:39:46.426-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:39:46.443-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.059 seconds
+[2025-04-22T21:41:13.217-0400] {processor.py:186} INFO - Started process (PID=15798) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:41:13.226-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:41:13.227-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:41:13.227-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:41:13.233-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:41:13.250-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:41:13.249-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:41:13.262-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:41:13.261-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:41:13.342-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.131 seconds
+[2025-04-22T21:42:11.948-0400] {processor.py:186} INFO - Started process (PID=15857) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:42:11.971-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:42:11.973-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:42:11.972-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:42:11.978-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:42:11.992-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:42:11.992-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:42:12.001-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:42:12.001-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:42:12.018-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.075 seconds
+[2025-04-22T21:43:38.978-0400] {processor.py:186} INFO - Started process (PID=15945) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:43:38.979-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:43:38.980-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:43:38.980-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:43:38.985-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:43:38.999-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:43:38.999-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:43:39.009-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:43:39.009-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:43:39.056-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.084 seconds
+[2025-04-22T21:45:04.431-0400] {processor.py:186} INFO - Started process (PID=16032) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:45:04.433-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:45:04.434-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:45:04.434-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:45:04.439-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:45:04.454-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:45:04.454-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:45:04.466-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:45:04.466-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:45:04.486-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.060 seconds
+[2025-04-22T21:46:31.435-0400] {processor.py:186} INFO - Started process (PID=16121) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:46:31.452-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:46:31.454-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:46:31.453-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:46:31.459-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:46:31.477-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:46:31.477-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:46:31.490-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:46:31.490-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:46:31.544-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.115 seconds
+[2025-04-22T21:47:34.356-0400] {processor.py:186} INFO - Started process (PID=16182) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:47:34.360-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:47:34.361-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:47:34.361-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:47:34.368-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:47:34.387-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:47:34.386-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:47:34.402-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:47:34.402-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:47:34.428-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.079 seconds
+[2025-04-22T21:49:01.765-0400] {processor.py:186} INFO - Started process (PID=16269) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:49:01.766-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:49:01.767-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:49:01.767-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:49:01.771-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:49:01.782-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:49:01.782-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:49:01.790-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:49:01.789-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:49:01.806-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.045 seconds
+[2025-04-22T21:50:26.928-0400] {processor.py:186} INFO - Started process (PID=16355) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:50:26.930-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:50:26.931-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:50:26.930-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:50:26.934-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:50:26.944-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:50:26.944-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:50:26.951-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:50:26.951-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:50:26.966-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.041 seconds
+[2025-04-22T21:51:25.938-0400] {processor.py:186} INFO - Started process (PID=16422) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:51:25.940-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:51:25.941-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:51:25.940-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:51:25.945-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:51:25.959-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:51:25.958-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:51:25.966-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:51:25.966-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:51:25.982-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.047 seconds
+[2025-04-22T21:52:25.188-0400] {processor.py:186} INFO - Started process (PID=16481) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:52:25.189-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:52:25.192-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:52:25.191-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:52:25.200-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:52:25.222-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:52:25.222-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:52:25.254-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:52:25.253-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:52:25.384-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.204 seconds
+[2025-04-22T21:53:28.563-0400] {processor.py:186} INFO - Started process (PID=16542) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:53:28.566-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:53:28.567-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:53:28.567-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:53:28.573-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:53:28.592-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:53:28.592-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:53:28.606-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:53:28.606-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:53:28.627-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.070 seconds
+[2025-04-22T21:54:55.616-0400] {processor.py:186} INFO - Started process (PID=16631) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:54:55.617-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:54:55.618-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:54:55.618-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:54:55.622-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:54:55.631-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:54:55.631-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:54:55.638-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:54:55.637-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:54:55.652-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.040 seconds
+[2025-04-22T21:56:22.225-0400] {processor.py:186} INFO - Started process (PID=16719) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:56:22.236-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:56:22.237-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:56:22.237-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:56:22.241-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:56:22.252-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:56:22.252-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:56:22.259-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:56:22.259-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:56:22.311-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.090 seconds
+[2025-04-22T21:57:21.317-0400] {processor.py:186} INFO - Started process (PID=16778) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:57:21.341-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:57:21.342-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:57:21.342-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:57:21.347-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:57:21.358-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:57:21.358-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:57:21.367-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:57:21.367-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:57:21.403-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.090 seconds
+[2025-04-22T21:58:44.662-0400] {processor.py:186} INFO - Started process (PID=16863) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:58:44.663-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T21:58:44.664-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:58:44.664-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:58:44.669-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T21:58:44.683-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:58:44.683-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:58:44.691-0400] {logging_mixin.py:190} INFO - [2025-04-22T21:58:44.691-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T21:58:44.708-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.050 seconds
+[2025-04-22T22:00:12.515-0400] {processor.py:186} INFO - Started process (PID=16951) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:00:12.516-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:00:12.517-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:00:12.517-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:00:12.521-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:00:12.532-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:00:12.532-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:00:12.541-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:00:12.540-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:00:12.554-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.043 seconds
+[2025-04-22T22:01:39.457-0400] {processor.py:186} INFO - Started process (PID=17041) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:01:39.458-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:01:39.459-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:01:39.459-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:01:39.464-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:01:39.477-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:01:39.477-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:01:39.487-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:01:39.487-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:01:39.504-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.052 seconds
+[2025-04-22T22:03:05.130-0400] {processor.py:186} INFO - Started process (PID=17128) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:03:05.131-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:03:05.132-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:03:05.132-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:03:05.138-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:03:05.151-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:03:05.151-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:03:05.161-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:03:05.161-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:03:05.177-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.052 seconds
+[2025-04-22T22:04:26.991-0400] {processor.py:186} INFO - Started process (PID=17213) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:04:26.993-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:04:26.994-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:04:26.994-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:04:26.997-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:04:27.008-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:04:27.007-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:04:27.014-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:04:27.014-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:04:27.026-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.039 seconds
+[2025-04-22T22:05:55.007-0400] {processor.py:186} INFO - Started process (PID=17302) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:05:55.034-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:05:55.036-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:05:55.035-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:05:55.041-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:05:55.074-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:05:55.074-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:05:55.081-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:05:55.081-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:05:55.183-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.180 seconds
+[2025-04-22T22:24:43.922-0400] {processor.py:186} INFO - Started process (PID=17729) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:24:43.923-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:24:43.924-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:24:43.924-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:24:43.928-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:24:43.938-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:24:43.938-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:24:43.946-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:24:43.946-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:24:43.963-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.045 seconds
+[2025-04-22T22:28:21.669-0400] {processor.py:186} INFO - Started process (PID=17934) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:28:21.680-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:28:21.683-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:28:21.682-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:28:21.695-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:28:21.710-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:28:21.710-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:28:21.722-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:28:21.722-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:28:21.764-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.105 seconds
+[2025-04-22T22:29:22.701-0400] {processor.py:186} INFO - Started process (PID=17993) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:29:22.702-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:29:22.703-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:29:22.703-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:29:22.707-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:29:22.717-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:29:22.717-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:29:22.723-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:29:22.723-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:29:22.738-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.041 seconds
+[2025-04-22T22:30:27.211-0400] {processor.py:186} INFO - Started process (PID=18067) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:30:27.213-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:30:27.213-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:30:27.213-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:30:27.217-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:30:27.226-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:30:27.226-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:30:27.232-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:30:27.232-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:30:27.246-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.040 seconds
+[2025-04-22T22:31:29.720-0400] {processor.py:186} INFO - Started process (PID=18164) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:31:29.721-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:31:29.722-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:31:29.722-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:31:29.727-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:31:29.739-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:31:29.739-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:31:29.747-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:31:29.747-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:31:29.761-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.045 seconds
+[2025-04-22T22:35:04.162-0400] {processor.py:186} INFO - Started process (PID=18367) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:35:04.168-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:35:04.169-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:35:04.169-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:35:04.174-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:35:04.186-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:35:04.186-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:35:04.196-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:35:04.196-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:35:04.255-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.098 seconds
+[2025-04-22T22:36:06.511-0400] {processor.py:186} INFO - Started process (PID=18428) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:36:06.531-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:36:06.532-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:36:06.531-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:36:06.536-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:36:06.548-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:36:06.548-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:36:06.557-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:36:06.556-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:36:06.583-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.077 seconds
+[2025-04-22T22:37:05.964-0400] {processor.py:186} INFO - Started process (PID=18491) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:37:05.987-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:37:05.989-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:37:05.988-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:37:05.994-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:37:06.004-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:37:06.004-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:37:06.012-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:37:06.012-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:37:06.032-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.072 seconds
+[2025-04-22T22:38:06.661-0400] {processor.py:186} INFO - Started process (PID=18551) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:38:06.681-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:38:06.683-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:38:06.683-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:38:06.687-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:38:06.697-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:38:06.697-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:38:06.704-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:38:06.704-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:38:06.723-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.066 seconds
+[2025-04-22T22:41:33.517-0400] {processor.py:186} INFO - Started process (PID=18744) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:41:33.519-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:41:33.519-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:41:33.519-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:41:33.523-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:41:33.534-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:41:33.533-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:41:33.540-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:41:33.540-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:41:33.558-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.045 seconds
+[2025-04-22T22:42:33.626-0400] {processor.py:186} INFO - Started process (PID=18813) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:42:33.628-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:42:33.629-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:42:33.629-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:42:33.633-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:42:33.645-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:42:33.645-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:42:33.653-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:42:33.653-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:42:33.703-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.081 seconds
+[2025-04-22T22:43:54.369-0400] {processor.py:186} INFO - Started process (PID=18914) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:43:54.371-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:43:54.372-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:43:54.372-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:43:54.375-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:43:54.385-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:43:54.384-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:43:54.391-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:43:54.391-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:43:54.407-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.043 seconds
+[2025-04-22T22:45:19.779-0400] {processor.py:186} INFO - Started process (PID=19031) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:45:19.783-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:45:19.786-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:45:19.785-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:45:19.792-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:45:19.808-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:45:19.808-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:45:19.821-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:45:19.821-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:45:19.862-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.089 seconds
+[2025-04-22T22:46:23.243-0400] {processor.py:186} INFO - Started process (PID=19111) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:46:23.245-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:46:23.246-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:46:23.245-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:46:23.249-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:46:23.259-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:46:23.259-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:46:23.266-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:46:23.266-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:46:23.287-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.049 seconds
+[2025-04-22T22:47:51.567-0400] {processor.py:186} INFO - Started process (PID=19211) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:47:51.568-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:47:51.569-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:47:51.569-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:47:51.572-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:47:51.583-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:47:51.583-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:47:51.591-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:47:51.590-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:47:51.606-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.042 seconds
+[2025-04-22T22:51:26.247-0400] {processor.py:186} INFO - Started process (PID=19550) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:51:26.248-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:51:26.249-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:51:26.249-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:51:26.252-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:51:26.263-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:51:26.263-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:51:26.271-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:51:26.271-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:51:26.287-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.044 seconds
+[2025-04-22T22:52:26.712-0400] {processor.py:186} INFO - Started process (PID=19618) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:52:26.713-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:52:26.714-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:52:26.714-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:52:26.718-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:52:26.735-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:52:26.735-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:52:26.747-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:52:26.747-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:52:26.762-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.055 seconds
+[2025-04-22T22:55:17.480-0400] {processor.py:186} INFO - Started process (PID=19905) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:55:17.502-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T22:55:17.503-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:55:17.503-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:55:17.508-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T22:55:17.520-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:55:17.520-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:55:17.528-0400] {logging_mixin.py:190} INFO - [2025-04-22T22:55:17.528-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T22:55:17.546-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.071 seconds
+[2025-04-22T23:00:11.200-0400] {processor.py:186} INFO - Started process (PID=20306) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:00:11.202-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T23:00:11.205-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:00:11.205-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:00:11.213-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:00:11.223-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:00:11.223-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T23:00:11.232-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:00:11.232-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T23:00:11.249-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.055 seconds
+[2025-04-22T23:03:38.282-0400] {processor.py:186} INFO - Started process (PID=20500) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:03:38.308-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T23:03:38.310-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:03:38.310-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:03:38.316-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:03:38.326-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:03:38.326-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T23:03:38.333-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:03:38.333-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T23:03:38.387-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.109 seconds
+[2025-04-22T23:05:06.517-0400] {processor.py:186} INFO - Started process (PID=20614) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:05:06.537-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T23:05:06.540-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:05:06.540-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:05:06.546-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:05:06.556-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:05:06.555-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T23:05:06.563-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:05:06.563-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T23:05:06.601-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.088 seconds
+[2025-04-22T23:06:07.042-0400] {processor.py:186} INFO - Started process (PID=20685) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:06:07.044-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T23:06:07.045-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:06:07.045-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:06:07.050-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:06:07.059-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:06:07.059-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T23:06:07.066-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:06:07.066-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T23:06:07.083-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.045 seconds
+[2025-04-22T23:20:27.201-0400] {processor.py:186} INFO - Started process (PID=566) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:20:27.204-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T23:20:27.205-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:20:27.205-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:20:27.211-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:20:27.223-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:20:27.223-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T23:20:27.233-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:20:27.233-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T23:20:27.250-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.053 seconds
+[2025-04-22T23:21:27.276-0400] {processor.py:186} INFO - Started process (PID=632) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:21:27.278-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T23:21:27.279-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:21:27.279-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:21:27.285-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:21:27.294-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:21:27.294-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T23:21:27.300-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:21:27.300-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T23:21:27.314-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.042 seconds
+[2025-04-22T23:22:49.909-0400] {processor.py:186} INFO - Started process (PID=752) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:22:49.910-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T23:22:49.912-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:22:49.911-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:22:49.917-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:22:49.926-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:22:49.926-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T23:22:49.932-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:22:49.932-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T23:22:49.945-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.039 seconds
+[2025-04-22T23:24:08.367-0400] {processor.py:186} INFO - Started process (PID=845) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:24:08.369-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T23:24:08.370-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:24:08.370-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:24:08.376-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:24:08.385-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:24:08.385-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T23:24:08.393-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:24:08.392-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T23:24:08.407-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.044 seconds
+[2025-04-22T23:25:28.977-0400] {processor.py:186} INFO - Started process (PID=1233) to work on /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:25:28.979-0400] {processor.py:914} INFO - Processing file /home/megin_mathew/airflow/dags/test-dag.py for tasks to queue
+[2025-04-22T23:25:28.981-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:25:28.981-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:25:28.988-0400] {processor.py:925} INFO - DAG(s) 'simple_test_dag' retrieved from /home/megin_mathew/airflow/dags/test-dag.py
+[2025-04-22T23:25:28.997-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:25:28.997-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T23:25:29.004-0400] {logging_mixin.py:190} INFO - [2025-04-22T23:25:29.004-0400] {dag.py:4180} INFO - Setting next_dagrun for simple_test_dag to None, run_after=None
+[2025-04-22T23:25:29.016-0400] {processor.py:208} INFO - Processing /home/megin_mathew/airflow/dags/test-dag.py took 0.044 seconds

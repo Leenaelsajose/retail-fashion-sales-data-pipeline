@@ -1,0 +1,402 @@
+[2025-04-22T18:42:27.277-0400] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T18:42:27.284-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T22:42:24.250030+00:00 [queued]>
+[2025-04-22T18:42:27.289-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T22:42:24.250030+00:00 [queued]>
+[2025-04-22T18:42:27.289-0400] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2025-04-22T18:42:27.297-0400] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): execute_notebook> on 2025-04-22 22:42:24.250030+00:00
+[2025-04-22T18:42:27.299-0400] {standard_task_runner.py:72} INFO - Started process 4292 to run task
+[2025-04-22T18:42:27.302-0400] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'fashion_data_pipeline', 'execute_notebook', 'manual__2025-04-22T22:42:24.250030+00:00', '--job-id', '57', '--raw', '--subdir', 'DAGS_FOLDER/FashionData_DAG.py', '--cfg-path', '/tmp/tmpf9v7pq3f']
+[2025-04-22T18:42:27.303-0400] {standard_task_runner.py:105} INFO - Job 57: Subtask execute_notebook
+[2025-04-22T18:42:27.335-0400] {task_command.py:467} INFO - Running <TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T22:42:24.250030+00:00 [running]> on host BOOK-KTS1KMKSNJ.
+[2025-04-22T18:42:27.396-0400] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fashion_data_pipeline' AIRFLOW_CTX_TASK_ID='execute_notebook' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T22:42:24.250030+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T22:42:24.250030+00:00'
+[2025-04-22T18:42:27.398-0400] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T18:42:27.398-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T18:42:27.398-0400] {logging_mixin.py:190} INFO - Current task name:execute_notebook state:running start_date:2025-04-22 22:42:27.284676+00:00
+[2025-04-22T18:42:27.398-0400] {logging_mixin.py:190} INFO - Dag name:fashion_data_pipeline and current dag run status:running
+[2025-04-22T18:42:27.399-0400] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T18:42:27.399-0400] {FashionData_DAG.py:58} INFO - Executing notebook: /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T18:42:27.399-0400] {FashionData_DAG.py:59} INFO - Output will be saved to: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-22.ipynb
+[2025-04-22T18:42:27.400-0400] {FashionData_DAG.py:60} INFO - Parameters passed to notebook: {'execution_date': '2025-04-22T22:42:24.250030+00:00', 'dag_run_id': 'manual__2025-04-22T22:42:24.250030+00:00', 'ds': '2025-04-22', 'ds_nodash': '20250422'}
+[2025-04-22T18:42:27.400-0400] {execute.py:83} INFO - Input Notebook:  /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T18:42:27.400-0400] {execute.py:84} INFO - Output Notebook: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-22.ipynb
+[2025-04-22T18:42:28.177-0400] {clientwrap.py:44} INFO - Executing notebook with kernel: python3
+[2025-04-22T18:42:28.177-0400] {engines.py:223} INFO - Executing Cell 1---------------------------------------
+[2025-04-22T18:42:28.194-0400] {engines.py:261} INFO - Ending Cell 1------------------------------------------
+[2025-04-22T18:42:28.196-0400] {engines.py:223} INFO - Executing Cell 2---------------------------------------
+[2025-04-22T18:42:28.203-0400] {engines.py:261} INFO - Ending Cell 2------------------------------------------
+[2025-04-22T18:42:28.204-0400] {engines.py:223} INFO - Executing Cell 3---------------------------------------
+[2025-04-22T18:42:28.619-0400] {clientwrap.py:91} INFO - Requirement already satisfied: kagglehub in ./airflow_venv/lib/python3.12/site-packages (0.3.11)
+Requirement already satisfied: pandas in ./airflow_venv/lib/python3.12/site-packages (2.2.3)
+Requirement already satisfied: psycopg2-binary in ./airflow_venv/lib/python3.12/site-packages (2.9.10)
+Requirement already satisfied: sqlalchemy in ./airflow_venv/lib/python3.12/site-packages (1.4.54)
+Requirement already satisfied: packaging in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (24.2)
+Requirement already satisfied: pyyaml in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (6.0.2)
+Requirement already satisfied: requests in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (2.32.3)
+Requirement already satisfied: tqdm in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (4.67.1)
+
+[2025-04-22T18:42:28.670-0400] {clientwrap.py:91} INFO - Requirement already satisfied: numpy>=1.26.0 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2.2.5)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: greenlet!=0.4.17 in ./airflow_venv/lib/python3.12/site-packages (from sqlalchemy) (3.2.0)
+Requirement already satisfied: six>=1.5 in ./airflow_venv/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (2.4.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (2025.1.31)
+
+[2025-04-22T18:42:29.058-0400] {engines.py:261} INFO - Ending Cell 3------------------------------------------
+[2025-04-22T18:42:29.060-0400] {engines.py:223} INFO - Executing Cell 4---------------------------------------
+[2025-04-22T18:42:29.130-0400] {clientwrap.py:91} INFO - ['KaggleDatasetAdapter', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', 'auth', 'cache', 'clients', 'colab_cache_resolver', 'competition', 'competition_download', 'config', 'dataset_download', 'dataset_load', 'dataset_upload', 'datasets', 'datasets_enums', 'datasets_helpers', 'env', 'exceptions', 'gcs_upload', 'get_package_asset_path', 'handle', 'http_resolver', 'integrity', 'kaggle_cache_resolver', 'kagglehub', 'load_dataset', 'logger', 'login', 'model_download', 'model_upload', 'models', 'models_helpers', 'notebook_output_download', 'notebooks', 'package_import', 'packages', 'registry', 'resolver', 'signing', 'tracker', 'utility_script_install', 'utility_scripts', 'whoami']
+
+[2025-04-22T18:42:29.130-0400] {clientwrap.py:98} WARNING - /home/megin_mathew/airflow_venv/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+
+[2025-04-22T18:42:29.131-0400] {engines.py:261} INFO - Ending Cell 4------------------------------------------
+[2025-04-22T18:42:29.133-0400] {engines.py:223} INFO - Executing Cell 5---------------------------------------
+[2025-04-22T18:42:29.598-0400] {clientwrap.py:91} INFO - Requirement already satisfied: kaggle in ./airflow_venv/lib/python3.12/site-packages (1.7.4.2)
+Requirement already satisfied: bleach in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (6.2.0)
+Requirement already satisfied: certifi>=14.05.14 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2025.1.31)
+Requirement already satisfied: charset-normalizer in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (3.4.1)
+Requirement already satisfied: idna in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (3.10)
+Requirement already satisfied: protobuf in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (5.29.4)
+Requirement already satisfied: python-dateutil>=2.5.3 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2.9.0.post0)
+Requirement already satisfied: python-slugify in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (8.0.4)
+Requirement already satisfied: requests in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2.32.3)
+Requirement already satisfied: setuptools>=21.0.0 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (79.0.0)
+Requirement already satisfied: six>=1.10 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (1.17.0)
+Requirement already satisfied: text-unidecode in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (1.3)
+Requirement already satisfied: tqdm in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (4.67.1)
+Requirement already satisfied: urllib3>=1.15.1 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2.4.0)
+Requirement already satisfied: webencodings in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (0.5.1)
+
+[2025-04-22T18:42:29.948-0400] {clientwrap.py:91} INFO - Note: you may need to restart the kernel to use updated packages.
+
+[2025-04-22T18:42:29.951-0400] {engines.py:261} INFO - Ending Cell 5------------------------------------------
+[2025-04-22T18:42:29.954-0400] {engines.py:223} INFO - Executing Cell 6---------------------------------------
+[2025-04-22T18:42:30.025-0400] {clientwrap.py:91} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/megin_mathew/.config/kaggle/kaggle.json'
+Kaggle module is successfully installed!
+
+[2025-04-22T18:42:30.026-0400] {engines.py:261} INFO - Ending Cell 6------------------------------------------
+[2025-04-22T18:42:30.028-0400] {engines.py:223} INFO - Executing Cell 7---------------------------------------
+[2025-04-22T18:42:30.034-0400] {clientwrap.py:91} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/megin_mathew/.config/kaggle/kaggle.json'
+Kaggle API authentication successful!
+
+[2025-04-22T18:42:30.036-0400] {engines.py:261} INFO - Ending Cell 7------------------------------------------
+[2025-04-22T18:42:30.038-0400] {engines.py:223} INFO - Executing Cell 8---------------------------------------
+[2025-04-22T18:43:14.138-0400] {clientwrap.py:91} INFO - Downloaded: transactions.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T18:43:17.523-0400] {clientwrap.py:98} WARNING - /home/megin_mathew/airflow_venv/lib/python3.12/site-packages/kagglehub/pandas_datasets.py:91: DtypeWarning: Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.
+  result = read_function(
+
+[2025-04-22T18:43:21.518-0400] {clientwrap.py:91} INFO - Downloaded: customers.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T18:43:21.930-0400] {clientwrap.py:91} INFO - Downloaded: discounts.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T18:43:22.250-0400] {clientwrap.py:91} INFO - Downloaded: employees.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T18:43:22.706-0400] {clientwrap.py:91} INFO - Downloaded: products.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T18:43:22.821-0400] {clientwrap.py:91} INFO - Downloaded: stores.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T18:43:22.825-0400] {engines.py:261} INFO - Ending Cell 8------------------------------------------
+[2025-04-22T18:43:22.829-0400] {engines.py:223} INFO - Executing Cell 9---------------------------------------
+[2025-04-22T18:43:22.841-0400] {engines.py:261} INFO - Ending Cell 9------------------------------------------
+[2025-04-22T18:43:22.843-0400] {engines.py:223} INFO - Executing Cell 10--------------------------------------
+[2025-04-22T18:43:22.846-0400] {engines.py:261} INFO - Ending Cell 10-----------------------------------------
+[2025-04-22T18:43:22.848-0400] {engines.py:223} INFO - Executing Cell 11--------------------------------------
+[2025-04-22T18:43:24.746-0400] {clientwrap.py:98} WARNING - 25/04/22 18:43:24 WARN Utils: Your hostname, BOOK-KTS1KMKSNJ resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+25/04/22 18:43:24 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+
+[2025-04-22T18:43:25.037-0400] {clientwrap.py:98} WARNING - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+
+[2025-04-22T18:43:25.241-0400] {clientwrap.py:98} WARNING - 25/04/22 18:43:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/04/22 18:43:25 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+
+[2025-04-22T18:43:25.705-0400] {clientwrap.py:98} WARNING - 25/04/22 18:43:25 WARN Utils: The configured local directories are not expected to be URIs; however, got suspicious values [D:/spark_temp]. Please check your configured local directories.
+
+[2025-04-22T18:43:26.118-0400] {clientwrap.py:98} WARNING - 2025-04-22 18:43:26,115 - INFO - Starting data load process...
+
+[2025-04-22T18:43:26.304-0400] {clientwrap.py:98} WARNING - 2025-04-22 18:43:26,302 - INFO - Processing stores.csv...
+
+[2025-04-22T18:43:27.098-0400] {clientwrap.py:98} WARNING - 25/04/22 18:43:27 WARN FileStreamSink: Assume no metadata directory. Error while looking for metadata directory in the path: C:/Users/megin/fashion_dataset/stores.csv.
+org.apache.hadoop.fs.UnsupportedFileSystemException: No FileSystem for scheme "C"
+	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3443)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3466)
+	at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:365)
+	at org.apache.spark.sql.execution.streaming.FileStreamSink$.hasMetadata(FileStreamSink.scala:53)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:366)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.csv(DataFrameReader.scala:538)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:75)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-04-22 18:43:27,093 - ERROR - Error processing stores.csv: An error occurred while calling o47.csv.
+: org.apache.hadoop.fs.UnsupportedFileSystemException: No FileSystem for scheme "C"
+	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3443)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3466)
+	at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:365)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$1(DataSource.scala:724)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at org.apache.spark.sql.execution.datasources.DataSource$.checkAndGlobPathIfNecessary(DataSource.scala:722)
+	at org.apache.spark.sql.execution.datasources.DataSource.checkAndGlobPathIfNecessary(DataSource.scala:551)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:404)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.csv(DataFrameReader.scala:538)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:75)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Traceback (most recent call last):
+  File "/tmp/ipykernel_4294/3969976327.py", line 452, in load_data_to_postgres
+    spark_df = spark.read.csv(file_path, header=True, inferSchema=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/pyspark/sql/readwriter.py", line 740, in csv
+    return self._df(self._jreader.csv(self._spark._sc._jvm.PythonUtils.toSeq(path)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling o47.csv.
+: org.apache.hadoop.fs.UnsupportedFileSystemException: No FileSystem for scheme "C"
+	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3443)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3466)
+	at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:365)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$1(DataSource.scala:724)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at org.apache.spark.sql.execution.datasources.DataSource$.checkAndGlobPathIfNecessary(DataSource.scala:722)
+	at org.apache.spark.sql.execution.datasources.DataSource.checkAndGlobPathIfNecessary(DataSource.scala:551)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:404)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.csv(DataFrameReader.scala:538)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:75)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+
+[2025-04-22T18:43:27.100-0400] {clientwrap.py:98} WARNING - 2025-04-22 18:43:27,098 - ERROR - Database error: An error occurred while calling o47.csv.
+: org.apache.hadoop.fs.UnsupportedFileSystemException: No FileSystem for scheme "C"
+	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3443)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3466)
+	at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:365)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$1(DataSource.scala:724)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at org.apache.spark.sql.execution.datasources.DataSource$.checkAndGlobPathIfNecessary(DataSource.scala:722)
+	at org.apache.spark.sql.execution.datasources.DataSource.checkAndGlobPathIfNecessary(DataSource.scala:551)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:404)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.csv(DataFrameReader.scala:538)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:75)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Traceback (most recent call last):
+  File "/tmp/ipykernel_4294/3969976327.py", line 452, in load_data_to_postgres
+    spark_df = spark.read.csv(file_path, header=True, inferSchema=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/pyspark/sql/readwriter.py", line 740, in csv
+    return self._df(self._jreader.csv(self._spark._sc._jvm.PythonUtils.toSeq(path)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling o47.csv.
+: org.apache.hadoop.fs.UnsupportedFileSystemException: No FileSystem for scheme "C"
+	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3443)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3466)
+	at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:365)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$1(DataSource.scala:724)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at org.apache.spark.sql.execution.datasources.DataSource$.checkAndGlobPathIfNecessary(DataSource.scala:722)
+	at org.apache.spark.sql.execution.datasources.DataSource.checkAndGlobPathIfNecessary(DataSource.scala:551)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:404)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.csv(DataFrameReader.scala:538)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:75)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+
+[2025-04-22T18:43:27.502-0400] {clientwrap.py:98} WARNING - 2025-04-22 18:43:27,498 - ERROR - Fatal error: An error occurred while calling o47.csv.
+: org.apache.hadoop.fs.UnsupportedFileSystemException: No FileSystem for scheme "C"
+	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3443)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3466)
+	at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:365)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$1(DataSource.scala:724)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at org.apache.spark.sql.execution.datasources.DataSource$.checkAndGlobPathIfNecessary(DataSource.scala:722)
+	at org.apache.spark.sql.execution.datasources.DataSource.checkAndGlobPathIfNecessary(DataSource.scala:551)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:404)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.csv(DataFrameReader.scala:538)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:75)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Traceback (most recent call last):
+  File "/tmp/ipykernel_4294/3969976327.py", line 492, in <module>
+    load_data_to_postgres()
+  File "/tmp/ipykernel_4294/3969976327.py", line 452, in load_data_to_postgres
+    spark_df = spark.read.csv(file_path, header=True, inferSchema=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/pyspark/sql/readwriter.py", line 740, in csv
+    return self._df(self._jreader.csv(self._spark._sc._jvm.PythonUtils.toSeq(path)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling o47.csv.
+: org.apache.hadoop.fs.UnsupportedFileSystemException: No FileSystem for scheme "C"
+	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3443)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3466)
+	at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:365)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$1(DataSource.scala:724)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at org.apache.spark.sql.execution.datasources.DataSource$.checkAndGlobPathIfNecessary(DataSource.scala:722)
+	at org.apache.spark.sql.execution.datasources.DataSource.checkAndGlobPathIfNecessary(DataSource.scala:551)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:404)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.csv(DataFrameReader.scala:538)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:75)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+
+[2025-04-22T18:43:27.504-0400] {engines.py:261} INFO - Ending Cell 11-----------------------------------------
+[2025-04-22T18:43:27.509-0400] {engines.py:223} INFO - Executing Cell 12--------------------------------------
+[2025-04-22T18:43:27.511-0400] {engines.py:261} INFO - Ending Cell 12-----------------------------------------
+[2025-04-22T18:43:30.152-0400] {FashionData_DAG.py:79} INFO - Notebook execution completed successfully
+[2025-04-22T18:43:30.154-0400] {python.py:240} INFO - Done. Returned value was: True
+[2025-04-22T18:43:30.215-0400] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T18:43:30.216-0400] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=fashion_data_pipeline, task_id=execute_notebook, run_id=manual__2025-04-22T22:42:24.250030+00:00, execution_date=20250422T224224, start_date=20250422T224227, end_date=20250422T224330
+[2025-04-22T18:43:30.239-0400] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-22T18:43:30.240-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-22T18:43:30.240-0400] {logging_mixin.py:190} INFO - Dag name:fashion_data_pipeline queued_at:2025-04-22 22:42:24.259714+00:00
+[2025-04-22T18:43:30.240-0400] {logging_mixin.py:190} INFO - Task hostname:BOOK-KTS1KMKSNJ. operator:PythonOperator
+[2025-04-22T18:43:30.266-0400] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T18:43:30.293-0400] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T18:43:30.294-0400] {local_task_job_runner.py:245} INFO - ::endgroup::

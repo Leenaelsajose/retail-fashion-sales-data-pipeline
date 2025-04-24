@@ -1,0 +1,645 @@
+[2025-04-22T03:21:35.377-0400] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T03:21:35.385-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T07:21:32.963179+00:00 [queued]>
+[2025-04-22T03:21:35.389-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T07:21:32.963179+00:00 [queued]>
+[2025-04-22T03:21:35.389-0400] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2025-04-22T03:21:35.398-0400] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): execute_notebook> on 2025-04-22 07:21:32.963179+00:00
+[2025-04-22T03:21:35.400-0400] {standard_task_runner.py:72} INFO - Started process 12584 to run task
+[2025-04-22T03:21:35.403-0400] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'fashion_data_pipeline', 'execute_notebook', 'manual__2025-04-22T07:21:32.963179+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/FashionData_DAG.py', '--cfg-path', '/tmp/tmpkx2cha0o']
+[2025-04-22T03:21:35.403-0400] {standard_task_runner.py:105} INFO - Job 36: Subtask execute_notebook
+[2025-04-22T03:21:35.437-0400] {task_command.py:467} INFO - Running <TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T07:21:32.963179+00:00 [running]> on host BOOK-KTS1KMKSNJ.
+[2025-04-22T03:21:35.477-0400] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fashion_data_pipeline' AIRFLOW_CTX_TASK_ID='execute_notebook' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T07:21:32.963179+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T07:21:32.963179+00:00'
+[2025-04-22T03:21:35.478-0400] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T03:21:35.478-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T03:21:35.479-0400] {logging_mixin.py:190} INFO - Current task name:execute_notebook state:running start_date:2025-04-22 07:21:35.385516+00:00
+[2025-04-22T03:21:35.479-0400] {logging_mixin.py:190} INFO - Dag name:fashion_data_pipeline and current dag run status:running
+[2025-04-22T03:21:35.479-0400] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T03:21:35.479-0400] {FashionData_DAG.py:58} INFO - Executing notebook: /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T03:21:35.480-0400] {FashionData_DAG.py:59} INFO - Output will be saved to: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-22.ipynb
+[2025-04-22T03:21:35.480-0400] {FashionData_DAG.py:60} INFO - Parameters passed to notebook: {'execution_date': '2025-04-22T07:21:32.963179+00:00', 'dag_run_id': 'manual__2025-04-22T07:21:32.963179+00:00', 'ds': '2025-04-22', 'ds_nodash': '20250422'}
+[2025-04-22T03:21:35.480-0400] {execute.py:83} INFO - Input Notebook:  /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T03:21:35.480-0400] {execute.py:84} INFO - Output Notebook: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-22.ipynb
+[2025-04-22T03:21:36.440-0400] {clientwrap.py:44} INFO - Executing notebook with kernel: python3
+[2025-04-22T03:21:36.441-0400] {engines.py:223} INFO - Executing Cell 1---------------------------------------
+[2025-04-22T03:21:36.449-0400] {engines.py:261} INFO - Ending Cell 1------------------------------------------
+[2025-04-22T03:21:36.451-0400] {engines.py:223} INFO - Executing Cell 2---------------------------------------
+[2025-04-22T03:21:36.457-0400] {engines.py:261} INFO - Ending Cell 2------------------------------------------
+[2025-04-22T03:21:36.459-0400] {engines.py:223} INFO - Executing Cell 3---------------------------------------
+[2025-04-22T03:21:36.979-0400] {clientwrap.py:91} INFO - Requirement already satisfied: kagglehub in ./airflow_venv/lib/python3.12/site-packages (0.3.11)
+Requirement already satisfied: pandas in ./airflow_venv/lib/python3.12/site-packages (2.2.3)
+Requirement already satisfied: psycopg2-binary in ./airflow_venv/lib/python3.12/site-packages (2.9.10)
+Requirement already satisfied: sqlalchemy in ./airflow_venv/lib/python3.12/site-packages (1.4.54)
+Requirement already satisfied: packaging in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (24.2)
+Requirement already satisfied: pyyaml in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (6.0.2)
+Requirement already satisfied: requests in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (2.32.3)
+Requirement already satisfied: tqdm in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (4.67.1)
+Requirement already satisfied: numpy>=1.26.0 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2.2.5)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: greenlet!=0.4.17 in ./airflow_venv/lib/python3.12/site-packages (from sqlalchemy) (3.2.0)
+Requirement already satisfied: six>=1.5 in ./airflow_venv/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (2.4.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (2025.1.31)
+
+[2025-04-22T03:21:37.300-0400] {engines.py:261} INFO - Ending Cell 3------------------------------------------
+[2025-04-22T03:21:37.302-0400] {engines.py:223} INFO - Executing Cell 4---------------------------------------
+[2025-04-22T03:21:37.384-0400] {clientwrap.py:91} INFO - ['KaggleDatasetAdapter', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', 'auth', 'cache', 'clients', 'colab_cache_resolver', 'competition', 'competition_download', 'config', 'dataset_download', 'dataset_load', 'dataset_upload', 'datasets', 'datasets_enums', 'datasets_helpers', 'env', 'exceptions', 'gcs_upload', 'get_package_asset_path', 'handle', 'http_resolver', 'integrity', 'kaggle_cache_resolver', 'kagglehub', 'load_dataset', 'logger', 'login', 'model_download', 'model_upload', 'models', 'models_helpers', 'notebook_output_download', 'notebooks', 'package_import', 'packages', 'registry', 'resolver', 'signing', 'tracker', 'utility_script_install', 'utility_scripts', 'whoami']
+
+[2025-04-22T03:21:37.385-0400] {clientwrap.py:98} WARNING - /home/megin_mathew/airflow_venv/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+
+[2025-04-22T03:21:37.386-0400] {engines.py:261} INFO - Ending Cell 4------------------------------------------
+[2025-04-22T03:21:37.387-0400] {engines.py:223} INFO - Executing Cell 5---------------------------------------
+[2025-04-22T03:21:37.852-0400] {clientwrap.py:91} INFO - Requirement already satisfied: kaggle in ./airflow_venv/lib/python3.12/site-packages (1.7.4.2)
+Requirement already satisfied: bleach in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (6.2.0)
+Requirement already satisfied: certifi>=14.05.14 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2025.1.31)
+Requirement already satisfied: charset-normalizer in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (3.4.1)
+Requirement already satisfied: idna in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (3.10)
+Requirement already satisfied: protobuf in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (5.29.4)
+Requirement already satisfied: python-dateutil>=2.5.3 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2.9.0.post0)
+Requirement already satisfied: python-slugify in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (8.0.4)
+Requirement already satisfied: requests in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2.32.3)
+Requirement already satisfied: setuptools>=21.0.0 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (79.0.0)
+Requirement already satisfied: six>=1.10 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (1.17.0)
+Requirement already satisfied: text-unidecode in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (1.3)
+Requirement already satisfied: tqdm in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (4.67.1)
+Requirement already satisfied: urllib3>=1.15.1 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2.4.0)
+Requirement already satisfied: webencodings in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (0.5.1)
+
+[2025-04-22T03:21:38.251-0400] {clientwrap.py:91} INFO - Note: you may need to restart the kernel to use updated packages.
+
+[2025-04-22T03:21:38.253-0400] {engines.py:261} INFO - Ending Cell 5------------------------------------------
+[2025-04-22T03:21:38.255-0400] {engines.py:223} INFO - Executing Cell 6---------------------------------------
+[2025-04-22T03:21:38.310-0400] {clientwrap.py:91} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/megin_mathew/.config/kaggle/kaggle.json'
+Kaggle module is successfully installed!
+
+[2025-04-22T03:21:38.312-0400] {engines.py:261} INFO - Ending Cell 6------------------------------------------
+[2025-04-22T03:21:38.314-0400] {engines.py:223} INFO - Executing Cell 7---------------------------------------
+[2025-04-22T03:21:38.319-0400] {clientwrap.py:91} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/megin_mathew/.config/kaggle/kaggle.json'
+Kaggle API authentication successful!
+
+[2025-04-22T03:21:38.321-0400] {engines.py:261} INFO - Ending Cell 7------------------------------------------
+[2025-04-22T03:21:38.323-0400] {engines.py:223} INFO - Executing Cell 8---------------------------------------
+[2025-04-22T03:21:39.456-0400] {clientwrap.py:91} INFO - Downloading from https://www.kaggle.com/api/v1/datasets/download/ricgomes/global-fashion-retail-stores-dataset?dataset_version_number=24&file_name=transactions.csv...
+
+[2025-04-22T03:21:39.463-0400] {clientwrap.py:98} WARNING -   0%|                                                                                        | 0.00/768M [00:00<?, ?B/s]
+[2025-04-22T03:21:39.655-0400] {clientwrap.py:98} WARNING -   0%|                                                                               | 1.00M/768M [00:00<02:26, 5.48MB/s]
+[2025-04-22T03:21:39.793-0400] {clientwrap.py:98} WARNING -   1%|▍                                                                              | 4.00M/768M [00:00<00:56, 14.3MB/s]
+[2025-04-22T03:21:39.923-0400] {clientwrap.py:98} WARNING -   1%|▉                                                                              | 9.00M/768M [00:00<00:32, 24.8MB/s]
+[2025-04-22T03:21:40.026-0400] {clientwrap.py:98} WARNING -   2%|█▏                                                                             | 12.0M/768M [00:00<00:29, 26.6MB/s]
+[2025-04-22T03:21:40.158-0400] {clientwrap.py:98} WARNING -   2%|█▋                                                                             | 16.0M/768M [00:00<00:27, 28.6MB/s]
+[2025-04-22T03:21:40.266-0400] {clientwrap.py:98} WARNING -   2%|█▉                                                                             | 19.0M/768M [00:00<00:27, 28.7MB/s]
+[2025-04-22T03:21:40.393-0400] {clientwrap.py:98} WARNING -   3%|██▎                                                                            | 23.0M/768M [00:00<00:25, 30.1MB/s]
+[2025-04-22T03:21:40.527-0400] {clientwrap.py:98} WARNING -   4%|██▊                                                                            | 27.0M/768M [00:01<00:25, 30.5MB/s]
+[2025-04-22T03:21:40.628-0400] {clientwrap.py:98} WARNING -   4%|███                                                                            | 30.0M/768M [00:01<00:25, 30.7MB/s]
+[2025-04-22T03:21:40.760-0400] {clientwrap.py:98} WARNING -   4%|███▍                                                                           | 34.0M/768M [00:01<00:24, 31.1MB/s]
+[2025-04-22T03:21:40.894-0400] {clientwrap.py:98} WARNING -   5%|███▉                                                                           | 38.0M/768M [00:01<00:24, 31.2MB/s]
+[2025-04-22T03:21:40.994-0400] {clientwrap.py:98} WARNING -   5%|████▏                                                                          | 41.0M/768M [00:01<00:24, 31.2MB/s]
+[2025-04-22T03:21:41.095-0400] {clientwrap.py:98} WARNING -   6%|████▌                                                                          | 44.0M/768M [00:01<00:24, 31.2MB/s]
+[2025-04-22T03:21:41.195-0400] {clientwrap.py:98} WARNING -   6%|████▊                                                                          | 47.0M/768M [00:01<00:24, 31.2MB/s]
+[2025-04-22T03:21:41.298-0400] {clientwrap.py:98} WARNING -   7%|█████▏                                                                         | 50.0M/768M [00:01<00:24, 31.0MB/s]
+[2025-04-22T03:21:41.406-0400] {clientwrap.py:98} WARNING -   7%|█████▍                                                                         | 53.0M/768M [00:01<00:24, 30.5MB/s]
+[2025-04-22T03:21:41.519-0400] {clientwrap.py:98} WARNING -   7%|█████▊                                                                         | 56.0M/768M [00:02<00:25, 29.7MB/s]
+[2025-04-22T03:21:41.630-0400] {clientwrap.py:98} WARNING -   8%|██████                                                                         | 59.0M/768M [00:02<00:25, 29.2MB/s]
+[2025-04-22T03:21:41.736-0400] {clientwrap.py:98} WARNING -   8%|██████▍                                                                        | 62.0M/768M [00:02<00:25, 29.4MB/s]
+[2025-04-22T03:21:41.841-0400] {clientwrap.py:98} WARNING -   8%|██████▋                                                                        | 65.0M/768M [00:02<00:24, 29.6MB/s]
+[2025-04-22T03:21:42.001-0400] {clientwrap.py:98} WARNING -   9%|███████                                                                        | 69.0M/768M [00:02<00:25, 28.3MB/s]
+[2025-04-22T03:21:42.105-0400] {clientwrap.py:98} WARNING -   9%|███████▍                                                                       | 72.0M/768M [00:02<00:25, 28.8MB/s]
+[2025-04-22T03:21:42.205-0400] {clientwrap.py:98} WARNING -  10%|███████▊                                                                       | 76.0M/768M [00:02<00:22, 32.2MB/s]
+[2025-04-22T03:21:42.346-0400] {clientwrap.py:98} WARNING -  10%|████████▏                                                                      | 80.0M/768M [00:02<00:22, 31.4MB/s]
+[2025-04-22T03:21:42.483-0400] {clientwrap.py:98} WARNING -  11%|████████▋                                                                      | 84.0M/768M [00:03<00:23, 31.1MB/s]
+[2025-04-22T03:21:42.620-0400] {clientwrap.py:98} WARNING -  11%|█████████                                                                      | 88.0M/768M [00:03<00:23, 30.9MB/s]
+[2025-04-22T03:21:42.728-0400] {clientwrap.py:98} WARNING -  12%|█████████▎                                                                     | 91.0M/768M [00:03<00:23, 30.7MB/s]
+[2025-04-22T03:21:42.831-0400] {clientwrap.py:98} WARNING -  12%|█████████▋                                                                     | 94.0M/768M [00:03<00:23, 30.4MB/s]
+[2025-04-22T03:21:42.932-0400] {clientwrap.py:98} WARNING -  13%|█████████▉                                                                     | 97.0M/768M [00:03<00:22, 30.6MB/s]
+[2025-04-22T03:21:43.041-0400] {clientwrap.py:98} WARNING -  13%|██████████▍                                                                     | 100M/768M [00:03<00:23, 30.2MB/s]
+[2025-04-22T03:21:43.173-0400] {clientwrap.py:98} WARNING -  14%|██████████▊                                                                     | 104M/768M [00:03<00:22, 30.6MB/s]
+[2025-04-22T03:21:43.278-0400] {clientwrap.py:98} WARNING -  14%|███████████▏                                                                    | 107M/768M [00:03<00:22, 30.5MB/s]
+[2025-04-22T03:21:43.383-0400] {clientwrap.py:98} WARNING -  14%|███████████▍                                                                    | 110M/768M [00:03<00:22, 30.4MB/s]
+[2025-04-22T03:21:43.487-0400] {clientwrap.py:98} WARNING -  15%|███████████▊                                                                    | 113M/768M [00:04<00:22, 30.3MB/s]
+[2025-04-22T03:21:43.588-0400] {clientwrap.py:98} WARNING -  15%|████████████                                                                    | 116M/768M [00:04<00:22, 30.5MB/s]
+[2025-04-22T03:21:43.723-0400] {clientwrap.py:98} WARNING -  16%|████████████▌                                                                   | 120M/768M [00:04<00:22, 30.8MB/s]
+[2025-04-22T03:21:43.851-0400] {clientwrap.py:98} WARNING -  16%|████████████▉                                                                   | 124M/768M [00:04<00:21, 31.3MB/s]
+[2025-04-22T03:21:43.953-0400] {clientwrap.py:98} WARNING -  17%|█████████████▏                                                                  | 127M/768M [00:04<00:21, 31.2MB/s]
+[2025-04-22T03:21:44.054-0400] {clientwrap.py:98} WARNING -  17%|█████████████▌                                                                  | 130M/768M [00:04<00:21, 31.3MB/s]
+[2025-04-22T03:21:44.187-0400] {clientwrap.py:98} WARNING -  17%|█████████████▉                                                                  | 134M/768M [00:04<00:21, 31.3MB/s]
+[2025-04-22T03:21:44.321-0400] {clientwrap.py:98} WARNING -  18%|██████████████▍                                                                 | 138M/768M [00:04<00:21, 31.3MB/s]
+[2025-04-22T03:21:44.455-0400] {clientwrap.py:98} WARNING -  18%|██████████████▊                                                                 | 142M/768M [00:04<00:20, 31.3MB/s]
+[2025-04-22T03:21:44.569-0400] {clientwrap.py:98} WARNING -  19%|███████████████                                                                 | 145M/768M [00:05<00:21, 30.3MB/s]
+[2025-04-22T03:21:44.800-0400] {clientwrap.py:98} WARNING -  19%|███████████████▍                                                                | 148M/768M [00:05<00:28, 22.8MB/s]
+[2025-04-22T03:21:44.900-0400] {clientwrap.py:98} WARNING -  20%|███████████████▋                                                                | 151M/768M [00:05<00:26, 24.7MB/s]
+[2025-04-22T03:21:45.040-0400] {clientwrap.py:98} WARNING -  20%|████████████████                                                                | 154M/768M [00:05<00:26, 24.0MB/s]
+[2025-04-22T03:21:45.166-0400] {clientwrap.py:98} WARNING -  21%|████████████████▌                                                               | 159M/768M [00:05<00:22, 28.9MB/s]
+[2025-04-22T03:21:45.269-0400] {clientwrap.py:98} WARNING -  21%|████████████████▉                                                               | 162M/768M [00:05<00:21, 29.4MB/s]
+[2025-04-22T03:21:45.371-0400] {clientwrap.py:98} WARNING -  21%|█████████████████▏                                                              | 165M/768M [00:05<00:21, 29.7MB/s]
+[2025-04-22T03:21:45.496-0400] {clientwrap.py:98} WARNING -  22%|█████████████████▌                                                              | 168M/768M [00:06<00:22, 28.3MB/s]
+[2025-04-22T03:21:45.611-0400] {clientwrap.py:98} WARNING -  22%|█████████████████▉                                                              | 172M/768M [00:06<00:20, 30.7MB/s]
+[2025-04-22T03:21:45.714-0400] {clientwrap.py:98} WARNING -  23%|██████████████████▏                                                             | 175M/768M [00:06<00:20, 30.7MB/s]
+[2025-04-22T03:21:45.819-0400] {clientwrap.py:98} WARNING -  23%|██████████████████▌                                                             | 178M/768M [00:06<00:20, 30.5MB/s]
+[2025-04-22T03:21:45.924-0400] {clientwrap.py:98} WARNING -  24%|██████████████████▊                                                             | 181M/768M [00:06<00:20, 30.3MB/s]
+[2025-04-22T03:21:46.026-0400] {clientwrap.py:98} WARNING -  24%|███████████████████▏                                                            | 184M/768M [00:06<00:20, 30.4MB/s]
+[2025-04-22T03:21:46.134-0400] {clientwrap.py:98} WARNING -  24%|███████████████████▍                                                            | 187M/768M [00:06<00:20, 30.0MB/s]
+[2025-04-22T03:21:46.238-0400] {clientwrap.py:98} WARNING -  25%|███████████████████▊                                                            | 190M/768M [00:06<00:20, 30.1MB/s]
+[2025-04-22T03:21:46.369-0400] {clientwrap.py:98} WARNING -  25%|████████████████████▏                                                           | 194M/768M [00:06<00:19, 30.8MB/s]
+[2025-04-22T03:21:46.475-0400] {clientwrap.py:98} WARNING -  26%|████████████████████▌                                                           | 197M/768M [00:07<00:19, 30.5MB/s]
+[2025-04-22T03:21:46.576-0400] {clientwrap.py:98} WARNING -  26%|████████████████████▊                                                           | 200M/768M [00:07<00:19, 30.7MB/s]
+[2025-04-22T03:21:46.678-0400] {clientwrap.py:98} WARNING -  26%|█████████████████████▏                                                          | 203M/768M [00:07<00:19, 30.7MB/s]
+[2025-04-22T03:21:46.783-0400] {clientwrap.py:98} WARNING -  27%|█████████████████████▍                                                          | 206M/768M [00:07<00:19, 30.6MB/s]
+[2025-04-22T03:21:46.886-0400] {clientwrap.py:98} WARNING -  27%|█████████████████████▊                                                          | 209M/768M [00:07<00:19, 30.5MB/s]
+[2025-04-22T03:21:47.034-0400] {clientwrap.py:98} WARNING -  28%|██████████████████████                                                          | 212M/768M [00:07<00:21, 27.0MB/s]
+[2025-04-22T03:21:47.161-0400] {clientwrap.py:98} WARNING -  28%|██████████████████████▌                                                         | 217M/768M [00:07<00:18, 31.7MB/s]
+[2025-04-22T03:21:47.491-0400] {clientwrap.py:98} WARNING -  29%|███████████████████████                                                         | 221M/768M [00:08<00:26, 21.4MB/s]
+[2025-04-22T03:21:47.634-0400] {clientwrap.py:98} WARNING -  29%|███████████████████████▎                                                        | 224M/768M [00:08<00:26, 21.5MB/s]
+[2025-04-22T03:21:47.861-0400] {clientwrap.py:98} WARNING -  30%|███████████████████████▋                                                        | 227M/768M [00:08<00:30, 18.7MB/s]
+[2025-04-22T03:21:47.987-0400] {clientwrap.py:98} WARNING -  30%|███████████████████████▉                                                        | 230M/768M [00:08<00:28, 20.1MB/s]
+[2025-04-22T03:21:48.108-0400] {clientwrap.py:98} WARNING -  30%|████████████████████████▎                                                       | 233M/768M [00:08<00:26, 21.6MB/s]
+[2025-04-22T03:21:48.220-0400] {clientwrap.py:98} WARNING -  31%|████████████████████████▌                                                       | 236M/768M [00:08<00:24, 23.1MB/s]
+[2025-04-22T03:21:48.326-0400] {clientwrap.py:98} WARNING -  31%|█████████████████████████                                                       | 240M/768M [00:08<00:20, 27.0MB/s]
+[2025-04-22T03:21:48.445-0400] {clientwrap.py:98} WARNING -  32%|█████████████████████████▎                                                      | 243M/768M [00:08<00:20, 26.9MB/s]
+[2025-04-22T03:21:48.547-0400] {clientwrap.py:98} WARNING -  32%|█████████████████████████▋                                                      | 246M/768M [00:09<00:19, 27.9MB/s]
+[2025-04-22T03:21:48.651-0400] {clientwrap.py:98} WARNING -  32%|█████████████████████████▉                                                      | 249M/768M [00:09<00:19, 28.5MB/s]
+[2025-04-22T03:21:48.784-0400] {clientwrap.py:98} WARNING -  33%|██████████████████████████▎                                                     | 253M/768M [00:09<00:18, 29.5MB/s]
+[2025-04-22T03:21:48.903-0400] {clientwrap.py:98} WARNING -  33%|██████████████████████████▋                                                     | 256M/768M [00:09<00:18, 28.6MB/s]
+[2025-04-22T03:21:49.044-0400] {clientwrap.py:98} WARNING -  34%|███████████████████████████                                                     | 260M/768M [00:09<00:18, 29.1MB/s]
+[2025-04-22T03:21:49.165-0400] {clientwrap.py:98} WARNING -  34%|███████████████████████████▌                                                    | 264M/768M [00:09<00:17, 30.6MB/s]
+[2025-04-22T03:21:49.292-0400] {clientwrap.py:98} WARNING -  35%|███████████████████████████▊                                                    | 267M/768M [00:09<00:18, 28.8MB/s]
+[2025-04-22T03:21:49.405-0400] {clientwrap.py:98} WARNING -  35%|████████████████████████████▏                                                   | 271M/768M [00:09<00:16, 31.1MB/s]
+[2025-04-22T03:21:49.518-0400] {clientwrap.py:98} WARNING -  36%|████████████████████████████▌                                                   | 274M/768M [00:10<00:17, 30.2MB/s]
+[2025-04-22T03:21:49.660-0400] {clientwrap.py:98} WARNING -  36%|████████████████████████████▉                                                   | 278M/768M [00:10<00:17, 30.1MB/s]
+[2025-04-22T03:21:49.781-0400] {clientwrap.py:98} WARNING -  37%|█████████████████████████████▍                                                  | 282M/768M [00:10<00:16, 31.3MB/s]
+[2025-04-22T03:21:49.902-0400] {clientwrap.py:98} WARNING -  37%|█████████████████████████████▋                                                  | 285M/768M [00:10<00:17, 29.7MB/s]
+[2025-04-22T03:21:50.035-0400] {clientwrap.py:98} WARNING -  38%|██████████████████████████████                                                  | 289M/768M [00:10<00:16, 30.3MB/s]
+[2025-04-22T03:21:50.146-0400] {clientwrap.py:98} WARNING -  38%|██████████████████████████████▍                                                 | 292M/768M [00:10<00:16, 29.7MB/s]
+[2025-04-22T03:21:50.261-0400] {clientwrap.py:98} WARNING -  38%|██████████████████████████████▋                                                 | 295M/768M [00:10<00:17, 29.1MB/s]
+[2025-04-22T03:21:50.375-0400] {clientwrap.py:98} WARNING -  39%|███████████████████████████████                                                 | 298M/768M [00:10<00:17, 28.6MB/s]
+[2025-04-22T03:21:50.488-0400] {clientwrap.py:98} WARNING -  39%|███████████████████████████████▎                                                | 301M/768M [00:11<00:17, 28.4MB/s]
+[2025-04-22T03:21:50.605-0400] {clientwrap.py:98} WARNING -  40%|███████████████████████████████▋                                                | 304M/768M [00:11<00:17, 28.0MB/s]
+[2025-04-22T03:21:50.737-0400] {clientwrap.py:98} WARNING -  40%|███████████████████████████████▉                                                | 307M/768M [00:11<00:18, 26.6MB/s]
+[2025-04-22T03:21:50.851-0400] {clientwrap.py:98} WARNING -  40%|████████████████████████████████▎                                               | 310M/768M [00:11<00:17, 26.9MB/s]
+[2025-04-22T03:21:50.962-0400] {clientwrap.py:98} WARNING -  41%|████████████████████████████████▌                                               | 313M/768M [00:11<00:17, 27.3MB/s]
+[2025-04-22T03:21:51.081-0400] {clientwrap.py:98} WARNING -  41%|████████████████████████████████▉                                               | 316M/768M [00:11<00:17, 27.1MB/s]
+[2025-04-22T03:21:51.195-0400] {clientwrap.py:98} WARNING -  42%|█████████████████████████████████▏                                              | 319M/768M [00:11<00:17, 27.2MB/s]
+[2025-04-22T03:21:51.307-0400] {clientwrap.py:98} WARNING -  42%|█████████████████████████████████▌                                              | 322M/768M [00:11<00:17, 27.5MB/s]
+[2025-04-22T03:21:51.422-0400] {clientwrap.py:98} WARNING -  42%|█████████████████████████████████▊                                              | 325M/768M [00:11<00:16, 27.4MB/s]
+[2025-04-22T03:21:51.558-0400] {clientwrap.py:98} WARNING -  43%|██████████████████████████████████▎                                             | 329M/768M [00:12<00:16, 28.6MB/s]
+[2025-04-22T03:21:51.708-0400] {clientwrap.py:98} WARNING -  43%|██████████████████████████████████▌                                             | 332M/768M [00:12<00:17, 25.9MB/s]
+[2025-04-22T03:21:51.831-0400] {clientwrap.py:98} WARNING -  44%|███████████████████████████████████                                             | 337M/768M [00:12<00:14, 30.7MB/s]
+[2025-04-22T03:21:51.936-0400] {clientwrap.py:98} WARNING -  44%|███████████████████████████████████▍                                            | 340M/768M [00:12<00:14, 30.5MB/s]
+[2025-04-22T03:21:52.050-0400] {clientwrap.py:98} WARNING -  45%|███████████████████████████████████▋                                            | 343M/768M [00:12<00:14, 29.7MB/s]
+[2025-04-22T03:21:52.164-0400] {clientwrap.py:98} WARNING -  45%|████████████████████████████████████                                            | 346M/768M [00:12<00:15, 29.1MB/s]
+[2025-04-22T03:21:52.277-0400] {clientwrap.py:98} WARNING -  45%|████████████████████████████████████▎                                           | 349M/768M [00:12<00:15, 28.7MB/s]
+[2025-04-22T03:21:52.390-0400] {clientwrap.py:98} WARNING -  46%|████████████████████████████████████▋                                           | 352M/768M [00:12<00:15, 28.5MB/s]
+[2025-04-22T03:21:52.498-0400] {clientwrap.py:98} WARNING -  46%|████████████████████████████████████▉                                           | 355M/768M [00:13<00:15, 28.6MB/s]
+[2025-04-22T03:21:52.613-0400] {clientwrap.py:98} WARNING -  47%|█████████████████████████████████████▎                                          | 358M/768M [00:13<00:15, 28.3MB/s]
+[2025-04-22T03:21:52.724-0400] {clientwrap.py:98} WARNING -  47%|█████████████████████████████████████▌                                          | 361M/768M [00:13<00:15, 28.3MB/s]
+[2025-04-22T03:21:52.838-0400] {clientwrap.py:98} WARNING -  47%|█████████████████████████████████████▉                                          | 364M/768M [00:13<00:15, 28.1MB/s]
+[2025-04-22T03:21:52.950-0400] {clientwrap.py:98} WARNING -  48%|██████████████████████████████████████▏                                         | 367M/768M [00:13<00:14, 28.1MB/s]
+[2025-04-22T03:21:53.063-0400] {clientwrap.py:98} WARNING -  48%|██████████████████████████████████████▌                                         | 370M/768M [00:13<00:14, 28.0MB/s]
+[2025-04-22T03:21:53.173-0400] {clientwrap.py:98} WARNING -  49%|██████████████████████████████████████▊                                         | 373M/768M [00:13<00:14, 28.1MB/s]
+[2025-04-22T03:21:53.289-0400] {clientwrap.py:98} WARNING -  49%|███████████████████████████████████████▏                                        | 376M/768M [00:13<00:14, 27.9MB/s]
+[2025-04-22T03:21:53.426-0400] {clientwrap.py:98} WARNING -  49%|███████████████████████████████████████▌                                        | 380M/768M [00:13<00:14, 28.8MB/s]
+[2025-04-22T03:21:53.528-0400] {clientwrap.py:98} WARNING -  50%|███████████████████████████████████████▉                                        | 383M/768M [00:14<00:13, 29.3MB/s]
+[2025-04-22T03:21:53.663-0400] {clientwrap.py:98} WARNING -  50%|████████████████████████████████████████▎                                       | 387M/768M [00:14<00:13, 29.9MB/s]
+[2025-04-22T03:21:53.799-0400] {clientwrap.py:98} WARNING -  51%|████████████████████████████████████████▋                                       | 390M/768M [00:14<00:14, 27.7MB/s]
+[2025-04-22T03:21:53.902-0400] {clientwrap.py:98} WARNING -  51%|█████████████████████████████████████████                                       | 394M/768M [00:14<00:12, 31.1MB/s]
+[2025-04-22T03:21:54.039-0400] {clientwrap.py:98} WARNING -  52%|█████████████████████████████████████████▍                                      | 398M/768M [00:14<00:12, 30.9MB/s]
+[2025-04-22T03:21:54.146-0400] {clientwrap.py:98} WARNING -  52%|█████████████████████████████████████████▊                                      | 401M/768M [00:14<00:12, 30.6MB/s]
+[2025-04-22T03:21:54.255-0400] {clientwrap.py:98} WARNING -  53%|██████████████████████████████████████████                                      | 404M/768M [00:14<00:12, 30.1MB/s]
+[2025-04-22T03:21:54.363-0400] {clientwrap.py:98} WARNING -  53%|██████████████████████████████████████████▍                                     | 407M/768M [00:14<00:12, 29.8MB/s]
+[2025-04-22T03:21:54.475-0400] {clientwrap.py:98} WARNING -  53%|██████████████████████████████████████████▋                                     | 410M/768M [00:15<00:12, 29.3MB/s]
+[2025-04-22T03:21:54.582-0400] {clientwrap.py:98} WARNING -  54%|███████████████████████████████████████████                                     | 413M/768M [00:15<00:12, 29.3MB/s]
+[2025-04-22T03:21:54.693-0400] {clientwrap.py:98} WARNING -  54%|███████████████████████████████████████████▎                                    | 416M/768M [00:15<00:12, 29.0MB/s]
+[2025-04-22T03:21:54.802-0400] {clientwrap.py:98} WARNING -  55%|███████████████████████████████████████████▋                                    | 419M/768M [00:15<00:12, 29.0MB/s]
+[2025-04-22T03:21:54.909-0400] {clientwrap.py:98} WARNING -  55%|███████████████████████████████████████████▉                                    | 422M/768M [00:15<00:12, 29.1MB/s]
+[2025-04-22T03:21:55.019-0400] {clientwrap.py:98} WARNING -  55%|████████████████████████████████████████████▎                                   | 425M/768M [00:15<00:12, 28.9MB/s]
+[2025-04-22T03:21:55.125-0400] {clientwrap.py:98} WARNING -  56%|████████████████████████████████████████████▌                                   | 428M/768M [00:15<00:12, 29.1MB/s]
+[2025-04-22T03:21:55.236-0400] {clientwrap.py:98} WARNING -  56%|████████████████████████████████████████████▉                                   | 431M/768M [00:15<00:12, 28.9MB/s]
+[2025-04-22T03:21:55.346-0400] {clientwrap.py:98} WARNING -  57%|█████████████████████████████████████████████▏                                  | 434M/768M [00:15<00:12, 28.8MB/s]
+[2025-04-22T03:21:55.481-0400] {clientwrap.py:98} WARNING -  57%|█████████████████████████████████████████████▋                                  | 438M/768M [00:16<00:11, 29.6MB/s]
+[2025-04-22T03:21:55.583-0400] {clientwrap.py:98} WARNING -  57%|█████████████████████████████████████████████▉                                  | 441M/768M [00:16<00:11, 29.9MB/s]
+[2025-04-22T03:21:55.698-0400] {clientwrap.py:98} WARNING -  58%|██████████████████████████████████████████████▎                                 | 444M/768M [00:16<00:11, 29.1MB/s]
+[2025-04-22T03:21:55.829-0400] {clientwrap.py:98} WARNING -  58%|██████████████████████████████████████████████▋                                 | 448M/768M [00:16<00:11, 30.1MB/s]
+[2025-04-22T03:21:55.951-0400] {clientwrap.py:98} WARNING -  59%|██████████████████████████████████████████████▉                                 | 451M/768M [00:16<00:11, 28.8MB/s]
+[2025-04-22T03:21:56.069-0400] {clientwrap.py:98} WARNING -  59%|███████████████████████████████████████████████▎                                | 454M/768M [00:16<00:11, 28.1MB/s]
+[2025-04-22T03:21:56.196-0400] {clientwrap.py:98} WARNING -  60%|███████████████████████████████████████████████▌                                | 457M/768M [00:16<00:12, 27.1MB/s]
+[2025-04-22T03:21:56.433-0400] {clientwrap.py:98} WARNING -  60%|███████████████████████████████████████████████▉                                | 460M/768M [00:16<00:15, 20.8MB/s]
+[2025-04-22T03:21:56.565-0400] {clientwrap.py:98} WARNING -  60%|████████████████████████████████████████████████▎                               | 464M/768M [00:17<00:13, 23.7MB/s]
+[2025-04-22T03:21:56.666-0400] {clientwrap.py:98} WARNING -  61%|████████████████████████████████████████████████▋                               | 467M/768M [00:17<00:12, 25.4MB/s]
+[2025-04-22T03:21:56.769-0400] {clientwrap.py:98} WARNING -  61%|████████████████████████████████████████████████▉                               | 470M/768M [00:17<00:11, 26.7MB/s]
+[2025-04-22T03:21:56.871-0400] {clientwrap.py:98} WARNING -  62%|█████████████████████████████████████████████████▎                              | 473M/768M [00:17<00:11, 27.7MB/s]
+[2025-04-22T03:21:56.983-0400] {clientwrap.py:98} WARNING -  62%|█████████████████████████████████████████████████▌                              | 476M/768M [00:17<00:10, 27.9MB/s]
+[2025-04-22T03:21:57.110-0400] {clientwrap.py:98} WARNING -  63%|██████████████████████████████████████████████████                              | 480M/768M [00:17<00:10, 29.5MB/s]
+[2025-04-22T03:21:57.213-0400] {clientwrap.py:98} WARNING -  63%|██████████████████████████████████████████████████▎                             | 483M/768M [00:17<00:10, 29.8MB/s]
+[2025-04-22T03:21:57.316-0400] {clientwrap.py:98} WARNING -  63%|██████████████████████████████████████████████████▋                             | 486M/768M [00:17<00:09, 30.0MB/s]
+[2025-04-22T03:21:57.418-0400] {clientwrap.py:98} WARNING -  64%|██████████████████████████████████████████████████▉                             | 489M/768M [00:17<00:09, 30.3MB/s]
+[2025-04-22T03:21:57.521-0400] {clientwrap.py:98} WARNING -  64%|███████████████████████████████████████████████████▎                            | 492M/768M [00:18<00:09, 30.4MB/s]
+[2025-04-22T03:21:57.622-0400] {clientwrap.py:98} WARNING -  64%|███████████████████████████████████████████████████▌                            | 495M/768M [00:18<00:09, 30.6MB/s]
+[2025-04-22T03:21:57.724-0400] {clientwrap.py:98} WARNING -  65%|███████████████████████████████████████████████████▉                            | 498M/768M [00:18<00:09, 30.6MB/s]
+[2025-04-22T03:21:57.827-0400] {clientwrap.py:98} WARNING -  65%|████████████████████████████████████████████████████▏                           | 501M/768M [00:18<00:09, 30.6MB/s]
+[2025-04-22T03:21:57.929-0400] {clientwrap.py:98} WARNING -  66%|████████████████████████████████████████████████████▌                           | 504M/768M [00:18<00:09, 30.7MB/s]
+[2025-04-22T03:21:58.032-0400] {clientwrap.py:98} WARNING -  66%|████████████████████████████████████████████████████▊                           | 507M/768M [00:18<00:08, 30.6MB/s]
+[2025-04-22T03:21:58.138-0400] {clientwrap.py:98} WARNING -  66%|█████████████████████████████████████████████████████▏                          | 510M/768M [00:18<00:08, 30.4MB/s]
+[2025-04-22T03:21:58.272-0400] {clientwrap.py:98} WARNING -  67%|█████████████████████████████████████████████████████▌                          | 514M/768M [00:18<00:08, 30.7MB/s]
+[2025-04-22T03:21:58.373-0400] {clientwrap.py:98} WARNING -  67%|█████████████████████████████████████████████████████▊                          | 517M/768M [00:18<00:08, 30.8MB/s]
+[2025-04-22T03:21:58.476-0400] {clientwrap.py:98} WARNING -  68%|██████████████████████████████████████████████████████▏                         | 520M/768M [00:19<00:08, 30.7MB/s]
+[2025-04-22T03:21:58.577-0400] {clientwrap.py:98} WARNING -  68%|██████████████████████████████████████████████████████▍                         | 523M/768M [00:19<00:08, 30.8MB/s]
+[2025-04-22T03:21:58.680-0400] {clientwrap.py:98} WARNING -  69%|██████████████████████████████████████████████████████▊                         | 526M/768M [00:19<00:08, 30.8MB/s]
+[2025-04-22T03:21:58.784-0400] {clientwrap.py:98} WARNING -  69%|███████████████████████████████████████████████████████                         | 529M/768M [00:19<00:08, 30.6MB/s]
+[2025-04-22T03:21:58.888-0400] {clientwrap.py:98} WARNING -  69%|███████████████████████████████████████████████████████▍                        | 532M/768M [00:19<00:08, 30.5MB/s]
+[2025-04-22T03:21:58.994-0400] {clientwrap.py:98} WARNING -  70%|███████████████████████████████████████████████████████▋                        | 535M/768M [00:19<00:08, 30.2MB/s]
+[2025-04-22T03:21:59.100-0400] {clientwrap.py:98} WARNING -  70%|████████████████████████████████████████████████████████                        | 538M/768M [00:19<00:08, 30.1MB/s]
+[2025-04-22T03:21:59.205-0400] {clientwrap.py:98} WARNING -  70%|████████████████████████████████████████████████████████▎                       | 541M/768M [00:19<00:07, 30.0MB/s]
+[2025-04-22T03:21:59.311-0400] {clientwrap.py:98} WARNING -  71%|████████████████████████████████████████████████████████▋                       | 544M/768M [00:19<00:07, 29.9MB/s]
+[2025-04-22T03:21:59.420-0400] {clientwrap.py:98} WARNING -  71%|████████████████████████████████████████████████████████▉                       | 547M/768M [00:19<00:07, 29.6MB/s]
+[2025-04-22T03:21:59.525-0400] {clientwrap.py:98} WARNING -  72%|█████████████████████████████████████████████████████████▎                      | 550M/768M [00:20<00:07, 29.7MB/s]
+[2025-04-22T03:21:59.639-0400] {clientwrap.py:98} WARNING -  72%|█████████████████████████████████████████████████████████▌                      | 553M/768M [00:20<00:07, 29.0MB/s]
+[2025-04-22T03:21:59.774-0400] {clientwrap.py:98} WARNING -  73%|██████████████████████████████████████████████████████████                      | 557M/768M [00:20<00:07, 29.8MB/s]
+[2025-04-22T03:21:59.882-0400] {clientwrap.py:98} WARNING -  73%|██████████████████████████████████████████████████████████▎                     | 560M/768M [00:20<00:07, 29.6MB/s]
+[2025-04-22T03:21:59.983-0400] {clientwrap.py:98} WARNING -  73%|██████████████████████████████████████████████████████████▋                     | 563M/768M [00:20<00:07, 30.0MB/s]
+[2025-04-22T03:22:00.091-0400] {clientwrap.py:98} WARNING -  74%|██████████████████████████████████████████████████████████▉                     | 566M/768M [00:20<00:07, 29.7MB/s]
+[2025-04-22T03:22:00.226-0400] {clientwrap.py:98} WARNING -  74%|███████████████████████████████████████████████████████████▍                    | 570M/768M [00:20<00:06, 30.2MB/s]
+[2025-04-22T03:22:00.328-0400] {clientwrap.py:98} WARNING -  75%|███████████████████████████████████████████████████████████▋                    | 573M/768M [00:20<00:06, 30.5MB/s]
+[2025-04-22T03:22:00.431-0400] {clientwrap.py:98} WARNING -  75%|████████████████████████████████████████████████████████████                    | 576M/768M [00:20<00:06, 30.5MB/s]
+[2025-04-22T03:22:00.533-0400] {clientwrap.py:98} WARNING -  75%|████████████████████████████████████████████████████████████▎                   | 579M/768M [00:21<00:06, 30.5MB/s]
+[2025-04-22T03:22:00.633-0400] {clientwrap.py:98} WARNING -  76%|████████████████████████████████████████████████████████████▋                   | 582M/768M [00:21<00:06, 30.8MB/s]
+[2025-04-22T03:22:00.737-0400] {clientwrap.py:98} WARNING -  76%|████████████████████████████████████████████████████████████▉                   | 585M/768M [00:21<00:06, 30.6MB/s]
+[2025-04-22T03:22:00.841-0400] {clientwrap.py:98} WARNING -  77%|█████████████████████████████████████████████████████████████▎                  | 588M/768M [00:21<00:06, 30.7MB/s]
+[2025-04-22T03:22:00.973-0400] {clientwrap.py:98} WARNING -  77%|█████████████████████████████████████████████████████████████▋                  | 592M/768M [00:21<00:05, 31.0MB/s]
+[2025-04-22T03:22:01.075-0400] {clientwrap.py:98} WARNING -  77%|█████████████████████████████████████████████████████████████▉                  | 595M/768M [00:21<00:05, 30.8MB/s]
+[2025-04-22T03:22:01.178-0400] {clientwrap.py:98} WARNING -  78%|██████████████████████████████████████████████████████████████▎                 | 598M/768M [00:21<00:05, 30.8MB/s]
+[2025-04-22T03:22:01.279-0400] {clientwrap.py:98} WARNING -  78%|██████████████████████████████████████████████████████████████▌                 | 601M/768M [00:21<00:05, 30.8MB/s]
+[2025-04-22T03:22:01.383-0400] {clientwrap.py:98} WARNING -  79%|██████████████████████████████████████████████████████████████▉                 | 604M/768M [00:21<00:05, 30.8MB/s]
+[2025-04-22T03:22:01.621-0400] {clientwrap.py:98} WARNING -  79%|███████████████████████████████████████████████████████████████▏                | 607M/768M [00:22<00:07, 22.1MB/s]
+[2025-04-22T03:22:01.752-0400] {clientwrap.py:98} WARNING -  80%|███████████████████████████████████████████████████████████████▋                | 611M/768M [00:22<00:06, 24.9MB/s]
+[2025-04-22T03:22:01.859-0400] {clientwrap.py:98} WARNING -  80%|███████████████████████████████████████████████████████████████▉                | 614M/768M [00:22<00:06, 26.0MB/s]
+[2025-04-22T03:22:01.959-0400] {clientwrap.py:98} WARNING -  80%|████████████████████████████████████████████████████████████████▎               | 617M/768M [00:22<00:05, 27.3MB/s]
+[2025-04-22T03:22:02.061-0400] {clientwrap.py:98} WARNING -  81%|████████████████████████████████████████████████████████████████▌               | 620M/768M [00:22<00:05, 28.2MB/s]
+[2025-04-22T03:22:02.195-0400] {clientwrap.py:98} WARNING -  81%|█████████████████████████████████████████████████████████████████               | 624M/768M [00:22<00:05, 29.3MB/s]
+[2025-04-22T03:22:02.298-0400] {clientwrap.py:98} WARNING -  82%|█████████████████████████████████████████████████████████████████▎              | 627M/768M [00:22<00:04, 29.6MB/s]
+[2025-04-22T03:22:02.402-0400] {clientwrap.py:98} WARNING -  82%|█████████████████████████████████████████████████████████████████▋              | 630M/768M [00:22<00:04, 29.8MB/s]
+[2025-04-22T03:22:02.505-0400] {clientwrap.py:98} WARNING -  82%|█████████████████████████████████████████████████████████████████▉              | 633M/768M [00:23<00:04, 30.0MB/s]
+[2025-04-22T03:22:02.606-0400] {clientwrap.py:98} WARNING -  83%|██████████████████████████████████████████████████████████████████▎             | 636M/768M [00:23<00:04, 30.3MB/s]
+[2025-04-22T03:22:02.707-0400] {clientwrap.py:98} WARNING -  83%|██████████████████████████████████████████████████████████████████▌             | 639M/768M [00:23<00:04, 30.5MB/s]
+[2025-04-22T03:22:02.810-0400] {clientwrap.py:98} WARNING -  84%|██████████████████████████████████████████████████████████████████▉             | 642M/768M [00:23<00:04, 30.6MB/s]
+[2025-04-22T03:22:02.910-0400] {clientwrap.py:98} WARNING -  84%|███████████████████████████████████████████████████████████████████▏            | 645M/768M [00:23<00:04, 30.8MB/s]
+[2025-04-22T03:22:03.015-0400] {clientwrap.py:98} WARNING -  84%|███████████████████████████████████████████████████████████████████▌            | 648M/768M [00:23<00:04, 30.5MB/s]
+[2025-04-22T03:22:03.150-0400] {clientwrap.py:98} WARNING -  85%|███████████████████████████████████████████████████████████████████▉            | 652M/768M [00:23<00:03, 30.7MB/s]
+[2025-04-22T03:22:03.255-0400] {clientwrap.py:98} WARNING -  85%|████████████████████████████████████████████████████████████████████▏           | 655M/768M [00:23<00:03, 30.6MB/s]
+[2025-04-22T03:22:03.355-0400] {clientwrap.py:98} WARNING -  86%|████████████████████████████████████████████████████████████████████▌           | 658M/768M [00:23<00:03, 30.8MB/s]
+[2025-04-22T03:22:03.456-0400] {clientwrap.py:98} WARNING -  86%|████████████████████████████████████████████████████████████████████▊           | 661M/768M [00:23<00:03, 30.9MB/s]
+[2025-04-22T03:22:03.558-0400] {clientwrap.py:98} WARNING -  86%|█████████████████████████████████████████████████████████████████████▏          | 664M/768M [00:24<00:03, 30.9MB/s]
+[2025-04-22T03:22:03.661-0400] {clientwrap.py:98} WARNING -  87%|█████████████████████████████████████████████████████████████████████▍          | 667M/768M [00:24<00:03, 30.8MB/s]
+[2025-04-22T03:22:03.762-0400] {clientwrap.py:98} WARNING -  87%|█████████████████████████████████████████████████████████████████████▊          | 670M/768M [00:24<00:03, 30.9MB/s]
+[2025-04-22T03:22:03.866-0400] {clientwrap.py:98} WARNING -  88%|██████████████████████████████████████████████████████████████████████          | 673M/768M [00:24<00:03, 30.7MB/s]
+[2025-04-22T03:22:03.969-0400] {clientwrap.py:98} WARNING -  88%|██████████████████████████████████████████████████████████████████████▍         | 676M/768M [00:24<00:03, 30.7MB/s]
+[2025-04-22T03:22:04.072-0400] {clientwrap.py:98} WARNING -  88%|██████████████████████████████████████████████████████████████████████▋         | 679M/768M [00:24<00:03, 30.5MB/s]
+[2025-04-22T03:22:04.185-0400] {clientwrap.py:98} WARNING -  89%|███████████████████████████████████████████████████████████████████████         | 682M/768M [00:24<00:03, 29.7MB/s]
+[2025-04-22T03:22:04.301-0400] {clientwrap.py:98} WARNING -  89%|███████████████████████████████████████████████████████████████████████▎        | 685M/768M [00:24<00:03, 28.9MB/s]
+[2025-04-22T03:22:04.417-0400] {clientwrap.py:98} WARNING -  90%|███████████████████████████████████████████████████████████████████████▋        | 688M/768M [00:24<00:02, 28.3MB/s]
+[2025-04-22T03:22:04.525-0400] {clientwrap.py:98} WARNING -  90%|███████████████████████████████████████████████████████████████████████▉        | 691M/768M [00:25<00:02, 28.6MB/s]
+[2025-04-22T03:22:04.642-0400] {clientwrap.py:98} WARNING -  90%|████████████████████████████████████████████████████████████████████████▎       | 694M/768M [00:25<00:02, 28.0MB/s]
+[2025-04-22T03:22:04.756-0400] {clientwrap.py:98} WARNING -  91%|████████████████████████████████████████████████████████████████████████▌       | 697M/768M [00:25<00:02, 27.9MB/s]
+[2025-04-22T03:22:04.870-0400] {clientwrap.py:98} WARNING -  91%|████████████████████████████████████████████████████████████████████████▉       | 700M/768M [00:25<00:02, 27.8MB/s]
+[2025-04-22T03:22:04.983-0400] {clientwrap.py:98} WARNING -  92%|█████████████████████████████████████████████████████████████████████████▏      | 703M/768M [00:25<00:02, 27.8MB/s]
+[2025-04-22T03:22:05.095-0400] {clientwrap.py:98} WARNING -  92%|█████████████████████████████████████████████████████████████████████████▌      | 706M/768M [00:25<00:02, 27.9MB/s]
+[2025-04-22T03:22:05.203-0400] {clientwrap.py:98} WARNING -  92%|█████████████████████████████████████████████████████████████████████████▊      | 709M/768M [00:25<00:02, 28.2MB/s]
+[2025-04-22T03:22:05.306-0400] {clientwrap.py:98} WARNING -  93%|██████████████████████████████████████████████████████████████████████████▏     | 712M/768M [00:25<00:02, 28.9MB/s]
+[2025-04-22T03:22:05.413-0400] {clientwrap.py:98} WARNING -  93%|██████████████████████████████████████████████████████████████████████████▍     | 715M/768M [00:25<00:01, 29.1MB/s]
+[2025-04-22T03:22:05.548-0400] {clientwrap.py:98} WARNING -  94%|██████████████████████████████████████████████████████████████████████████▉     | 719M/768M [00:26<00:01, 29.7MB/s]
+[2025-04-22T03:22:05.679-0400] {clientwrap.py:98} WARNING -  94%|███████████████████████████████████████████████████████████████████████████▎    | 723M/768M [00:26<00:01, 30.5MB/s]
+[2025-04-22T03:22:05.784-0400] {clientwrap.py:98} WARNING -  95%|███████████████████████████████████████████████████████████████████████████▋    | 726M/768M [00:26<00:01, 30.4MB/s]
+[2025-04-22T03:22:05.886-0400] {clientwrap.py:98} WARNING -  95%|███████████████████████████████████████████████████████████████████████████▉    | 729M/768M [00:26<00:01, 30.5MB/s]
+[2025-04-22T03:22:06.006-0400] {clientwrap.py:98} WARNING -  95%|████████████████████████████████████████████████████████████████████████████▎   | 732M/768M [00:26<00:01, 29.2MB/s]
+[2025-04-22T03:22:06.126-0400] {clientwrap.py:98} WARNING -  96%|████████████████████████████████████████████████████████████████████████████▋   | 736M/768M [00:26<00:01, 30.9MB/s]
+[2025-04-22T03:22:06.243-0400] {clientwrap.py:98} WARNING -  96%|████████████████████████████████████████████████████████████████████████████▉   | 739M/768M [00:26<00:01, 29.7MB/s]
+[2025-04-22T03:22:06.355-0400] {clientwrap.py:98} WARNING -  97%|█████████████████████████████████████████████████████████████████████████████▎  | 742M/768M [00:26<00:00, 29.2MB/s]
+[2025-04-22T03:22:06.471-0400] {clientwrap.py:98} WARNING -  97%|█████████████████████████████████████████████████████████████████████████████▌  | 745M/768M [00:27<00:00, 28.6MB/s]
+[2025-04-22T03:22:06.583-0400] {clientwrap.py:98} WARNING -  97%|█████████████████████████████████████████████████████████████████████████████▉  | 748M/768M [00:27<00:00, 28.5MB/s]
+[2025-04-22T03:22:06.699-0400] {clientwrap.py:98} WARNING -  98%|██████████████████████████████████████████████████████████████████████████████▏ | 751M/768M [00:27<00:00, 28.0MB/s]
+[2025-04-22T03:22:06.813-0400] {clientwrap.py:98} WARNING -  98%|██████████████████████████████████████████████████████████████████████████████▌ | 754M/768M [00:27<00:00, 27.9MB/s]
+[2025-04-22T03:22:06.936-0400] {clientwrap.py:98} WARNING -  99%|██████████████████████████████████████████████████████████████████████████████▊ | 757M/768M [00:27<00:00, 27.2MB/s]
+[2025-04-22T03:22:07.041-0400] {clientwrap.py:98} WARNING -  99%|███████████████████████████████████████████████████████████████████████████████▏| 760M/768M [00:27<00:00, 27.9MB/s]
+[2025-04-22T03:22:07.159-0400] {clientwrap.py:98} WARNING -  99%|███████████████████████████████████████████████████████████████████████████████▍| 763M/768M [00:27<00:00, 27.5MB/s]
+[2025-04-22T03:22:07.274-0400] {clientwrap.py:98} WARNING - 100%|███████████████████████████████████████████████████████████████████████████████▊| 766M/768M [00:27<00:00, 27.5MB/s]
+[2025-04-22T03:22:07.340-0400] {clientwrap.py:98} WARNING - 100%|████████████████████████████████████████████████████████████████████████████████| 768M/768M [00:27<00:00, 28.9MB/s]
+[2025-04-22T03:22:07.365-0400] {clientwrap.py:98} WARNING - 
+
+[2025-04-22T03:22:49.750-0400] {clientwrap.py:91} INFO - Downloaded: transactions.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T03:22:50.520-0400] {clientwrap.py:91} INFO - Downloading from https://www.kaggle.com/api/v1/datasets/download/ricgomes/global-fashion-retail-stores-dataset?dataset_version_number=24&file_name=customers.csv...
+
+[2025-04-22T03:22:50.521-0400] {clientwrap.py:98} WARNING -   0%|                                                                                        | 0.00/182M [00:00<?, ?B/s]
+[2025-04-22T03:22:50.699-0400] {clientwrap.py:98} WARNING -   1%|▍                                                                              | 1.00M/182M [00:00<00:31, 5.93MB/s]
+[2025-04-22T03:22:50.860-0400] {clientwrap.py:98} WARNING -   2%|█▋                                                                             | 4.00M/182M [00:00<00:13, 13.5MB/s]
+[2025-04-22T03:22:50.983-0400] {clientwrap.py:98} WARNING -   5%|███▉                                                                           | 9.00M/182M [00:00<00:07, 24.7MB/s]
+[2025-04-22T03:22:51.084-0400] {clientwrap.py:98} WARNING -   7%|█████▏                                                                         | 12.0M/182M [00:00<00:06, 26.6MB/s]
+[2025-04-22T03:22:51.187-0400] {clientwrap.py:98} WARNING -   8%|██████▌                                                                        | 15.0M/182M [00:00<00:06, 27.8MB/s]
+[2025-04-22T03:22:51.293-0400] {clientwrap.py:98} WARNING -  10%|███████▊                                                                       | 18.0M/182M [00:00<00:06, 28.5MB/s]
+[2025-04-22T03:22:51.393-0400] {clientwrap.py:98} WARNING -  12%|█████████▏                                                                     | 21.0M/182M [00:00<00:05, 29.3MB/s]
+[2025-04-22T03:22:51.503-0400] {clientwrap.py:98} WARNING -  13%|██████████▍                                                                    | 24.0M/182M [00:00<00:05, 29.1MB/s]
+[2025-04-22T03:22:51.605-0400] {clientwrap.py:98} WARNING -  15%|███████████▋                                                                   | 27.0M/182M [00:01<00:05, 29.5MB/s]
+[2025-04-22T03:22:51.710-0400] {clientwrap.py:98} WARNING -  17%|█████████████                                                                  | 30.0M/182M [00:01<00:05, 29.7MB/s]
+[2025-04-22T03:22:51.812-0400] {clientwrap.py:98} WARNING -  18%|██████████████▎                                                                | 33.0M/182M [00:01<00:05, 30.1MB/s]
+[2025-04-22T03:22:51.914-0400] {clientwrap.py:98} WARNING -  20%|███████████████▋                                                               | 36.0M/182M [00:01<00:05, 30.3MB/s]
+[2025-04-22T03:22:52.015-0400] {clientwrap.py:98} WARNING -  21%|████████████████▉                                                              | 39.0M/182M [00:01<00:04, 30.5MB/s]
+[2025-04-22T03:22:52.118-0400] {clientwrap.py:98} WARNING -  23%|██████████████████▎                                                            | 42.0M/182M [00:01<00:04, 30.6MB/s]
+[2025-04-22T03:22:52.221-0400] {clientwrap.py:98} WARNING -  25%|███████████████████▌                                                           | 45.0M/182M [00:01<00:04, 30.6MB/s]
+[2025-04-22T03:22:52.334-0400] {clientwrap.py:98} WARNING -  26%|████████████████████▊                                                          | 48.0M/182M [00:01<00:04, 29.7MB/s]
+[2025-04-22T03:22:52.470-0400] {clientwrap.py:98} WARNING -  29%|██████████████████████▌                                                        | 52.0M/182M [00:01<00:04, 30.1MB/s]
+[2025-04-22T03:22:52.572-0400] {clientwrap.py:98} WARNING -  30%|███████████████████████▉                                                       | 55.0M/182M [00:02<00:04, 30.3MB/s]
+[2025-04-22T03:22:52.709-0400] {clientwrap.py:98} WARNING -  32%|█████████████████████████▋                                                     | 59.0M/182M [00:02<00:04, 30.4MB/s]
+[2025-04-22T03:22:52.842-0400] {clientwrap.py:98} WARNING -  35%|███████████████████████████▍                                                   | 63.0M/182M [00:02<00:04, 30.7MB/s]
+[2025-04-22T03:22:52.944-0400] {clientwrap.py:98} WARNING -  36%|████████████████████████████▋                                                  | 66.0M/182M [00:02<00:03, 30.8MB/s]
+[2025-04-22T03:22:53.111-0400] {clientwrap.py:98} WARNING -  38%|█████████████████████████████▉                                                 | 69.0M/182M [00:02<00:04, 26.2MB/s]
+[2025-04-22T03:22:53.226-0400] {clientwrap.py:98} WARNING -  40%|███████████████████████████████▋                                               | 73.0M/182M [00:02<00:03, 29.0MB/s]
+[2025-04-22T03:22:53.353-0400] {clientwrap.py:98} WARNING -  42%|█████████████████████████████████                                              | 76.0M/182M [00:02<00:03, 27.7MB/s]
+[2025-04-22T03:22:53.483-0400] {clientwrap.py:98} WARNING -  43%|██████████████████████████████████▎                                            | 79.0M/182M [00:02<00:04, 26.7MB/s]
+[2025-04-22T03:22:53.608-0400] {clientwrap.py:98} WARNING -  45%|███████████████████████████████████▋                                           | 82.0M/182M [00:03<00:03, 26.2MB/s]
+[2025-04-22T03:22:53.738-0400] {clientwrap.py:98} WARNING -  47%|████████████████████████████████████▉                                          | 85.0M/182M [00:03<00:03, 25.6MB/s]
+[2025-04-22T03:22:53.865-0400] {clientwrap.py:98} WARNING -  48%|██████████████████████████████████████▎                                        | 88.0M/182M [00:03<00:03, 25.4MB/s]
+[2025-04-22T03:22:53.991-0400] {clientwrap.py:98} WARNING -  50%|███████████████████████████████████████▌                                       | 91.0M/182M [00:03<00:03, 25.2MB/s]
+[2025-04-22T03:22:54.118-0400] {clientwrap.py:98} WARNING -  52%|████████████████████████████████████████▊                                      | 94.0M/182M [00:03<00:03, 25.1MB/s]
+[2025-04-22T03:22:54.248-0400] {clientwrap.py:98} WARNING -  53%|██████████████████████████████████████████▏                                    | 97.0M/182M [00:03<00:03, 24.8MB/s]
+[2025-04-22T03:22:54.377-0400] {clientwrap.py:98} WARNING -  55%|████████████████████████████████████████████                                    | 100M/182M [00:03<00:03, 24.7MB/s]
+[2025-04-22T03:22:54.502-0400] {clientwrap.py:98} WARNING -  57%|█████████████████████████████████████████████▎                                  | 103M/182M [00:03<00:03, 24.8MB/s]
+[2025-04-22T03:22:54.631-0400] {clientwrap.py:98} WARNING -  58%|██████████████████████████████████████████████▋                                 | 106M/182M [00:04<00:03, 24.7MB/s]
+[2025-04-22T03:22:54.761-0400] {clientwrap.py:98} WARNING -  61%|████████████████████████████████████████████████▍                               | 110M/182M [00:04<00:02, 26.9MB/s]
+[2025-04-22T03:22:54.903-0400] {clientwrap.py:98} WARNING -  62%|█████████████████████████████████████████████████▋                              | 113M/182M [00:04<00:02, 25.4MB/s]
+[2025-04-22T03:22:55.033-0400] {clientwrap.py:98} WARNING -  65%|███████████████████████████████████████████████████▉                            | 118M/182M [00:04<00:02, 29.9MB/s]
+[2025-04-22T03:22:55.142-0400] {clientwrap.py:98} WARNING -  67%|█████████████████████████████████████████████████████▎                          | 121M/182M [00:04<00:02, 29.6MB/s]
+[2025-04-22T03:22:55.258-0400] {clientwrap.py:98} WARNING -  68%|██████████████████████████████████████████████████████▌                         | 124M/182M [00:04<00:02, 28.9MB/s]
+[2025-04-22T03:22:55.374-0400] {clientwrap.py:98} WARNING -  70%|███████████████████████████████████████████████████████▉                        | 127M/182M [00:04<00:02, 28.4MB/s]
+[2025-04-22T03:22:55.481-0400] {clientwrap.py:98} WARNING -  72%|█████████████████████████████████████████████████████████▏                      | 130M/182M [00:04<00:01, 28.6MB/s]
+[2025-04-22T03:22:55.583-0400] {clientwrap.py:98} WARNING -  73%|██████████████████████████████████████████████████████████▌                     | 133M/182M [00:05<00:01, 29.3MB/s]
+[2025-04-22T03:22:55.689-0400] {clientwrap.py:98} WARNING -  75%|███████████████████████████████████████████████████████████▊                    | 136M/182M [00:05<00:01, 29.4MB/s]
+[2025-04-22T03:22:55.794-0400] {clientwrap.py:98} WARNING -  76%|█████████████████████████████████████████████████████████████▏                  | 139M/182M [00:05<00:01, 29.6MB/s]
+[2025-04-22T03:22:55.895-0400] {clientwrap.py:98} WARNING -  78%|██████████████████████████████████████████████████████████████▌                 | 142M/182M [00:05<00:01, 30.0MB/s]
+[2025-04-22T03:22:55.999-0400] {clientwrap.py:98} WARNING -  80%|███████████████████████████████████████████████████████████████▊                | 145M/182M [00:05<00:01, 30.1MB/s]
+[2025-04-22T03:22:56.103-0400] {clientwrap.py:98} WARNING -  81%|█████████████████████████████████████████████████████████████████▏              | 148M/182M [00:05<00:01, 30.1MB/s]
+[2025-04-22T03:22:56.211-0400] {clientwrap.py:98} WARNING -  83%|██████████████████████████████████████████████████████████████████▍             | 151M/182M [00:05<00:01, 29.9MB/s]
+[2025-04-22T03:22:56.312-0400] {clientwrap.py:98} WARNING -  85%|███████████████████████████████████████████████████████████████████▊            | 154M/182M [00:05<00:00, 30.2MB/s]
+[2025-04-22T03:22:56.417-0400] {clientwrap.py:98} WARNING -  86%|█████████████████████████████████████████████████████████████████████           | 157M/182M [00:05<00:00, 30.1MB/s]
+[2025-04-22T03:22:56.520-0400] {clientwrap.py:98} WARNING -  88%|██████████████████████████████████████████████████████████████████████▍         | 160M/182M [00:05<00:00, 30.2MB/s]
+[2025-04-22T03:22:56.668-0400] {clientwrap.py:98} WARNING -  90%|███████████████████████████████████████████████████████████████████████▊        | 163M/182M [00:06<00:00, 26.9MB/s]
+[2025-04-22T03:22:56.807-0400] {clientwrap.py:98} WARNING -  92%|█████████████████████████████████████████████████████████████████████████▉      | 168M/182M [00:06<00:00, 30.5MB/s]
+[2025-04-22T03:22:56.919-0400] {clientwrap.py:98} WARNING -  94%|███████████████████████████████████████████████████████████████████████████▎    | 171M/182M [00:06<00:00, 29.8MB/s]
+[2025-04-22T03:22:57.034-0400] {clientwrap.py:98} WARNING -  96%|████████████████████████████████████████████████████████████████████████████▌   | 174M/182M [00:06<00:00, 29.1MB/s]
+[2025-04-22T03:22:57.145-0400] {clientwrap.py:98} WARNING -  97%|█████████████████████████████████████████████████████████████████████████████▉  | 177M/182M [00:06<00:00, 28.8MB/s]
+[2025-04-22T03:22:57.257-0400] {clientwrap.py:98} WARNING -  99%|███████████████████████████████████████████████████████████████████████████████▏| 180M/182M [00:06<00:00, 28.7MB/s]
+[2025-04-22T03:22:57.323-0400] {clientwrap.py:98} WARNING - 100%|████████████████████████████████████████████████████████████████████████████████| 182M/182M [00:06<00:00, 28.0MB/s]
+[2025-04-22T03:22:57.346-0400] {clientwrap.py:98} WARNING - 
+
+[2025-04-22T03:23:00.467-0400] {clientwrap.py:98} WARNING - /home/megin_mathew/airflow_venv/lib/python3.12/site-packages/kagglehub/pandas_datasets.py:91: DtypeWarning: Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.
+  result = read_function(
+
+[2025-04-22T03:23:03.975-0400] {clientwrap.py:91} INFO - Downloaded: customers.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T03:23:04.576-0400] {clientwrap.py:91} INFO - Downloading from https://www.kaggle.com/api/v1/datasets/download/ricgomes/global-fashion-retail-stores-dataset?dataset_version_number=24&file_name=discounts.csv...
+
+[2025-04-22T03:23:04.578-0400] {clientwrap.py:98} WARNING -   0%|                                                                                       | 0.00/17.8k [00:00<?, ?B/s]
+[2025-04-22T03:23:04.600-0400] {clientwrap.py:98} WARNING - 100%|███████████████████████████████████████████████████████████████████████████████| 17.8k/17.8k [00:00<00:00, 861kB/s]
+[2025-04-22T03:23:04.777-0400] {clientwrap.py:91} INFO - Downloaded: discounts.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T03:23:04.779-0400] {clientwrap.py:98} WARNING - 
+
+[2025-04-22T03:23:05.624-0400] {clientwrap.py:91} INFO - Downloading from https://www.kaggle.com/api/v1/datasets/download/ricgomes/global-fashion-retail-stores-dataset?dataset_version_number=24&file_name=employees.csv...
+
+[2025-04-22T03:23:05.625-0400] {clientwrap.py:98} WARNING -   0%|                                                                                       | 0.00/14.8k [00:00<?, ?B/s]
+[2025-04-22T03:23:05.645-0400] {clientwrap.py:98} WARNING - 100%|███████████████████████████████████████████████████████████████████████████████| 14.8k/14.8k [00:00<00:00, 808kB/s]
+[2025-04-22T03:23:05.827-0400] {clientwrap.py:91} INFO - Downloaded: employees.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T03:23:05.828-0400] {clientwrap.py:98} WARNING - 
+
+[2025-04-22T03:23:06.644-0400] {clientwrap.py:91} INFO - Downloading from https://www.kaggle.com/api/v1/datasets/download/ricgomes/global-fashion-retail-stores-dataset?dataset_version_number=24&file_name=products.csv...
+
+[2025-04-22T03:23:06.646-0400] {clientwrap.py:98} WARNING -   0%|                                                                                       | 0.00/4.76M [00:00<?, ?B/s]
+[2025-04-22T03:23:06.834-0400] {clientwrap.py:98} WARNING -  21%|████████████████▍                                                             | 1.00M/4.76M [00:00<00:00, 5.58MB/s]
+[2025-04-22T03:23:06.953-0400] {clientwrap.py:98} WARNING -  84%|█████████████████████████████████████████████████████████████████▌            | 4.00M/4.76M [00:00<00:00, 15.5MB/s]
+[2025-04-22T03:23:06.975-0400] {clientwrap.py:98} WARNING - 100%|██████████████████████████████████████████████████████████████████████████████| 4.76M/4.76M [00:00<00:00, 15.2MB/s]
+[2025-04-22T03:23:07.043-0400] {clientwrap.py:98} WARNING - 
+
+[2025-04-22T03:23:07.324-0400] {clientwrap.py:91} INFO - Downloaded: products.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T03:23:07.906-0400] {clientwrap.py:91} INFO - Downloading from https://www.kaggle.com/api/v1/datasets/download/ricgomes/global-fashion-retail-stores-dataset?dataset_version_number=24&file_name=stores.csv...
+
+[2025-04-22T03:23:07.907-0400] {clientwrap.py:98} WARNING -   0%|                                                                                       | 0.00/2.14k [00:00<?, ?B/s]
+[2025-04-22T03:23:07.908-0400] {clientwrap.py:98} WARNING - 100%|██████████████████████████████████████████████████████████████████████████████| 2.14k/2.14k [00:00<00:00, 5.15MB/s]
+[2025-04-22T03:23:07.917-0400] {clientwrap.py:91} INFO - Downloaded: stores.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T03:23:07.917-0400] {clientwrap.py:98} WARNING - 
+
+[2025-04-22T03:23:07.922-0400] {engines.py:261} INFO - Ending Cell 8------------------------------------------
+[2025-04-22T03:23:07.937-0400] {engines.py:223} INFO - Executing Cell 9---------------------------------------
+[2025-04-22T03:23:07.959-0400] {engines.py:261} INFO - Ending Cell 9------------------------------------------
+[2025-04-22T03:23:07.967-0400] {engines.py:223} INFO - Executing Cell 10--------------------------------------
+[2025-04-22T03:23:07.976-0400] {engines.py:261} INFO - Ending Cell 10-----------------------------------------
+[2025-04-22T03:23:07.985-0400] {engines.py:223} INFO - Executing Cell 11--------------------------------------
+[2025-04-22T03:23:08.201-0400] {engines.py:261} INFO - Ending Cell 11-----------------------------------------
+[2025-04-22T03:23:08.888-0400] {FashionData_DAG.py:89} ERROR - Failed to execute notebook: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 4
+      2 import logging
+      3 import pandas as pd
+----> 4 from dotenv import load_dotenv
+      5 from datetime import datetime
+      6 from sqlalchemy import create_engine, Column, Integer, String, Float, Date, DateTime, Boolean, ForeignKey, Text, text
+
+ModuleNotFoundError: No module named 'dotenv'
+
+[2025-04-22T03:23:08.933-0400] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 68, in execute_notebook
+    pm.execute_notebook(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 4
+      2 import logging
+      3 import pandas as pd
+----> 4 from dotenv import load_dotenv
+      5 from datetime import datetime
+      6 from sqlalchemy import create_engine, Column, Integer, String, Float, Date, DateTime, Boolean, ForeignKey, Text, text
+
+ModuleNotFoundError: No module named 'dotenv'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 91, in execute_notebook
+    raise AirflowException(f"Notebook execution failed: {str(e)}")
+airflow.exceptions.AirflowException: Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 4
+      2 import logging
+      3 import pandas as pd
+----> 4 from dotenv import load_dotenv
+      5 from datetime import datetime
+      6 from sqlalchemy import create_engine, Column, Integer, String, Float, Date, DateTime, Boolean, ForeignKey, Text, text
+
+ModuleNotFoundError: No module named 'dotenv'
+
+[2025-04-22T03:23:08.962-0400] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-22T03:23:08.962-0400] {logging_mixin.py:190} INFO - Task start:2025-04-22 07:21:35.385516+00:00 end:2025-04-22 07:23:08.959611+00:00 duration:93.574095
+[2025-04-22T03:23:08.963-0400] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): execute_notebook> dag:<DAG: fashion_data_pipeline> dagrun:<DagRun fashion_data_pipeline @ 2025-04-22 07:21:32.963179+00:00: manual__2025-04-22T07:21:32.963179+00:00, state:running, queued_at: 2025-04-22 07:21:32.976405+00:00. externally triggered: True>
+[2025-04-22T03:23:08.963-0400] {logging_mixin.py:190} INFO - Failure caused by Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 4
+      2 import logging
+      3 import pandas as pd
+----> 4 from dotenv import load_dotenv
+      5 from datetime import datetime
+      6 from sqlalchemy import create_engine, Column, Integer, String, Float, Date, DateTime, Boolean, ForeignKey, Text, text
+
+ModuleNotFoundError: No module named 'dotenv'
+[2025-04-22T03:23:08.963-0400] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=fashion_data_pipeline, task_id=execute_notebook, run_id=manual__2025-04-22T07:21:32.963179+00:00, execution_date=20250422T072132, start_date=20250422T072135, end_date=20250422T072308
+[2025-04-22T03:23:09.001-0400] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T03:23:09.002-0400] {standard_task_runner.py:124} ERROR - Failed to execute job 36 for task execute_notebook (Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 4
+      2 import logging
+      3 import pandas as pd
+----> 4 from dotenv import load_dotenv
+      5 from datetime import datetime
+      6 from sqlalchemy import create_engine, Column, Integer, String, Float, Date, DateTime, Boolean, ForeignKey, Text, text
+
+ModuleNotFoundError: No module named 'dotenv'
+; 12584)
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 68, in execute_notebook
+    pm.execute_notebook(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 4
+      2 import logging
+      3 import pandas as pd
+----> 4 from dotenv import load_dotenv
+      5 from datetime import datetime
+      6 from sqlalchemy import create_engine, Column, Integer, String, Float, Date, DateTime, Boolean, ForeignKey, Text, text
+
+ModuleNotFoundError: No module named 'dotenv'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 91, in execute_notebook
+    raise AirflowException(f"Notebook execution failed: {str(e)}")
+airflow.exceptions.AirflowException: Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 4
+      2 import logging
+      3 import pandas as pd
+----> 4 from dotenv import load_dotenv
+      5 from datetime import datetime
+      6 from sqlalchemy import create_engine, Column, Integer, String, Float, Date, DateTime, Boolean, ForeignKey, Text, text
+
+ModuleNotFoundError: No module named 'dotenv'
+
+[2025-04-22T03:23:09.054-0400] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-22T03:23:09.092-0400] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T03:23:09.092-0400] {local_task_job_runner.py:245} INFO - ::endgroup::

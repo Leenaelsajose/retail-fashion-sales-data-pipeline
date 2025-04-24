@@ -1,0 +1,186 @@
+[2025-04-22T03:04:45.823-0400] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T03:04:45.828-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T07:04:43.434831+00:00 [queued]>
+[2025-04-22T03:04:45.831-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T07:04:43.434831+00:00 [queued]>
+[2025-04-22T03:04:45.831-0400] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2025-04-22T03:04:45.842-0400] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): execute_notebook> on 2025-04-22 07:04:43.434831+00:00
+[2025-04-22T03:04:45.844-0400] {standard_task_runner.py:72} INFO - Started process 10650 to run task
+[2025-04-22T03:04:45.846-0400] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'fashion_data_pipeline', 'execute_notebook', 'manual__2025-04-22T07:04:43.434831+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/FashionData_DAG.py', '--cfg-path', '/tmp/tmporjaz2b6']
+[2025-04-22T03:04:45.846-0400] {standard_task_runner.py:105} INFO - Job 24: Subtask execute_notebook
+[2025-04-22T03:04:45.871-0400] {task_command.py:467} INFO - Running <TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T07:04:43.434831+00:00 [running]> on host BOOK-KTS1KMKSNJ.
+[2025-04-22T03:04:45.905-0400] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fashion_data_pipeline' AIRFLOW_CTX_TASK_ID='execute_notebook' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T07:04:43.434831+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T07:04:43.434831+00:00'
+[2025-04-22T03:04:45.906-0400] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T03:04:45.906-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T03:04:45.906-0400] {logging_mixin.py:190} INFO - Current task name:execute_notebook state:running start_date:2025-04-22 07:04:45.828589+00:00
+[2025-04-22T03:04:45.906-0400] {logging_mixin.py:190} INFO - Dag name:fashion_data_pipeline and current dag run status:running
+[2025-04-22T03:04:45.906-0400] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T03:04:45.907-0400] {FashionData_DAG.py:58} INFO - Executing notebook: /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T03:04:45.907-0400] {FashionData_DAG.py:59} INFO - Output will be saved to: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-22.ipynb
+[2025-04-22T03:04:45.907-0400] {FashionData_DAG.py:60} INFO - Parameters passed to notebook: {'execution_date': '2025-04-22T07:04:43.434831+00:00', 'dag_run_id': 'manual__2025-04-22T07:04:43.434831+00:00', 'ds': '2025-04-22', 'ds_nodash': '20250422'}
+[2025-04-22T03:04:45.908-0400] {execute.py:83} INFO - Input Notebook:  /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T03:04:45.908-0400] {execute.py:84} INFO - Output Notebook: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-22.ipynb
+[2025-04-22T03:04:45.908-0400] {FashionData_DAG.py:83} ERROR - Input notebook not found at /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T03:04:45.911-0400] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/iorw.py", line 199, in read
+    json.loads(path)
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 68, in execute_notebook
+    pm.execute_notebook(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 89, in execute_notebook
+    nb = load_notebook_node(input_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/iorw.py", line 499, in load_notebook_node
+    nb = nbformat.reads(papermill_io.read(notebook_path), as_version=4)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/iorw.py", line 96, in read
+    notebook_metadata = self.get_handler(path, extensions).read(path)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/iorw.py", line 203, in read
+    raise e
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/iorw.py", line 193, in read
+    with open(path, encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 84, in execute_notebook
+    raise AirflowException(f"Input notebook not found: {notebook_path}")
+airflow.exceptions.AirflowException: Input notebook not found: /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T03:04:45.917-0400] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-22T03:04:45.917-0400] {logging_mixin.py:190} INFO - Task start:2025-04-22 07:04:45.828589+00:00 end:2025-04-22 07:04:45.917216+00:00 duration:0.088627
+[2025-04-22T03:04:45.917-0400] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): execute_notebook> dag:<DAG: fashion_data_pipeline> dagrun:<DagRun fashion_data_pipeline @ 2025-04-22 07:04:43.434831+00:00: manual__2025-04-22T07:04:43.434831+00:00, state:running, queued_at: 2025-04-22 07:04:43.441056+00:00. externally triggered: True>
+[2025-04-22T03:04:45.918-0400] {logging_mixin.py:190} INFO - Failure caused by Input notebook not found: /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T03:04:45.918-0400] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=fashion_data_pipeline, task_id=execute_notebook, run_id=manual__2025-04-22T07:04:43.434831+00:00, execution_date=20250422T070443, start_date=20250422T070445, end_date=20250422T070445
+[2025-04-22T03:04:45.932-0400] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T03:04:45.932-0400] {standard_task_runner.py:124} ERROR - Failed to execute job 24 for task execute_notebook (Input notebook not found: /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb; 10650)
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/iorw.py", line 199, in read
+    json.loads(path)
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 68, in execute_notebook
+    pm.execute_notebook(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 89, in execute_notebook
+    nb = load_notebook_node(input_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/iorw.py", line 499, in load_notebook_node
+    nb = nbformat.reads(papermill_io.read(notebook_path), as_version=4)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/iorw.py", line 96, in read
+    notebook_metadata = self.get_handler(path, extensions).read(path)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/iorw.py", line 203, in read
+    raise e
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/iorw.py", line 193, in read
+    with open(path, encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 84, in execute_notebook
+    raise AirflowException(f"Input notebook not found: {notebook_path}")
+airflow.exceptions.AirflowException: Input notebook not found: /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T03:04:45.939-0400] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-22T03:04:45.946-0400] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T03:04:45.946-0400] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,424 @@
+[2025-04-22T03:11:40.524-0400] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T03:11:40.533-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T07:11:02.252958+00:00 [queued]>
+[2025-04-22T03:11:40.537-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T07:11:02.252958+00:00 [queued]>
+[2025-04-22T03:11:40.537-0400] {taskinstance.py:2867} INFO - Starting attempt 2 of 4
+[2025-04-22T03:11:40.548-0400] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): execute_notebook> on 2025-04-22 07:11:02.252958+00:00
+[2025-04-22T03:11:40.551-0400] {standard_task_runner.py:72} INFO - Started process 11595 to run task
+[2025-04-22T03:11:40.553-0400] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'fashion_data_pipeline', 'execute_notebook', 'manual__2025-04-22T07:11:02.252958+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/FashionData_DAG.py', '--cfg-path', '/tmp/tmpz9on59us']
+[2025-04-22T03:11:40.553-0400] {standard_task_runner.py:105} INFO - Job 32: Subtask execute_notebook
+[2025-04-22T03:11:40.581-0400] {task_command.py:467} INFO - Running <TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T07:11:02.252958+00:00 [running]> on host BOOK-KTS1KMKSNJ.
+[2025-04-22T03:11:40.615-0400] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fashion_data_pipeline' AIRFLOW_CTX_TASK_ID='execute_notebook' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T07:11:02.252958+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T07:11:02.252958+00:00'
+[2025-04-22T03:11:40.616-0400] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T03:11:40.616-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T03:11:40.616-0400] {logging_mixin.py:190} INFO - Current task name:execute_notebook state:running start_date:2025-04-22 07:11:40.533380+00:00
+[2025-04-22T03:11:40.616-0400] {logging_mixin.py:190} INFO - Dag name:fashion_data_pipeline and current dag run status:running
+[2025-04-22T03:11:40.616-0400] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T03:11:40.617-0400] {FashionData_DAG.py:58} INFO - Executing notebook: /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T03:11:40.617-0400] {FashionData_DAG.py:59} INFO - Output will be saved to: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-22.ipynb
+[2025-04-22T03:11:40.617-0400] {FashionData_DAG.py:60} INFO - Parameters passed to notebook: {'execution_date': '2025-04-22T07:11:02.252958+00:00', 'dag_run_id': 'manual__2025-04-22T07:11:02.252958+00:00', 'ds': '2025-04-22', 'ds_nodash': '20250422'}
+[2025-04-22T03:11:40.618-0400] {execute.py:83} INFO - Input Notebook:  /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T03:11:40.618-0400] {execute.py:84} INFO - Output Notebook: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-22.ipynb
+[2025-04-22T03:11:41.752-0400] {clientwrap.py:44} INFO - Executing notebook with kernel: python3
+[2025-04-22T03:11:41.752-0400] {engines.py:223} INFO - Executing Cell 1---------------------------------------
+[2025-04-22T03:11:41.760-0400] {engines.py:261} INFO - Ending Cell 1------------------------------------------
+[2025-04-22T03:11:41.764-0400] {engines.py:223} INFO - Executing Cell 2---------------------------------------
+[2025-04-22T03:11:41.770-0400] {engines.py:261} INFO - Ending Cell 2------------------------------------------
+[2025-04-22T03:11:41.772-0400] {engines.py:223} INFO - Executing Cell 3---------------------------------------
+[2025-04-22T03:11:42.443-0400] {clientwrap.py:91} INFO - Collecting kagglehub
+
+[2025-04-22T03:11:42.595-0400] {clientwrap.py:91} INFO -   Downloading kagglehub-0.3.11-py3-none-any.whl.metadata (32 kB)
+
+[2025-04-22T03:11:42.748-0400] {clientwrap.py:91} INFO - Collecting pandas
+
+[2025-04-22T03:11:42.799-0400] {clientwrap.py:91} INFO -   Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (89 kB)
+
+[2025-04-22T03:11:42.900-0400] {clientwrap.py:91} INFO - Collecting psycopg2-binary
+
+[2025-04-22T03:11:42.951-0400] {clientwrap.py:91} INFO -   Downloading psycopg2_binary-2.9.10-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Requirement already satisfied: sqlalchemy in ./airflow_venv/lib/python3.12/site-packages (1.4.54)
+Requirement already satisfied: packaging in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (24.2)
+Requirement already satisfied: pyyaml in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (6.0.2)
+Requirement already satisfied: requests in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (2.32.3)
+Requirement already satisfied: tqdm in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (4.67.1)
+
+[2025-04-22T03:11:43.052-0400] {clientwrap.py:91} INFO - Collecting numpy>=1.26.0 (from pandas)
+
+[2025-04-22T03:11:43.103-0400] {clientwrap.py:91} INFO -   Downloading numpy-2.2.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: greenlet!=0.4.17 in ./airflow_venv/lib/python3.12/site-packages (from sqlalchemy) (3.2.0)
+Requirement already satisfied: six>=1.5 in ./airflow_venv/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (2.4.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (2025.1.31)
+
+[2025-04-22T03:11:43.154-0400] {clientwrap.py:91} INFO - Downloading kagglehub-0.3.11-py3-none-any.whl (63 kB)
+
+[2025-04-22T03:11:43.206-0400] {clientwrap.py:91} INFO - Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/12.7 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2025-04-22T03:11:43.408-0400] {clientwrap.py:91} INFO - [2K   [91m━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.4/12.7 MB[0m [31m19.9 MB/s[0m eta [36m0:00:01[0m
+[2025-04-22T03:11:43.613-0400] {clientwrap.py:91} INFO - [2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━[0m [32m10.7/12.7 MB[0m [31m29.4 MB/s[0m eta [36m0:00:01[0m
+[2025-04-22T03:11:43.664-0400] {clientwrap.py:91} INFO - [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m12.7/12.7 MB[0m [31m28.7 MB/s[0m eta [36m0:00:00[0m
+[?25h
+[2025-04-22T03:11:43.715-0400] {clientwrap.py:91} INFO - Downloading psycopg2_binary-2.9.10-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.0 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2025-04-22T03:11:43.817-0400] {clientwrap.py:91} INFO - [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.0/3.0 MB[0m [31m28.0 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading numpy-2.2.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.1 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/16.1 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2025-04-22T03:11:44.020-0400] {clientwrap.py:91} INFO - [2K   [91m━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m6.3/16.1 MB[0m [31m32.0 MB/s[0m eta [36m0:00:01[0m
+[2025-04-22T03:11:44.223-0400] {clientwrap.py:91} INFO - [2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━[0m [32m12.3/16.1 MB[0m [31m30.7 MB/s[0m eta [36m0:00:01[0m
+[2025-04-22T03:11:44.375-0400] {clientwrap.py:91} INFO - [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m16.1/16.1 MB[0m [31m29.9 MB/s[0m eta [36m0:00:00[0m
+[?25h
+[2025-04-22T03:11:44.578-0400] {clientwrap.py:91} INFO - Installing collected packages: psycopg2-binary, numpy, pandas, kagglehub
+
+[2025-04-22T03:11:49.904-0400] {clientwrap.py:91} INFO - Successfully installed kagglehub-0.3.11 numpy-2.2.5 pandas-2.2.3 psycopg2-binary-2.9.10
+
+[2025-04-22T03:11:50.108-0400] {engines.py:261} INFO - Ending Cell 3------------------------------------------
+[2025-04-22T03:11:50.111-0400] {engines.py:223} INFO - Executing Cell 4---------------------------------------
+[2025-04-22T03:11:50.218-0400] {clientwrap.py:91} INFO - ['KaggleDatasetAdapter', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', 'auth', 'cache', 'clients', 'colab_cache_resolver', 'competition', 'competition_download', 'config', 'dataset_download', 'dataset_load', 'dataset_upload', 'datasets', 'datasets_enums', 'datasets_helpers', 'env', 'exceptions', 'gcs_upload', 'get_package_asset_path', 'handle', 'http_resolver', 'integrity', 'kaggle_cache_resolver', 'kagglehub', 'load_dataset', 'logger', 'login', 'model_download', 'model_upload', 'models', 'models_helpers', 'notebook_output_download', 'notebooks', 'package_import', 'packages', 'registry', 'resolver', 'signing', 'tracker', 'utility_script_install', 'utility_scripts', 'whoami']
+
+[2025-04-22T03:11:50.219-0400] {clientwrap.py:98} WARNING - /home/megin_mathew/airflow_venv/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+
+[2025-04-22T03:11:50.220-0400] {engines.py:261} INFO - Ending Cell 4------------------------------------------
+[2025-04-22T03:11:50.223-0400] {engines.py:223} INFO - Executing Cell 5---------------------------------------
+[2025-04-22T03:11:50.843-0400] {clientwrap.py:91} INFO - Collecting kaggle
+
+[2025-04-22T03:11:50.995-0400] {clientwrap.py:91} INFO -   Downloading kaggle-1.7.4.2-py3-none-any.whl.metadata (16 kB)
+
+[2025-04-22T03:11:51.046-0400] {clientwrap.py:91} INFO - Collecting bleach (from kaggle)
+  Downloading bleach-6.2.0-py3-none-any.whl.metadata (30 kB)
+
+[2025-04-22T03:11:51.097-0400] {clientwrap.py:91} INFO - Requirement already satisfied: certifi>=14.05.14 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2025.1.31)
+Requirement already satisfied: charset-normalizer in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (3.4.1)
+Requirement already satisfied: idna in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (3.10)
+Requirement already satisfied: protobuf in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (5.29.4)
+Requirement already satisfied: python-dateutil>=2.5.3 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2.9.0.post0)
+Requirement already satisfied: python-slugify in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (8.0.4)
+Requirement already satisfied: requests in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2.32.3)
+
+[2025-04-22T03:11:51.199-0400] {clientwrap.py:91} INFO - Collecting setuptools>=21.0.0 (from kaggle)
+  Using cached setuptools-79.0.0-py3-none-any.whl.metadata (6.5 kB)
+Requirement already satisfied: six>=1.10 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (1.17.0)
+Requirement already satisfied: text-unidecode in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (1.3)
+Requirement already satisfied: tqdm in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (4.67.1)
+Requirement already satisfied: urllib3>=1.15.1 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2.4.0)
+
+[2025-04-22T03:11:51.250-0400] {clientwrap.py:91} INFO - Collecting webencodings (from kaggle)
+  Downloading webencodings-0.5.1-py2.py3-none-any.whl.metadata (2.1 kB)
+
+[2025-04-22T03:11:51.301-0400] {clientwrap.py:91} INFO - Downloading kaggle-1.7.4.2-py3-none-any.whl (173 kB)
+
+[2025-04-22T03:11:51.352-0400] {clientwrap.py:91} INFO - Using cached setuptools-79.0.0-py3-none-any.whl (1.3 MB)
+
+[2025-04-22T03:11:51.404-0400] {clientwrap.py:91} INFO - Downloading bleach-6.2.0-py3-none-any.whl (163 kB)
+Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+
+[2025-04-22T03:11:51.607-0400] {clientwrap.py:91} INFO - Installing collected packages: webencodings, setuptools, bleach, kaggle
+
+[2025-04-22T03:11:52.420-0400] {clientwrap.py:91} INFO - Successfully installed bleach-6.2.0 kaggle-1.7.4.2 setuptools-79.0.0 webencodings-0.5.1
+
+[2025-04-22T03:11:52.640-0400] {clientwrap.py:91} INFO - Note: you may need to restart the kernel to use updated packages.
+
+[2025-04-22T03:11:52.644-0400] {engines.py:261} INFO - Ending Cell 5------------------------------------------
+[2025-04-22T03:11:52.646-0400] {engines.py:223} INFO - Executing Cell 6---------------------------------------
+[2025-04-22T03:11:52.990-0400] {engines.py:261} INFO - Ending Cell 6------------------------------------------
+[2025-04-22T03:11:55.968-0400] {FashionData_DAG.py:89} ERROR - Failed to execute notebook: 
+---------------------------------------------------------------------------
+Exception encountered at "In [6]":
+---------------------------------------------------------------------------
+OSError                                   Traceback (most recent call last)
+Cell In[6], line 1
+----> 1 import kaggle
+      2 print("Kaggle module is successfully installed!")
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/__init__.py:6
+      3 from kaggle.api.kaggle_api_extended import KaggleApi
+      5 api = KaggleApi()
+----> 6 api.authenticate()
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/api/kaggle_api_extended.py:433, in KaggleApi.authenticate(self)
+    431     return
+    432   else:
+--> 433     raise IOError('Could not find {}. Make sure it\'s located in'
+    434                   ' {}. Or use the environment method. See setup'
+    435                   ' instructions at'
+    436                   ' https://github.com/Kaggle/kaggle-api/'.format(
+    437                       self.config_file, self.config_dir))
+    439 # Step 3: load into configuration!
+    440 self._load_config(config_data)
+
+OSError: Could not find kaggle.json. Make sure it's located in /home/megin_mathew/.config/kaggle. Or use the environment method. See setup instructions at https://github.com/Kaggle/kaggle-api/
+
+[2025-04-22T03:11:55.973-0400] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 68, in execute_notebook
+    pm.execute_notebook(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [6]":
+---------------------------------------------------------------------------
+OSError                                   Traceback (most recent call last)
+Cell In[6], line 1
+----> 1 import kaggle
+      2 print("Kaggle module is successfully installed!")
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/__init__.py:6
+      3 from kaggle.api.kaggle_api_extended import KaggleApi
+      5 api = KaggleApi()
+----> 6 api.authenticate()
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/api/kaggle_api_extended.py:433, in KaggleApi.authenticate(self)
+    431     return
+    432   else:
+--> 433     raise IOError('Could not find {}. Make sure it\'s located in'
+    434                   ' {}. Or use the environment method. See setup'
+    435                   ' instructions at'
+    436                   ' https://github.com/Kaggle/kaggle-api/'.format(
+    437                       self.config_file, self.config_dir))
+    439 # Step 3: load into configuration!
+    440 self._load_config(config_data)
+
+OSError: Could not find kaggle.json. Make sure it's located in /home/megin_mathew/.config/kaggle. Or use the environment method. See setup instructions at https://github.com/Kaggle/kaggle-api/
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 91, in execute_notebook
+    raise AirflowException(f"Notebook execution failed: {str(e)}")
+airflow.exceptions.AirflowException: Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [6]":
+---------------------------------------------------------------------------
+OSError                                   Traceback (most recent call last)
+Cell In[6], line 1
+----> 1 import kaggle
+      2 print("Kaggle module is successfully installed!")
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/__init__.py:6
+      3 from kaggle.api.kaggle_api_extended import KaggleApi
+      5 api = KaggleApi()
+----> 6 api.authenticate()
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/api/kaggle_api_extended.py:433, in KaggleApi.authenticate(self)
+    431     return
+    432   else:
+--> 433     raise IOError('Could not find {}. Make sure it\'s located in'
+    434                   ' {}. Or use the environment method. See setup'
+    435                   ' instructions at'
+    436                   ' https://github.com/Kaggle/kaggle-api/'.format(
+    437                       self.config_file, self.config_dir))
+    439 # Step 3: load into configuration!
+    440 self._load_config(config_data)
+
+OSError: Could not find kaggle.json. Make sure it's located in /home/megin_mathew/.config/kaggle. Or use the environment method. See setup instructions at https://github.com/Kaggle/kaggle-api/
+
+[2025-04-22T03:11:55.977-0400] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-22T03:11:55.977-0400] {logging_mixin.py:190} INFO - Task start:2025-04-22 07:11:40.533380+00:00 end:2025-04-22 07:11:55.976914+00:00 duration:15.443534
+[2025-04-22T03:11:55.977-0400] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): execute_notebook> dag:<DAG: fashion_data_pipeline> dagrun:<DagRun fashion_data_pipeline @ 2025-04-22 07:11:02.252958+00:00: manual__2025-04-22T07:11:02.252958+00:00, state:running, queued_at: 2025-04-22 07:11:02.259639+00:00. externally triggered: True>
+[2025-04-22T03:11:55.977-0400] {logging_mixin.py:190} INFO - Failure caused by Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [6]":
+---------------------------------------------------------------------------
+OSError                                   Traceback (most recent call last)
+Cell In[6], line 1
+----> 1 import kaggle
+      2 print("Kaggle module is successfully installed!")
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/__init__.py:6
+      3 from kaggle.api.kaggle_api_extended import KaggleApi
+      5 api = KaggleApi()
+----> 6 api.authenticate()
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/api/kaggle_api_extended.py:433, in KaggleApi.authenticate(self)
+    431     return
+    432   else:
+--> 433     raise IOError('Could not find {}. Make sure it\'s located in'
+    434                   ' {}. Or use the environment method. See setup'
+    435                   ' instructions at'
+    436                   ' https://github.com/Kaggle/kaggle-api/'.format(
+    437                       self.config_file, self.config_dir))
+    439 # Step 3: load into configuration!
+    440 self._load_config(config_data)
+
+OSError: Could not find kaggle.json. Make sure it's located in /home/megin_mathew/.config/kaggle. Or use the environment method. See setup instructions at https://github.com/Kaggle/kaggle-api/
+[2025-04-22T03:11:55.977-0400] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=fashion_data_pipeline, task_id=execute_notebook, run_id=manual__2025-04-22T07:11:02.252958+00:00, execution_date=20250422T071102, start_date=20250422T071140, end_date=20250422T071155
+[2025-04-22T03:11:55.995-0400] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T03:11:55.996-0400] {standard_task_runner.py:124} ERROR - Failed to execute job 32 for task execute_notebook (Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [6]":
+---------------------------------------------------------------------------
+OSError                                   Traceback (most recent call last)
+Cell In[6], line 1
+----> 1 import kaggle
+      2 print("Kaggle module is successfully installed!")
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/__init__.py:6
+      3 from kaggle.api.kaggle_api_extended import KaggleApi
+      5 api = KaggleApi()
+----> 6 api.authenticate()
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/api/kaggle_api_extended.py:433, in KaggleApi.authenticate(self)
+    431     return
+    432   else:
+--> 433     raise IOError('Could not find {}. Make sure it\'s located in'
+    434                   ' {}. Or use the environment method. See setup'
+    435                   ' instructions at'
+    436                   ' https://github.com/Kaggle/kaggle-api/'.format(
+    437                       self.config_file, self.config_dir))
+    439 # Step 3: load into configuration!
+    440 self._load_config(config_data)
+
+OSError: Could not find kaggle.json. Make sure it's located in /home/megin_mathew/.config/kaggle. Or use the environment method. See setup instructions at https://github.com/Kaggle/kaggle-api/
+; 11595)
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 68, in execute_notebook
+    pm.execute_notebook(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [6]":
+---------------------------------------------------------------------------
+OSError                                   Traceback (most recent call last)
+Cell In[6], line 1
+----> 1 import kaggle
+      2 print("Kaggle module is successfully installed!")
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/__init__.py:6
+      3 from kaggle.api.kaggle_api_extended import KaggleApi
+      5 api = KaggleApi()
+----> 6 api.authenticate()
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/api/kaggle_api_extended.py:433, in KaggleApi.authenticate(self)
+    431     return
+    432   else:
+--> 433     raise IOError('Could not find {}. Make sure it\'s located in'
+    434                   ' {}. Or use the environment method. See setup'
+    435                   ' instructions at'
+    436                   ' https://github.com/Kaggle/kaggle-api/'.format(
+    437                       self.config_file, self.config_dir))
+    439 # Step 3: load into configuration!
+    440 self._load_config(config_data)
+
+OSError: Could not find kaggle.json. Make sure it's located in /home/megin_mathew/.config/kaggle. Or use the environment method. See setup instructions at https://github.com/Kaggle/kaggle-api/
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 91, in execute_notebook
+    raise AirflowException(f"Notebook execution failed: {str(e)}")
+airflow.exceptions.AirflowException: Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [6]":
+---------------------------------------------------------------------------
+OSError                                   Traceback (most recent call last)
+Cell In[6], line 1
+----> 1 import kaggle
+      2 print("Kaggle module is successfully installed!")
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/__init__.py:6
+      3 from kaggle.api.kaggle_api_extended import KaggleApi
+      5 api = KaggleApi()
+----> 6 api.authenticate()
+
+File ~/airflow_venv/lib/python3.12/site-packages/kaggle/api/kaggle_api_extended.py:433, in KaggleApi.authenticate(self)
+    431     return
+    432   else:
+--> 433     raise IOError('Could not find {}. Make sure it\'s located in'
+    434                   ' {}. Or use the environment method. See setup'
+    435                   ' instructions at'
+    436                   ' https://github.com/Kaggle/kaggle-api/'.format(
+    437                       self.config_file, self.config_dir))
+    439 # Step 3: load into configuration!
+    440 self._load_config(config_data)
+
+OSError: Could not find kaggle.json. Make sure it's located in /home/megin_mathew/.config/kaggle. Or use the environment method. See setup instructions at https://github.com/Kaggle/kaggle-api/
+
+[2025-04-22T03:11:56.041-0400] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-22T03:11:56.049-0400] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T03:11:56.049-0400] {local_task_job_runner.py:245} INFO - ::endgroup::

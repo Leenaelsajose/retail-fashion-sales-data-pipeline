@@ -1,0 +1,312 @@
+[2025-04-22T03:23:40.812-0400] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T03:23:40.817-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T07:12:14.712270+00:00 [queued]>
+[2025-04-22T03:23:40.820-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T07:12:14.712270+00:00 [queued]>
+[2025-04-22T03:23:40.821-0400] {taskinstance.py:2867} INFO - Starting attempt 3 of 3
+[2025-04-22T03:23:40.829-0400] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): execute_notebook> on 2025-04-22 07:12:14.712270+00:00
+[2025-04-22T03:23:40.832-0400] {standard_task_runner.py:72} INFO - Started process 12678 to run task
+[2025-04-22T03:23:40.834-0400] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'fashion_data_pipeline', 'execute_notebook', 'manual__2025-04-22T07:12:14.712270+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/FashionData_DAG.py', '--cfg-path', '/tmp/tmpy4y03ejn']
+[2025-04-22T03:23:40.834-0400] {standard_task_runner.py:105} INFO - Job 37: Subtask execute_notebook
+[2025-04-22T03:23:40.862-0400] {task_command.py:467} INFO - Running <TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-22T07:12:14.712270+00:00 [running]> on host BOOK-KTS1KMKSNJ.
+[2025-04-22T03:23:40.899-0400] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fashion_data_pipeline' AIRFLOW_CTX_TASK_ID='execute_notebook' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T07:12:14.712270+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T07:12:14.712270+00:00'
+[2025-04-22T03:23:40.900-0400] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T03:23:40.901-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T03:23:40.901-0400] {logging_mixin.py:190} INFO - Current task name:execute_notebook state:running start_date:2025-04-22 07:23:40.818114+00:00
+[2025-04-22T03:23:40.901-0400] {logging_mixin.py:190} INFO - Dag name:fashion_data_pipeline and current dag run status:running
+[2025-04-22T03:23:40.901-0400] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T03:23:40.902-0400] {FashionData_DAG.py:58} INFO - Executing notebook: /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T03:23:40.902-0400] {FashionData_DAG.py:59} INFO - Output will be saved to: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-22.ipynb
+[2025-04-22T03:23:40.902-0400] {FashionData_DAG.py:60} INFO - Parameters passed to notebook: {'execution_date': '2025-04-22T07:12:14.712270+00:00', 'dag_run_id': 'manual__2025-04-22T07:12:14.712270+00:00', 'ds': '2025-04-22', 'ds_nodash': '20250422'}
+[2025-04-22T03:23:40.902-0400] {execute.py:83} INFO - Input Notebook:  /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T03:23:40.902-0400] {execute.py:84} INFO - Output Notebook: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-22.ipynb
+[2025-04-22T03:23:41.743-0400] {clientwrap.py:44} INFO - Executing notebook with kernel: python3
+[2025-04-22T03:23:41.744-0400] {engines.py:223} INFO - Executing Cell 1---------------------------------------
+[2025-04-22T03:23:41.757-0400] {engines.py:261} INFO - Ending Cell 1------------------------------------------
+[2025-04-22T03:23:41.760-0400] {engines.py:223} INFO - Executing Cell 2---------------------------------------
+[2025-04-22T03:23:41.766-0400] {engines.py:261} INFO - Ending Cell 2------------------------------------------
+[2025-04-22T03:23:41.767-0400] {engines.py:223} INFO - Executing Cell 3---------------------------------------
+[2025-04-22T03:23:42.289-0400] {clientwrap.py:91} INFO - Requirement already satisfied: kagglehub in ./airflow_venv/lib/python3.12/site-packages (0.3.11)
+Requirement already satisfied: pandas in ./airflow_venv/lib/python3.12/site-packages (2.2.3)
+Requirement already satisfied: psycopg2-binary in ./airflow_venv/lib/python3.12/site-packages (2.9.10)
+Requirement already satisfied: sqlalchemy in ./airflow_venv/lib/python3.12/site-packages (1.4.54)
+Requirement already satisfied: packaging in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (24.2)
+Requirement already satisfied: pyyaml in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (6.0.2)
+Requirement already satisfied: requests in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (2.32.3)
+Requirement already satisfied: tqdm in ./airflow_venv/lib/python3.12/site-packages (from kagglehub) (4.67.1)
+Requirement already satisfied: numpy>=1.26.0 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2.2.5)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in ./airflow_venv/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: greenlet!=0.4.17 in ./airflow_venv/lib/python3.12/site-packages (from sqlalchemy) (3.2.0)
+Requirement already satisfied: six>=1.5 in ./airflow_venv/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (2.4.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (2025.1.31)
+
+[2025-04-22T03:23:42.628-0400] {engines.py:261} INFO - Ending Cell 3------------------------------------------
+[2025-04-22T03:23:42.630-0400] {engines.py:223} INFO - Executing Cell 4---------------------------------------
+[2025-04-22T03:23:42.713-0400] {clientwrap.py:91} INFO - ['KaggleDatasetAdapter', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', 'auth', 'cache', 'clients', 'colab_cache_resolver', 'competition', 'competition_download', 'config', 'dataset_download', 'dataset_load', 'dataset_upload', 'datasets', 'datasets_enums', 'datasets_helpers', 'env', 'exceptions', 'gcs_upload', 'get_package_asset_path', 'handle', 'http_resolver', 'integrity', 'kaggle_cache_resolver', 'kagglehub', 'load_dataset', 'logger', 'login', 'model_download', 'model_upload', 'models', 'models_helpers', 'notebook_output_download', 'notebooks', 'package_import', 'packages', 'registry', 'resolver', 'signing', 'tracker', 'utility_script_install', 'utility_scripts', 'whoami']
+
+[2025-04-22T03:23:42.714-0400] {clientwrap.py:98} WARNING - /home/megin_mathew/airflow_venv/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+
+[2025-04-22T03:23:42.714-0400] {engines.py:261} INFO - Ending Cell 4------------------------------------------
+[2025-04-22T03:23:42.716-0400] {engines.py:223} INFO - Executing Cell 5---------------------------------------
+[2025-04-22T03:23:43.078-0400] {clientwrap.py:91} INFO - Requirement already satisfied: kaggle in ./airflow_venv/lib/python3.12/site-packages (1.7.4.2)
+Requirement already satisfied: bleach in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (6.2.0)
+Requirement already satisfied: certifi>=14.05.14 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2025.1.31)
+Requirement already satisfied: charset-normalizer in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (3.4.1)
+Requirement already satisfied: idna in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (3.10)
+Requirement already satisfied: protobuf in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (5.29.4)
+Requirement already satisfied: python-dateutil>=2.5.3 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2.9.0.post0)
+Requirement already satisfied: python-slugify in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (8.0.4)
+Requirement already satisfied: requests in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2.32.3)
+Requirement already satisfied: setuptools>=21.0.0 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (79.0.0)
+Requirement already satisfied: six>=1.10 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (1.17.0)
+Requirement already satisfied: text-unidecode in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (1.3)
+Requirement already satisfied: tqdm in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (4.67.1)
+Requirement already satisfied: urllib3>=1.15.1 in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (2.4.0)
+Requirement already satisfied: webencodings in ./airflow_venv/lib/python3.12/site-packages (from kaggle) (0.5.1)
+
+[2025-04-22T03:23:43.388-0400] {clientwrap.py:91} INFO - Note: you may need to restart the kernel to use updated packages.
+
+[2025-04-22T03:23:43.392-0400] {engines.py:261} INFO - Ending Cell 5------------------------------------------
+[2025-04-22T03:23:43.395-0400] {engines.py:223} INFO - Executing Cell 6---------------------------------------
+[2025-04-22T03:23:43.464-0400] {clientwrap.py:91} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/megin_mathew/.config/kaggle/kaggle.json'
+Kaggle module is successfully installed!
+
+[2025-04-22T03:23:43.466-0400] {engines.py:261} INFO - Ending Cell 6------------------------------------------
+[2025-04-22T03:23:43.468-0400] {engines.py:223} INFO - Executing Cell 7---------------------------------------
+[2025-04-22T03:23:43.475-0400] {clientwrap.py:91} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/megin_mathew/.config/kaggle/kaggle.json'
+Kaggle API authentication successful!
+
+[2025-04-22T03:23:43.477-0400] {engines.py:261} INFO - Ending Cell 7------------------------------------------
+[2025-04-22T03:23:43.478-0400] {engines.py:223} INFO - Executing Cell 8---------------------------------------
+[2025-04-22T03:24:33.142-0400] {clientwrap.py:91} INFO - Downloaded: transactions.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T03:24:37.497-0400] {clientwrap.py:98} WARNING - /home/megin_mathew/airflow_venv/lib/python3.12/site-packages/kagglehub/pandas_datasets.py:91: DtypeWarning: Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.
+  result = read_function(
+
+[2025-04-22T03:24:41.825-0400] {clientwrap.py:91} INFO - Downloaded: customers.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T03:24:42.219-0400] {clientwrap.py:91} INFO - Downloaded: discounts.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T03:24:42.490-0400] {clientwrap.py:91} INFO - Downloaded: employees.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T03:24:42.895-0400] {clientwrap.py:91} INFO - Downloaded: products.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T03:24:42.992-0400] {clientwrap.py:91} INFO - Downloaded: stores.csv → Stored in: C:/Users/megin/fashion_dataset
+
+[2025-04-22T03:24:42.997-0400] {engines.py:261} INFO - Ending Cell 8------------------------------------------
+[2025-04-22T03:24:43.003-0400] {engines.py:223} INFO - Executing Cell 9---------------------------------------
+[2025-04-22T03:24:43.019-0400] {engines.py:261} INFO - Ending Cell 9------------------------------------------
+[2025-04-22T03:24:43.022-0400] {engines.py:223} INFO - Executing Cell 10--------------------------------------
+[2025-04-22T03:24:43.024-0400] {engines.py:261} INFO - Ending Cell 10-----------------------------------------
+[2025-04-22T03:24:43.026-0400] {engines.py:223} INFO - Executing Cell 11--------------------------------------
+[2025-04-22T03:24:43.540-0400] {engines.py:261} INFO - Ending Cell 11-----------------------------------------
+[2025-04-22T03:24:43.976-0400] {FashionData_DAG.py:89} ERROR - Failed to execute notebook: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 9
+      7 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
+      8 from sqlalchemy.exc import SQLAlchemyError
+----> 9 from pyspark.sql import SparkSession
+     10 from pyspark.sql.functions import col, when, to_date, lit
+     11 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+
+ModuleNotFoundError: No module named 'pyspark'
+
+[2025-04-22T03:24:44.025-0400] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 68, in execute_notebook
+    pm.execute_notebook(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 9
+      7 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
+      8 from sqlalchemy.exc import SQLAlchemyError
+----> 9 from pyspark.sql import SparkSession
+     10 from pyspark.sql.functions import col, when, to_date, lit
+     11 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+
+ModuleNotFoundError: No module named 'pyspark'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 91, in execute_notebook
+    raise AirflowException(f"Notebook execution failed: {str(e)}")
+airflow.exceptions.AirflowException: Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 9
+      7 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
+      8 from sqlalchemy.exc import SQLAlchemyError
+----> 9 from pyspark.sql import SparkSession
+     10 from pyspark.sql.functions import col, when, to_date, lit
+     11 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+
+ModuleNotFoundError: No module named 'pyspark'
+
+[2025-04-22T03:24:44.056-0400] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-22T03:24:44.057-0400] {logging_mixin.py:190} INFO - Task start:2025-04-22 07:23:40.818114+00:00 end:2025-04-22 07:24:44.044375+00:00 duration:63.226261
+[2025-04-22T03:24:44.058-0400] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): execute_notebook> dag:<DAG: fashion_data_pipeline> dagrun:<DagRun fashion_data_pipeline @ 2025-04-22 07:12:14.712270+00:00: manual__2025-04-22T07:12:14.712270+00:00, state:running, queued_at: 2025-04-22 07:12:14.717731+00:00. externally triggered: True>
+[2025-04-22T03:24:44.059-0400] {logging_mixin.py:190} INFO - Failure caused by Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 9
+      7 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
+      8 from sqlalchemy.exc import SQLAlchemyError
+----> 9 from pyspark.sql import SparkSession
+     10 from pyspark.sql.functions import col, when, to_date, lit
+     11 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+
+ModuleNotFoundError: No module named 'pyspark'
+[2025-04-22T03:24:44.059-0400] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=fashion_data_pipeline, task_id=execute_notebook, run_id=manual__2025-04-22T07:12:14.712270+00:00, execution_date=20250422T071214, start_date=20250422T072340, end_date=20250422T072444
+[2025-04-22T03:24:44.103-0400] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T03:24:44.104-0400] {standard_task_runner.py:124} ERROR - Failed to execute job 37 for task execute_notebook (Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 9
+      7 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
+      8 from sqlalchemy.exc import SQLAlchemyError
+----> 9 from pyspark.sql import SparkSession
+     10 from pyspark.sql.functions import col, when, to_date, lit
+     11 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+
+ModuleNotFoundError: No module named 'pyspark'
+; 12678)
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 68, in execute_notebook
+    pm.execute_notebook(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 9
+      7 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
+      8 from sqlalchemy.exc import SQLAlchemyError
+----> 9 from pyspark.sql import SparkSession
+     10 from pyspark.sql.functions import col, when, to_date, lit
+     11 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+
+ModuleNotFoundError: No module named 'pyspark'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 91, in execute_notebook
+    raise AirflowException(f"Notebook execution failed: {str(e)}")
+airflow.exceptions.AirflowException: Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[10], line 9
+      7 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
+      8 from sqlalchemy.exc import SQLAlchemyError
+----> 9 from pyspark.sql import SparkSession
+     10 from pyspark.sql.functions import col, when, to_date, lit
+     11 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+
+ModuleNotFoundError: No module named 'pyspark'
+
+[2025-04-22T03:24:44.123-0400] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-22T03:24:44.148-0400] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T03:24:44.149-0400] {local_task_job_runner.py:245} INFO - ::endgroup::

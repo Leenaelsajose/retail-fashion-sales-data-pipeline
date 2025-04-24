@@ -1,0 +1,461 @@
+[2025-04-22T22:32:21.492-0400] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T22:32:21.501-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-23T02:21:48.741972+00:00 [queued]>
+[2025-04-22T22:32:21.505-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-23T02:21:48.741972+00:00 [queued]>
+[2025-04-22T22:32:21.506-0400] {taskinstance.py:2867} INFO - Starting attempt 3 of 4
+[2025-04-22T22:32:21.518-0400] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): execute_notebook> on 2025-04-23 02:21:48.741972+00:00
+[2025-04-22T22:32:21.521-0400] {standard_task_runner.py:72} INFO - Started process 18228 to run task
+[2025-04-22T22:32:21.524-0400] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'fashion_data_pipeline', 'execute_notebook', 'manual__2025-04-23T02:21:48.741972+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/FashionData_DAG.py', '--cfg-path', '/tmp/tmptkq7s0rf']
+[2025-04-22T22:32:21.525-0400] {standard_task_runner.py:105} INFO - Job 75: Subtask execute_notebook
+[2025-04-22T22:32:21.568-0400] {task_command.py:467} INFO - Running <TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-23T02:21:48.741972+00:00 [running]> on host BOOK-KTS1KMKSNJ.
+[2025-04-22T22:32:21.625-0400] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fashion_data_pipeline' AIRFLOW_CTX_TASK_ID='execute_notebook' AIRFLOW_CTX_EXECUTION_DATE='2025-04-23T02:21:48.741972+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-23T02:21:48.741972+00:00'
+[2025-04-22T22:32:21.627-0400] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T22:32:21.627-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T22:32:21.627-0400] {logging_mixin.py:190} INFO - Current task name:execute_notebook state:running start_date:2025-04-23 02:32:21.501488+00:00
+[2025-04-22T22:32:21.627-0400] {logging_mixin.py:190} INFO - Dag name:fashion_data_pipeline and current dag run status:running
+[2025-04-22T22:32:21.627-0400] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T22:32:21.628-0400] {FashionData_DAG.py:58} INFO - Executing notebook: /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T22:32:21.629-0400] {FashionData_DAG.py:59} INFO - Output will be saved to: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-23.ipynb
+[2025-04-22T22:32:21.629-0400] {FashionData_DAG.py:60} INFO - Parameters passed to notebook: {'execution_date': '2025-04-23T02:21:48.741972+00:00', 'dag_run_id': 'manual__2025-04-23T02:21:48.741972+00:00', 'ds': '2025-04-23', 'ds_nodash': '20250423'}
+[2025-04-22T22:32:21.629-0400] {execute.py:83} INFO - Input Notebook:  /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T22:32:21.629-0400] {execute.py:84} INFO - Output Notebook: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-23.ipynb
+[2025-04-22T22:32:22.598-0400] {clientwrap.py:44} INFO - Executing notebook with kernel: python3
+[2025-04-22T22:32:22.599-0400] {engines.py:223} INFO - Executing Cell 1---------------------------------------
+[2025-04-22T22:32:22.611-0400] {engines.py:261} INFO - Ending Cell 1------------------------------------------
+[2025-04-22T22:32:22.620-0400] {engines.py:223} INFO - Executing Cell 2---------------------------------------
+[2025-04-22T22:32:22.629-0400] {engines.py:261} INFO - Ending Cell 2------------------------------------------
+[2025-04-22T22:32:22.631-0400] {engines.py:223} INFO - Executing Cell 3---------------------------------------
+[2025-04-22T22:32:23.437-0400] {clientwrap.py:91} INFO - Requirement already satisfied: kagglehub in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (0.3.11)
+Requirement already satisfied: pandas in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (2.2.3)
+Requirement already satisfied: psycopg2-binary in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (2.9.10)
+Requirement already satisfied: sqlalchemy in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (1.4.54)
+Requirement already satisfied: packaging in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kagglehub) (24.2)
+Requirement already satisfied: pyyaml in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kagglehub) (6.0.2)
+Requirement already satisfied: requests in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kagglehub) (2.32.3)
+Requirement already satisfied: tqdm in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kagglehub) (4.67.1)
+Requirement already satisfied: numpy>=1.26.0 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from pandas) (2.2.5)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: greenlet!=0.4.17 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from sqlalchemy) (3.2.0)
+
+[2025-04-22T22:32:23.488-0400] {clientwrap.py:91} INFO - Requirement already satisfied: six>=1.5 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (2.4.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (2025.1.31)
+
+[2025-04-22T22:32:24.008-0400] {engines.py:261} INFO - Ending Cell 3------------------------------------------
+[2025-04-22T22:32:24.011-0400] {engines.py:223} INFO - Executing Cell 4---------------------------------------
+[2025-04-22T22:32:24.183-0400] {clientwrap.py:91} INFO - ['KaggleDatasetAdapter', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', 'auth', 'cache', 'clients', 'colab_cache_resolver', 'competition', 'competition_download', 'config', 'dataset_download', 'dataset_load', 'dataset_upload', 'datasets', 'datasets_enums', 'datasets_helpers', 'env', 'exceptions', 'gcs_upload', 'get_package_asset_path', 'handle', 'http_resolver', 'integrity', 'kaggle_cache_resolver', 'kagglehub', 'load_dataset', 'logger', 'login', 'model_download', 'model_upload', 'models', 'models_helpers', 'notebook_output_download', 'notebooks', 'package_import', 'packages', 'registry', 'resolver', 'signing', 'tracker', 'utility_script_install', 'utility_scripts', 'whoami']
+
+[2025-04-22T22:32:24.184-0400] {clientwrap.py:98} WARNING - /home/megin_mathew/airflow_venv/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+
+[2025-04-22T22:32:24.186-0400] {engines.py:261} INFO - Ending Cell 4------------------------------------------
+[2025-04-22T22:32:24.190-0400] {engines.py:223} INFO - Executing Cell 5---------------------------------------
+[2025-04-22T22:32:24.917-0400] {clientwrap.py:91} INFO - Requirement already satisfied: kaggle in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (1.7.4.2)
+Requirement already satisfied: bleach in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (6.2.0)
+Requirement already satisfied: certifi>=14.05.14 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (2025.1.31)
+Requirement already satisfied: charset-normalizer in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (3.4.1)
+Requirement already satisfied: idna in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (3.10)
+Requirement already satisfied: protobuf in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (5.29.4)
+Requirement already satisfied: python-dateutil>=2.5.3 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (2.9.0.post0)
+Requirement already satisfied: python-slugify in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (8.0.4)
+
+[2025-04-22T22:32:24.968-0400] {clientwrap.py:91} INFO - Requirement already satisfied: requests in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (2.32.3)
+Requirement already satisfied: setuptools>=21.0.0 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (79.0.0)
+Requirement already satisfied: six>=1.10 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (1.17.0)
+Requirement already satisfied: text-unidecode in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (1.3)
+Requirement already satisfied: tqdm in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (4.67.1)
+Requirement already satisfied: urllib3>=1.15.1 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (2.4.0)
+Requirement already satisfied: webencodings in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (0.5.1)
+
+[2025-04-22T22:32:25.398-0400] {clientwrap.py:91} INFO - Note: you may need to restart the kernel to use updated packages.
+
+[2025-04-22T22:32:25.400-0400] {engines.py:261} INFO - Ending Cell 5------------------------------------------
+[2025-04-22T22:32:25.403-0400] {engines.py:223} INFO - Executing Cell 6---------------------------------------
+[2025-04-22T22:32:25.511-0400] {clientwrap.py:91} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/megin_mathew/.config/kaggle/kaggle.json'
+Kaggle module is successfully installed!
+
+[2025-04-22T22:32:25.512-0400] {engines.py:261} INFO - Ending Cell 6------------------------------------------
+[2025-04-22T22:32:25.515-0400] {engines.py:223} INFO - Executing Cell 7---------------------------------------
+[2025-04-22T22:32:25.522-0400] {clientwrap.py:91} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/megin_mathew/.config/kaggle/kaggle.json'
+Kaggle API authentication successful!
+
+[2025-04-22T22:32:25.524-0400] {engines.py:261} INFO - Ending Cell 7------------------------------------------
+[2025-04-22T22:32:25.527-0400] {engines.py:223} INFO - Executing Cell 8---------------------------------------
+[2025-04-22T22:33:44.198-0400] {clientwrap.py:91} INFO - Downloaded: transactions.csv → Stored in: /home/megin_mathew/fashion_dataset
+
+[2025-04-22T22:33:49.743-0400] {clientwrap.py:98} WARNING - /home/megin_mathew/airflow_venv/lib/python3.12/site-packages/kagglehub/pandas_datasets.py:91: DtypeWarning: Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.
+  result = read_function(
+
+[2025-04-22T22:33:57.490-0400] {clientwrap.py:91} INFO - Downloaded: customers.csv → Stored in: /home/megin_mathew/fashion_dataset
+
+[2025-04-22T22:33:58.386-0400] {clientwrap.py:91} INFO - Downloaded: discounts.csv → Stored in: /home/megin_mathew/fashion_dataset
+
+[2025-04-22T22:33:58.688-0400] {clientwrap.py:91} INFO - Downloaded: employees.csv → Stored in: /home/megin_mathew/fashion_dataset
+
+[2025-04-22T22:33:59.317-0400] {clientwrap.py:91} INFO - Downloaded: products.csv → Stored in: /home/megin_mathew/fashion_dataset
+
+[2025-04-22T22:33:59.497-0400] {clientwrap.py:91} INFO - Downloaded: stores.csv → Stored in: /home/megin_mathew/fashion_dataset
+
+[2025-04-22T22:33:59.506-0400] {engines.py:261} INFO - Ending Cell 8------------------------------------------
+[2025-04-22T22:33:59.514-0400] {engines.py:223} INFO - Executing Cell 9---------------------------------------
+[2025-04-22T22:33:59.538-0400] {engines.py:261} INFO - Ending Cell 9------------------------------------------
+[2025-04-22T22:33:59.555-0400] {engines.py:223} INFO - Executing Cell 10--------------------------------------
+[2025-04-22T22:33:59.590-0400] {engines.py:261} INFO - Ending Cell 10-----------------------------------------
+[2025-04-22T22:33:59.654-0400] {engines.py:223} INFO - Executing Cell 11--------------------------------------
+[2025-04-22T22:34:00.606-0400] {engines.py:261} INFO - Ending Cell 11-----------------------------------------
+[2025-04-22T22:34:01.415-0400] {FashionData_DAG.py:89} ERROR - Failed to execute notebook: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+PermissionError                           Traceback (most recent call last)
+Cell In[10], line 19
+     12 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+     14 # Configure logging
+     15 logging.basicConfig(
+     16     level=logging.INFO,
+     17     format='%(asctime)s - %(levelname)s - %(message)s',
+     18     handlers=[
+---> 19         logging.FileHandler('data_loader.log', encoding='utf-8'),
+     20         logging.StreamHandler()
+     21     ]
+     22 )
+     23 logger = logging.getLogger(__name__)
+     25 # Initialize Spark with Hadoop workaround for Windows
+
+File /usr/lib/python3.12/logging/__init__.py:1231, in FileHandler.__init__(self, filename, mode, encoding, delay, errors)
+   1229     self.stream = None
+   1230 else:
+-> 1231     StreamHandler.__init__(self, self._open())
+
+File /usr/lib/python3.12/logging/__init__.py:1263, in FileHandler._open(self)
+   1258 """
+   1259 Open the current base file with the (original) mode and encoding.
+   1260 Return the resulting stream.
+   1261 """
+   1262 open_func = self._builtin_open
+-> 1263 return open_func(self.baseFilename, self.mode,
+   1264                  encoding=self.encoding, errors=self.errors)
+
+PermissionError: [Errno 13] Permission denied: '/home/data_loader.log'
+
+[2025-04-22T22:34:01.542-0400] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 68, in execute_notebook
+    pm.execute_notebook(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+PermissionError                           Traceback (most recent call last)
+Cell In[10], line 19
+     12 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+     14 # Configure logging
+     15 logging.basicConfig(
+     16     level=logging.INFO,
+     17     format='%(asctime)s - %(levelname)s - %(message)s',
+     18     handlers=[
+---> 19         logging.FileHandler('data_loader.log', encoding='utf-8'),
+     20         logging.StreamHandler()
+     21     ]
+     22 )
+     23 logger = logging.getLogger(__name__)
+     25 # Initialize Spark with Hadoop workaround for Windows
+
+File /usr/lib/python3.12/logging/__init__.py:1231, in FileHandler.__init__(self, filename, mode, encoding, delay, errors)
+   1229     self.stream = None
+   1230 else:
+-> 1231     StreamHandler.__init__(self, self._open())
+
+File /usr/lib/python3.12/logging/__init__.py:1263, in FileHandler._open(self)
+   1258 """
+   1259 Open the current base file with the (original) mode and encoding.
+   1260 Return the resulting stream.
+   1261 """
+   1262 open_func = self._builtin_open
+-> 1263 return open_func(self.baseFilename, self.mode,
+   1264                  encoding=self.encoding, errors=self.errors)
+
+PermissionError: [Errno 13] Permission denied: '/home/data_loader.log'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 91, in execute_notebook
+    raise AirflowException(f"Notebook execution failed: {str(e)}")
+airflow.exceptions.AirflowException: Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+PermissionError                           Traceback (most recent call last)
+Cell In[10], line 19
+     12 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+     14 # Configure logging
+     15 logging.basicConfig(
+     16     level=logging.INFO,
+     17     format='%(asctime)s - %(levelname)s - %(message)s',
+     18     handlers=[
+---> 19         logging.FileHandler('data_loader.log', encoding='utf-8'),
+     20         logging.StreamHandler()
+     21     ]
+     22 )
+     23 logger = logging.getLogger(__name__)
+     25 # Initialize Spark with Hadoop workaround for Windows
+
+File /usr/lib/python3.12/logging/__init__.py:1231, in FileHandler.__init__(self, filename, mode, encoding, delay, errors)
+   1229     self.stream = None
+   1230 else:
+-> 1231     StreamHandler.__init__(self, self._open())
+
+File /usr/lib/python3.12/logging/__init__.py:1263, in FileHandler._open(self)
+   1258 """
+   1259 Open the current base file with the (original) mode and encoding.
+   1260 Return the resulting stream.
+   1261 """
+   1262 open_func = self._builtin_open
+-> 1263 return open_func(self.baseFilename, self.mode,
+   1264                  encoding=self.encoding, errors=self.errors)
+
+PermissionError: [Errno 13] Permission denied: '/home/data_loader.log'
+
+[2025-04-22T22:34:01.576-0400] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-22T22:34:01.577-0400] {logging_mixin.py:190} INFO - Task start:2025-04-23 02:32:21.501488+00:00 end:2025-04-23 02:34:01.572424+00:00 duration:100.070936
+[2025-04-22T22:34:01.578-0400] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): execute_notebook> dag:<DAG: fashion_data_pipeline> dagrun:<DagRun fashion_data_pipeline @ 2025-04-23 02:21:48.741972+00:00: manual__2025-04-23T02:21:48.741972+00:00, state:running, queued_at: 2025-04-23 02:21:48.767152+00:00. externally triggered: True>
+[2025-04-22T22:34:01.579-0400] {logging_mixin.py:190} INFO - Failure caused by Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+PermissionError                           Traceback (most recent call last)
+Cell In[10], line 19
+     12 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+     14 # Configure logging
+     15 logging.basicConfig(
+     16     level=logging.INFO,
+     17     format='%(asctime)s - %(levelname)s - %(message)s',
+     18     handlers=[
+---> 19         logging.FileHandler('data_loader.log', encoding='utf-8'),
+     20         logging.StreamHandler()
+     21     ]
+     22 )
+     23 logger = logging.getLogger(__name__)
+     25 # Initialize Spark with Hadoop workaround for Windows
+
+File /usr/lib/python3.12/logging/__init__.py:1231, in FileHandler.__init__(self, filename, mode, encoding, delay, errors)
+   1229     self.stream = None
+   1230 else:
+-> 1231     StreamHandler.__init__(self, self._open())
+
+File /usr/lib/python3.12/logging/__init__.py:1263, in FileHandler._open(self)
+   1258 """
+   1259 Open the current base file with the (original) mode and encoding.
+   1260 Return the resulting stream.
+   1261 """
+   1262 open_func = self._builtin_open
+-> 1263 return open_func(self.baseFilename, self.mode,
+   1264                  encoding=self.encoding, errors=self.errors)
+
+PermissionError: [Errno 13] Permission denied: '/home/data_loader.log'
+[2025-04-22T22:34:01.579-0400] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=fashion_data_pipeline, task_id=execute_notebook, run_id=manual__2025-04-23T02:21:48.741972+00:00, execution_date=20250423T022148, start_date=20250423T023221, end_date=20250423T023401
+[2025-04-22T22:34:02.079-0400] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T22:34:02.081-0400] {standard_task_runner.py:124} ERROR - Failed to execute job 75 for task execute_notebook (Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+PermissionError                           Traceback (most recent call last)
+Cell In[10], line 19
+     12 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+     14 # Configure logging
+     15 logging.basicConfig(
+     16     level=logging.INFO,
+     17     format='%(asctime)s - %(levelname)s - %(message)s',
+     18     handlers=[
+---> 19         logging.FileHandler('data_loader.log', encoding='utf-8'),
+     20         logging.StreamHandler()
+     21     ]
+     22 )
+     23 logger = logging.getLogger(__name__)
+     25 # Initialize Spark with Hadoop workaround for Windows
+
+File /usr/lib/python3.12/logging/__init__.py:1231, in FileHandler.__init__(self, filename, mode, encoding, delay, errors)
+   1229     self.stream = None
+   1230 else:
+-> 1231     StreamHandler.__init__(self, self._open())
+
+File /usr/lib/python3.12/logging/__init__.py:1263, in FileHandler._open(self)
+   1258 """
+   1259 Open the current base file with the (original) mode and encoding.
+   1260 Return the resulting stream.
+   1261 """
+   1262 open_func = self._builtin_open
+-> 1263 return open_func(self.baseFilename, self.mode,
+   1264                  encoding=self.encoding, errors=self.errors)
+
+PermissionError: [Errno 13] Permission denied: '/home/data_loader.log'
+; 18228)
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 68, in execute_notebook
+    pm.execute_notebook(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+PermissionError                           Traceback (most recent call last)
+Cell In[10], line 19
+     12 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+     14 # Configure logging
+     15 logging.basicConfig(
+     16     level=logging.INFO,
+     17     format='%(asctime)s - %(levelname)s - %(message)s',
+     18     handlers=[
+---> 19         logging.FileHandler('data_loader.log', encoding='utf-8'),
+     20         logging.StreamHandler()
+     21     ]
+     22 )
+     23 logger = logging.getLogger(__name__)
+     25 # Initialize Spark with Hadoop workaround for Windows
+
+File /usr/lib/python3.12/logging/__init__.py:1231, in FileHandler.__init__(self, filename, mode, encoding, delay, errors)
+   1229     self.stream = None
+   1230 else:
+-> 1231     StreamHandler.__init__(self, self._open())
+
+File /usr/lib/python3.12/logging/__init__.py:1263, in FileHandler._open(self)
+   1258 """
+   1259 Open the current base file with the (original) mode and encoding.
+   1260 Return the resulting stream.
+   1261 """
+   1262 open_func = self._builtin_open
+-> 1263 return open_func(self.baseFilename, self.mode,
+   1264                  encoding=self.encoding, errors=self.errors)
+
+PermissionError: [Errno 13] Permission denied: '/home/data_loader.log'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow_venv/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/megin_mathew/airflow/dags/FashionData_DAG.py", line 91, in execute_notebook
+    raise AirflowException(f"Notebook execution failed: {str(e)}")
+airflow.exceptions.AirflowException: Notebook execution failed: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+PermissionError                           Traceback (most recent call last)
+Cell In[10], line 19
+     12 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, DateType, BooleanType
+     14 # Configure logging
+     15 logging.basicConfig(
+     16     level=logging.INFO,
+     17     format='%(asctime)s - %(levelname)s - %(message)s',
+     18     handlers=[
+---> 19         logging.FileHandler('data_loader.log', encoding='utf-8'),
+     20         logging.StreamHandler()
+     21     ]
+     22 )
+     23 logger = logging.getLogger(__name__)
+     25 # Initialize Spark with Hadoop workaround for Windows
+
+File /usr/lib/python3.12/logging/__init__.py:1231, in FileHandler.__init__(self, filename, mode, encoding, delay, errors)
+   1229     self.stream = None
+   1230 else:
+-> 1231     StreamHandler.__init__(self, self._open())
+
+File /usr/lib/python3.12/logging/__init__.py:1263, in FileHandler._open(self)
+   1258 """
+   1259 Open the current base file with the (original) mode and encoding.
+   1260 Return the resulting stream.
+   1261 """
+   1262 open_func = self._builtin_open
+-> 1263 return open_func(self.baseFilename, self.mode,
+   1264                  encoding=self.encoding, errors=self.errors)
+
+PermissionError: [Errno 13] Permission denied: '/home/data_loader.log'
+
+[2025-04-22T22:34:02.127-0400] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-22T22:34:02.170-0400] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T22:34:02.170-0400] {local_task_job_runner.py:245} INFO - ::endgroup::

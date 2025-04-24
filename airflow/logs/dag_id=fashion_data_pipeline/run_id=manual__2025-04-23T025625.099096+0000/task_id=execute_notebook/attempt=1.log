@@ -1,0 +1,138 @@
+[2025-04-22T22:56:30.035-0400] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T22:56:30.041-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-23T02:56:25.099096+00:00 [queued]>
+[2025-04-22T22:56:30.045-0400] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-23T02:56:25.099096+00:00 [queued]>
+[2025-04-22T22:56:30.045-0400] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2025-04-22T22:56:30.056-0400] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): execute_notebook> on 2025-04-23 02:56:25.099096+00:00
+[2025-04-22T22:56:30.059-0400] {standard_task_runner.py:72} INFO - Started process 19997 to run task
+[2025-04-22T22:56:30.061-0400] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'fashion_data_pipeline', 'execute_notebook', 'manual__2025-04-23T02:56:25.099096+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/FashionData_DAG.py', '--cfg-path', '/tmp/tmp_97zuik_']
+[2025-04-22T22:56:30.062-0400] {standard_task_runner.py:105} INFO - Job 79: Subtask execute_notebook
+[2025-04-22T22:56:30.093-0400] {task_command.py:467} INFO - Running <TaskInstance: fashion_data_pipeline.execute_notebook manual__2025-04-23T02:56:25.099096+00:00 [running]> on host BOOK-KTS1KMKSNJ.
+[2025-04-22T22:56:30.141-0400] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fashion_data_pipeline' AIRFLOW_CTX_TASK_ID='execute_notebook' AIRFLOW_CTX_EXECUTION_DATE='2025-04-23T02:56:25.099096+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-23T02:56:25.099096+00:00'
+[2025-04-22T22:56:30.142-0400] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T22:56:30.143-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T22:56:30.143-0400] {logging_mixin.py:190} INFO - Current task name:execute_notebook state:running start_date:2025-04-23 02:56:30.041783+00:00
+[2025-04-22T22:56:30.143-0400] {logging_mixin.py:190} INFO - Dag name:fashion_data_pipeline and current dag run status:running
+[2025-04-22T22:56:30.143-0400] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T22:56:30.144-0400] {FashionData_DAG.py:58} INFO - Executing notebook: /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T22:56:30.144-0400] {FashionData_DAG.py:59} INFO - Output will be saved to: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-23.ipynb
+[2025-04-22T22:56:30.144-0400] {FashionData_DAG.py:60} INFO - Parameters passed to notebook: {'execution_date': '2025-04-23T02:56:25.099096+00:00', 'dag_run_id': 'manual__2025-04-23T02:56:25.099096+00:00', 'ds': '2025-04-23', 'ds_nodash': '20250423'}
+[2025-04-22T22:56:30.144-0400] {execute.py:83} INFO - Input Notebook:  /home/megin_mathew/airflow/notebooks/Fashion_Data_Pipeline.ipynb
+[2025-04-22T22:56:30.144-0400] {execute.py:84} INFO - Output Notebook: /home/megin_mathew/airflow/notebook_outputs/Fashion_Data_Pipeline-output-2025-04-23.ipynb
+[2025-04-22T22:56:31.064-0400] {clientwrap.py:44} INFO - Executing notebook with kernel: python3
+[2025-04-22T22:56:31.064-0400] {engines.py:223} INFO - Executing Cell 1---------------------------------------
+[2025-04-22T22:56:31.073-0400] {engines.py:261} INFO - Ending Cell 1------------------------------------------
+[2025-04-22T22:56:31.075-0400] {engines.py:223} INFO - Executing Cell 2---------------------------------------
+[2025-04-22T22:56:31.082-0400] {engines.py:261} INFO - Ending Cell 2------------------------------------------
+[2025-04-22T22:56:31.083-0400] {engines.py:223} INFO - Executing Cell 3---------------------------------------
+[2025-04-22T22:56:31.709-0400] {clientwrap.py:91} INFO - Requirement already satisfied: kagglehub in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (0.3.11)
+Requirement already satisfied: pandas in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (2.2.3)
+Requirement already satisfied: psycopg2-binary in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (2.9.10)
+Requirement already satisfied: sqlalchemy in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (1.4.54)
+Requirement already satisfied: packaging in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kagglehub) (24.2)
+Requirement already satisfied: pyyaml in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kagglehub) (6.0.2)
+Requirement already satisfied: requests in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kagglehub) (2.32.3)
+Requirement already satisfied: tqdm in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kagglehub) (4.67.1)
+Requirement already satisfied: numpy>=1.26.0 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from pandas) (2.2.5)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: greenlet!=0.4.17 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from sqlalchemy) (3.2.0)
+Requirement already satisfied: six>=1.5 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (2.4.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from requests->kagglehub) (2025.1.31)
+
+[2025-04-22T22:56:32.123-0400] {engines.py:261} INFO - Ending Cell 3------------------------------------------
+[2025-04-22T22:56:32.126-0400] {engines.py:223} INFO - Executing Cell 4---------------------------------------
+[2025-04-22T22:56:32.228-0400] {clientwrap.py:91} INFO - ['KaggleDatasetAdapter', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', 'auth', 'cache', 'clients', 'colab_cache_resolver', 'competition', 'competition_download', 'config', 'dataset_download', 'dataset_load', 'dataset_upload', 'datasets', 'datasets_enums', 'datasets_helpers', 'env', 'exceptions', 'gcs_upload', 'get_package_asset_path', 'handle', 'http_resolver', 'integrity', 'kaggle_cache_resolver', 'kagglehub', 'load_dataset', 'logger', 'login', 'model_download', 'model_upload', 'models', 'models_helpers', 'notebook_output_download', 'notebooks', 'package_import', 'packages', 'registry', 'resolver', 'signing', 'tracker', 'utility_script_install', 'utility_scripts', 'whoami']
+
+[2025-04-22T22:56:32.228-0400] {clientwrap.py:98} WARNING - /home/megin_mathew/airflow_venv/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+
+[2025-04-22T22:56:32.230-0400] {engines.py:261} INFO - Ending Cell 4------------------------------------------
+[2025-04-22T22:56:32.232-0400] {engines.py:223} INFO - Executing Cell 5---------------------------------------
+[2025-04-22T22:56:32.802-0400] {clientwrap.py:91} INFO - Requirement already satisfied: kaggle in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (1.7.4.2)
+Requirement already satisfied: bleach in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (6.2.0)
+Requirement already satisfied: certifi>=14.05.14 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (2025.1.31)
+Requirement already satisfied: charset-normalizer in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (3.4.1)
+Requirement already satisfied: idna in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (3.10)
+Requirement already satisfied: protobuf in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (5.29.4)
+Requirement already satisfied: python-dateutil>=2.5.3 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (2.9.0.post0)
+Requirement already satisfied: python-slugify in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (8.0.4)
+Requirement already satisfied: requests in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (2.32.3)
+Requirement already satisfied: setuptools>=21.0.0 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (79.0.0)
+Requirement already satisfied: six>=1.10 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (1.17.0)
+Requirement already satisfied: text-unidecode in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (1.3)
+Requirement already satisfied: tqdm in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (4.67.1)
+Requirement already satisfied: urllib3>=1.15.1 in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (2.4.0)
+Requirement already satisfied: webencodings in ./megin_mathew/airflow_venv/lib/python3.12/site-packages (from kaggle) (0.5.1)
+
+[2025-04-22T22:56:33.212-0400] {clientwrap.py:91} INFO - Note: you may need to restart the kernel to use updated packages.
+
+[2025-04-22T22:56:33.214-0400] {engines.py:261} INFO - Ending Cell 5------------------------------------------
+[2025-04-22T22:56:33.217-0400] {engines.py:223} INFO - Executing Cell 6---------------------------------------
+[2025-04-22T22:56:33.296-0400] {clientwrap.py:91} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/megin_mathew/.config/kaggle/kaggle.json'
+Kaggle module is successfully installed!
+
+[2025-04-22T22:56:33.298-0400] {engines.py:261} INFO - Ending Cell 6------------------------------------------
+[2025-04-22T22:56:33.300-0400] {engines.py:223} INFO - Executing Cell 7---------------------------------------
+[2025-04-22T22:56:33.306-0400] {clientwrap.py:91} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/megin_mathew/.config/kaggle/kaggle.json'
+Kaggle API authentication successful!
+
+[2025-04-22T22:56:33.308-0400] {engines.py:261} INFO - Ending Cell 7------------------------------------------
+[2025-04-22T22:56:33.310-0400] {engines.py:223} INFO - Executing Cell 8---------------------------------------
+[2025-04-22T22:57:49.594-0400] {clientwrap.py:91} INFO - Downloaded: transactions.csv → Stored in: /home/megin_mathew/fashion_dataset
+
+[2025-04-22T22:57:54.168-0400] {clientwrap.py:98} WARNING - /home/megin_mathew/airflow_venv/lib/python3.12/site-packages/kagglehub/pandas_datasets.py:91: DtypeWarning: Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.
+  result = read_function(
+
+[2025-04-22T22:58:00.859-0400] {clientwrap.py:91} INFO - Downloaded: customers.csv → Stored in: /home/megin_mathew/fashion_dataset
+
+[2025-04-22T22:58:01.394-0400] {clientwrap.py:91} INFO - Downloaded: discounts.csv → Stored in: /home/megin_mathew/fashion_dataset
+
+[2025-04-22T22:58:01.741-0400] {clientwrap.py:91} INFO - Downloaded: employees.csv → Stored in: /home/megin_mathew/fashion_dataset
+
+[2025-04-22T22:58:02.240-0400] {clientwrap.py:91} INFO - Downloaded: products.csv → Stored in: /home/megin_mathew/fashion_dataset
+
+[2025-04-22T22:58:02.404-0400] {clientwrap.py:91} INFO - Downloaded: stores.csv → Stored in: /home/megin_mathew/fashion_dataset
+
+[2025-04-22T22:58:02.409-0400] {engines.py:261} INFO - Ending Cell 8------------------------------------------
+[2025-04-22T22:58:02.415-0400] {engines.py:223} INFO - Executing Cell 9---------------------------------------
+[2025-04-22T22:58:02.437-0400] {engines.py:261} INFO - Ending Cell 9------------------------------------------
+[2025-04-22T22:58:02.458-0400] {engines.py:223} INFO - Executing Cell 10--------------------------------------
+[2025-04-22T22:58:02.492-0400] {engines.py:261} INFO - Ending Cell 10-----------------------------------------
+[2025-04-22T22:58:02.557-0400] {engines.py:223} INFO - Executing Cell 11--------------------------------------
+[2025-04-22T22:58:04.960-0400] {clientwrap.py:98} WARNING - 25/04/22 22:58:04 WARN Utils: Your hostname, BOOK-KTS1KMKSNJ resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+25/04/22 22:58:04 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+
+[2025-04-22T22:58:05.363-0400] {clientwrap.py:98} WARNING - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+
+[2025-04-22T22:58:05.603-0400] {clientwrap.py:98} WARNING - 25/04/22 22:58:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/04/22 22:58:05 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+
+[2025-04-22T22:58:06.942-0400] {clientwrap.py:98} WARNING - 2025-04-22 22:58:06,937 - INFO - Starting data load process...
+
+[2025-04-22T22:58:06.945-0400] {clientwrap.py:98} WARNING - 2025-04-22 22:58:06,939 - ERROR - Fatal error: Missing required environment variable: DB_USER
+Traceback (most recent call last):
+  File "/tmp/ipykernel_19999/3184093236.py", line 531, in <module>
+    load_data_to_postgres()
+  File "/tmp/ipykernel_19999/3184093236.py", line 451, in load_data_to_postgres
+    raise ValueError(f"Missing required environment variable: {var_name}")
+ValueError: Missing required environment variable: DB_USER
+
+[2025-04-22T22:58:06.948-0400] {engines.py:261} INFO - Ending Cell 11-----------------------------------------
+[2025-04-22T22:58:06.953-0400] {engines.py:223} INFO - Executing Cell 12--------------------------------------
+[2025-04-22T22:58:06.957-0400] {engines.py:261} INFO - Ending Cell 12-----------------------------------------
+[2025-04-22T22:58:09.643-0400] {FashionData_DAG.py:79} INFO - Notebook execution completed successfully
+[2025-04-22T22:58:09.647-0400] {python.py:240} INFO - Done. Returned value was: True
+[2025-04-22T22:58:09.783-0400] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T22:58:09.785-0400] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=fashion_data_pipeline, task_id=execute_notebook, run_id=manual__2025-04-23T02:56:25.099096+00:00, execution_date=20250423T025625, start_date=20250423T025630, end_date=20250423T025809
+[2025-04-22T22:58:09.886-0400] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-22T22:58:09.886-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-22T22:58:09.886-0400] {logging_mixin.py:190} INFO - Dag name:fashion_data_pipeline queued_at:2025-04-23 02:56:25.183020+00:00
+[2025-04-22T22:58:09.886-0400] {logging_mixin.py:190} INFO - Task hostname:BOOK-KTS1KMKSNJ. operator:PythonOperator
+[2025-04-22T22:58:09.906-0400] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T22:58:09.938-0400] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T22:58:09.939-0400] {local_task_job_runner.py:245} INFO - ::endgroup::
