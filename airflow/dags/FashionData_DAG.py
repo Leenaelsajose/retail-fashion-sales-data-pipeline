@@ -61,15 +61,11 @@ def execute_notebook(**kwargs):
 
 
         # Execute the notebook with extended timeout (converted to int)
-        # Removed kernel_spec as it's often not needed for basic Papermill execution
-        # and can introduce complexity depending on your environment setup.
-        # If you need specific kernel resources, you might need a different executor
-        # or a more advanced Papermill setup.
         pm.execute_notebook(
             input_path=notebook_path,
             output_path=output_path,
             parameters=params,
-            kernel_name='python3', # Ensure 'python3' kernel is available in your environment
+            kernel_name='python3', 
             log_output=True,
             progress_bar=False,
             start_timeout=600,
@@ -94,7 +90,7 @@ with DAG(
     'fashion_data_pipeline',
     default_args=default_args,
     description='Daily execution of Fashion Retail Data Pipeline',
-    schedule_interval='@daily', # Or use a specific cron expression or timedelta
+    schedule_interval='@daily', 
     catchup=False,
     tags=['data_pipeline', 'fashion', 'papermill'],
 ) as dag:
@@ -102,7 +98,7 @@ with DAG(
     execute_notebook_task = PythonOperator(
         task_id='execute_notebook',
         python_callable=execute_notebook,
-        provide_context=True, # Needed to pass execution context (ds, dag_run, etc.)
-        execution_timeout=timedelta(hours=3), # Overall task timeout
+        provide_context=True,
+        execution_timeout=timedelta(hours=3),
     )
 
