@@ -4,7 +4,7 @@
 
 - The pipeline code is present in the notebooks folder inside the airflow folder.Below is the direct link:
   https://github.com/Leenaelsajose/retail-fashion-sales-data-pipeline/blob/main/airflow/notebooks/Fashion_Data_Pipeline.ipynb
-  _PS: The password in the environment folder has been cleared out._
+-  _PS: The password in the environment folder has been cleared out._
 
 ## Dag Code
 
